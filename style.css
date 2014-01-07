@@ -15,6 +15,7 @@ h2 {
 
 p {
   margin: 5px 0px;
+  font-size: 11px;
 }
 
 div.top_image {
@@ -113,10 +114,11 @@ div.win p.prize {
   background-color: #231f20;
   width: 140px;
   line-height: 37px;
+  font-size: 13px;
 }
 
 div.grand_prize,
 div.weekly_prize {
-  height: 325px;
+  height: 319px;
 }
 
