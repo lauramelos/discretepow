@@ -56,12 +56,12 @@ div.fb_like_mask {
 div.bottom_text {
   width: 690px;
   height: 190px;
-  margin-top: 380;
+  margin: 380px auto 0px;
 }
 
 div.bottom_text p {
   color: white;
-  margin: 5px;
+  margin: 5px 0px;
 }
 
 div.bottom_text h2 {
