@@ -114,6 +114,10 @@ FB.Canvas.setAutoGrow(1000);
     </div>
   </div>
 
+  <div class="want_in">
+
+  </div>
+
     <?php if ($user): ?>
       <a href="<?php echo $logoutUrl; ?>">Logout</a>
     <?php else: ?>

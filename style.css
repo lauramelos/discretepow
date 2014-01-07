@@ -123,3 +123,9 @@ div.weekly_prize {
   height: 319px;
 }
 
+div.want_in {
+  height: 700px;
+  background-image: url('imgs/wantin_bg.jpg');
+  width: 100%;
+  padding-top: 1px;
+}
