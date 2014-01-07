@@ -54,11 +54,8 @@ if ($user) {
       </div>
     <?php endif ?>
 
-    <h3>PHP Session</h3>
-    <pre><?php print_r($_SESSION); ?></pre>
-
     <?php if ($user): ?>
-      <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+      <img class="fb_thumb" src="https://graph.facebook.com/<?php echo $user; ?>/picture">
     <?php else: ?>
       <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
