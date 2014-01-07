@@ -129,3 +129,20 @@ div.want_in {
   width: 100%;
   padding-top: 1px;
 }
+
+div.want_in .step {
+  width: 470px;
+}
+
+div.want_in .step .title {
+  height: 162px;
+  width: 137px;
+  display: block;
+  float: left;
+}
+
+div.want_in .step img {
+  display: block;
+  float: right;
+}
+

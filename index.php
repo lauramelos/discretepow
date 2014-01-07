@@ -115,10 +115,24 @@ FB.Canvas.setAutoGrow(1000);
   </div>
 
   <div class="want_in">
-  <?php
-  $host = $_SERVER['HTTP_HOST'];
-  echo $host;
-  ?>
+    <div class="step one">
+      <div class="title">
+      </div>
+      <img src="imgs/wantin_step1.jpg" />
+      <div class="qualification">
+      </div>
+      <div class="caption">
+      </div>
+    <div>
+    <div class="step two">
+      <div class="title">
+      </div>
+      <img src="imgs/wantin_step2.jpg" />
+      <div class="qualification">
+      </div>
+      <div class="caption">
+      </div>
+    <div>
   </div>
 
     <?php if ($user): ?>
