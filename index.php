@@ -7,17 +7,6 @@ $facebook = new Facebook(array(
   'secret' => 'a4c1147272a2df8f706f5ac2a7956b5b',
 ));
 
-$user = $facebook->getUser();
-if ($user) {
-  try {
-    // Proceed knowing you have a logged in user who's authenticated.
-    $user_profile = $facebook->api('/me');
-  } catch (FacebookApiException $e) {
-    error_log($e);
-    $user = null;
-  }
-}
-
 $request = $facebook->getSignedRequest();
 $isFan = $request['page']['liked'];
 
