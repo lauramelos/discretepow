@@ -34,3 +34,10 @@ div.title_under_logo p {
   margin: 7px 0px;
 }
 
+img.fb_thumb {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid red;
+}
+
