@@ -18,11 +18,9 @@ if ($user) {
   }
 }
 
-$pageFanId=226931190751436;
-$isFan = $facebook->api(array(
-  "method" => "fql.query",
-  "query"  => "SELECT uid, page_id FROM page_fan WHERE page_id = '$pageFanId' AND uid = '$user'"
-));
+$request = $facebook->getSignedRequest();
+$isFan = $request['page']['liked'];
+echo 'es fan: '.$IsFan;
 
 // Login or logout url will be needed depending on current user state.
 if ($user) {
@@ -65,15 +63,7 @@ FB.Canvas.setAutoGrow(1000);
     <div class="fb_like_mask">
     </div>
   <?php endif ?>
-    <?php print_r($isFan); ?>
-    <?php print_r($user); ?>
-    <?php echo $loginUrl; ?>
 
-<?php
-$request = $facebook->getSignedRequest();
-$IsFan = $request['page']['liked'];
-echo 'es fan: '.$IsFan;
-?>
 
   <div class="top_image">
     <div class="top_logo"></div>
