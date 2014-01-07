@@ -66,8 +66,10 @@ FB.Canvas.setAutoGrow(1000);
 </script>
 
   <?php if (!$isFan): ?>
-    <div class="fb_like_mask"></div>
+    <div class="fb_like_mask">
     <?php print_r($isFan); ?>
+    <?php print_r($user); ?>
+    </div>
   <?php endif ?>
 
   <div class="top_image">
