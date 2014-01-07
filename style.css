@@ -72,3 +72,9 @@ div.bottom_text h2 {
   color: #8bc83f;
 }
 
+div.win {
+  height: 639px;
+  background-image: url('imgs/win_bg.jpg');
+  width: 100%;
+}
+
