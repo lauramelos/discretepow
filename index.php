@@ -80,10 +80,10 @@ FB.Canvas.setAutoGrow(1000);
       <p>The last decade has been the hottest on record, Politics aside, that's not
           good for anyone, especially skiers and showboarders. Winter is our season
           but winter is in trouble. So let's do something about it!.
-          <em>Protect Our Winters</em> is the POW Seven Pledge ans start making 
+          <strong>Protect Our Winters</strong> is the POW Seven Pledge ans start making 
           an impact on the future of Winter!</p>
-      <p><em>Our partners have put together some amazing prize packages as a thank
-              you for supporting POW</em>
+      <p><strong>Our partners have put together some amazing prize packages as a thank
+              you for supporting POW</strong>
     </div>
   </div>
 
