@@ -122,6 +122,7 @@ FB.Canvas.setAutoGrow(1000);
       </div>
       <img src="imgs/wantin_step1.jpg" />
       <div class="qualification">
+        <p>WEEKLY PRIZE QUALIFICATION</p>
       </div>
       <div class="caption">
       </div>
@@ -131,6 +132,7 @@ FB.Canvas.setAutoGrow(1000);
       </div>
       <img src="imgs/wantin_step2.jpg" />
       <div class="qualification">
+        <p>GRAND PRIZE QUALIFICATION</p>
       </div>
       <div class="caption">
       </div>
