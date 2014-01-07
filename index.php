@@ -134,9 +134,7 @@ FB.Canvas.setAutoGrow(1000);
         <h2>INSTAGRAM #UnitedWePOW</h2>
       </div>
       <img src="imgs/wantin_step2.jpg" />
-      <div class="qualification">
-        <p>GRAND PRIZE QUALIFICATION</p>
-      </div>
+        <p class="qualification">GRAND PRIZE QUALIFICATION</p>
       <div class="caption">
         <h2>WIN THE ULTIMATE SKI WEEKEND IN UTAH</h2>
         <p>Tag your ski, snowboard and general winter-loving pics on
