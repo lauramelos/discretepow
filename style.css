@@ -111,7 +111,7 @@ div.win h2 {
   padding-left: 10px;
 }
 
-.quialification p,
+.qualification p,
 div.win p.prize {
   background-color: #231f20;
   width: 140px;
@@ -133,6 +133,7 @@ div.want_in {
 
 div.want_in .step {
   width: 470px;
+  margin: 44px 85px 0px 0px;
 }
 
 div.want_in .step .title {
