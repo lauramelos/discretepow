@@ -59,7 +59,7 @@ if ($user) {
 <?php
 $isFan = $facebook->api(array(
   "method" => "fql.query",
-  "query"  => "SELECT uid FROM page_fan WHERE page_id = '552821881436791' AND uid = $user"
+  "query"  => "SELECT uid FROM page_fan WHERE page_id = '304246793017733' AND uid = $user"
 ));
 
 print_r($isFan);
