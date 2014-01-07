@@ -7,7 +7,6 @@ $facebook = new Facebook(array(
   'secret' => 'a4c1147272a2df8f706f5ac2a7956b5b',
 ));
 
-
 $user = $facebook->getUser();
 if ($user) {
   try {
@@ -18,6 +17,13 @@ if ($user) {
     $user = null;
   }
 }
+
+$pageFanId=552821881436791;
+$isFan = $facebook->api(array(
+  "method" => "fql.query",
+  "query"  => "SELECT uid FROM page_fan WHERE page_id = $pageFanId AND uid = $user"
+));
+
 // Login or logout url will be needed depending on current user state.
 if ($user) {
   $logoutUrl = $facebook->getLogoutUrl();
@@ -57,10 +63,6 @@ if ($user) {
     <?php endif ?>
 
 <?php
-$isFan = $facebook->api(array(
-  "method" => "fql.query",
-  "query"  => "SELECT uid FROM page_fan WHERE page_id = '112311695446814' AND uid = $user"
-));
 
 if ($isFan) {
 print_r($isFan);
