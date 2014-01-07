@@ -96,15 +96,20 @@ div.desc_text {
   width: 335px;
   float: left;
   display: block;
+  padding-left: 25px;
 }
 
 div.win p {
   color: white;
+  padding-left: 10px;
+}
+
+div.win h2 {
+  padding-left: 10px;
 }
 
 div.win p.prize {
   background-color: #231f20;
   width: 140px;
   line-height: 37px;
-  padding-left: 10px;
 }
