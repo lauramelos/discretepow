@@ -114,3 +114,9 @@ div.win p.prize {
   width: 140px;
   line-height: 37px;
 }
+
+div.grand_prize,
+div.weekly_prize {
+  height: 325px;
+}
+
