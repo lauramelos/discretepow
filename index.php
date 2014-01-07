@@ -144,5 +144,11 @@ FB.Canvas.setAutoGrow(1000);
     <div>
   </div>
 
+    <?php if ($user): ?>
+      <?php if ($isFan): ?>
+        <img class="fb_thumb" src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+      <?php endif ?>
+    <?php endif ?>
+
 </body>
 </html>
