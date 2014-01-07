@@ -75,6 +75,16 @@ FB.Canvas.setAutoGrow(1000);
       <p>TAKE A STAND FOR WINTER</p>
       <p>GET HOOKED UP LIKE A PRO</p>
     </div>
+    <div class="bottom_text">
+      <h2>WE LOVE WINTER. LET'S TAKE A STAND TO PROTECT IT</h2>
+      <p>The last decade has been the hottest on record, Politics aside, that's not
+          good for anyone, especially skiers and showboarders. Winter is our season
+          but winter is in trouble. So let's do something about it!.
+          <em>Protect Our Winters</em> is the POW Seven Pledge ans start making 
+          an impact on the future of Winter!</p>
+      <p><em>Our partners have put together some amazing prize packages as a thank
+              you for supporting POW</em>
+    </div>
   </div>
 
     <?php if ($user): ?>
