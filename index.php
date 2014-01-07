@@ -72,7 +72,7 @@ FB.Canvas.setAutoGrow(1000);
 <?php
 $request = $facebook->getSignedRequest();
 $IsFan = $request['page']['liked'];
-echo $IsFan;
+echo 'es fan: '.$IsFan;
 ?>
 
   <div class="top_image">
