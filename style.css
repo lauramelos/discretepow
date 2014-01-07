@@ -84,8 +84,7 @@ div.win img {
   display: block;
 }
 
-div.weekly_prize,
-div.grand_prize {
+div.desc_text {
   width: 335px;
   float: left;
   display: block;
