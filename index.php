@@ -21,14 +21,6 @@ if ($user) {
 $request = $facebook->getSignedRequest();
 $isFan = $request['page']['liked'];
 
-// Login or logout url will be needed depending on current user state.
-if ($user) {
-  $logoutUrl = $facebook->getLogoutUrl();
-} else {
-  $statusUrl = $facebook->getLoginStatusUrl();
-  $loginUrl = $facebook->getLoginUrl();
-}
-
 ?>
 
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
@@ -143,12 +135,6 @@ FB.Canvas.setAutoGrow(1000);
       </div>
     <div>
   </div>
-
-    <?php if ($user): ?>
-      <?php if ($isFan): ?>
-        <img class="fb_thumb" src="https://graph.facebook.com/<?php echo $user; ?>/picture">
-      <?php endif ?>
-    <?php endif ?>
 
 </body>
 </html>
