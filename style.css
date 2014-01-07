@@ -145,6 +145,11 @@ div.want_in .step .title {
   background-color: #34582c;
 }
 
+div.want_in .step .title p,
+div.want_in .step .title h2 {
+  color: white;
+}
+
 div.want_in .step img {
   display: block;
   float: right;
@@ -152,4 +157,6 @@ div.want_in .step img {
 
 .qualification p {
   width: 100%;
+  color: white;
+  padding-left: 10px;
 }
