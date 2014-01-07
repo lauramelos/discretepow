@@ -1,5 +1,6 @@
 body {
   width: 810px;
+  position: relative;
 }
 body * {
   -moz-box-sizing: border-box;
@@ -36,8 +37,8 @@ div.title_under_logo p {
 
 img.fb_thumb {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 5px;
+  right: 5px;
   border: 1px solid red;
 }
 
