@@ -49,5 +49,6 @@ div.fb_like_mask {
   position: absolute;
   top: 0px;
   left: 0px;
+  background: url('imgs/fb_like_mask.png') no-repeat top center #rgba(0,0,0,0.2);
 }
 
