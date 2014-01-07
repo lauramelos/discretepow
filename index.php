@@ -69,6 +69,12 @@ FB.Canvas.setAutoGrow(1000);
     <?php print_r($user); ?>
     <?php echo $loginUrl; ?>
 
+<?php
+$request = $facebook->getSignedRequest();
+$IsFan = $request['page']['liked'];
+echo $IsFan;
+?>
+
   <div class="top_image">
     <div class="top_logo"></div>
     <div class="title_under_logo">
