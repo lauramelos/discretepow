@@ -51,7 +51,7 @@ img.fb_thumb {
   position: absolute;
   top: 5px;
   right: 5px;
-  border: 1px solid red;
+  border: 1px solid #34582c;
 }
 
 div.fb_like_mask {
