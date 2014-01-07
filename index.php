@@ -86,6 +86,33 @@ FB.Canvas.setAutoGrow(1000);
               you for supporting POW</strong>
     </div>
   </div>
+  <div class="win">
+    <div class="weekly_prize">
+      <div class="desc_text">
+        <p class="prize">WEEKLY PRIZE</p>
+        <h2>GOPRO HERO 3, $150 IN DISCRETE GEAR AND MORE</h2>
+        <p>Each week we'll select one lucky winner to take home the new GoPro Hero 3,
+            $150 in Discrete gear and a <i>Into the Mind</i> Blu-Ray signed by
+            Julian Carr</p>
+      </div>
+      <img src="imgs/win_products.png" />
+    </div>
+    <div class="grand_prize">
+      <div class="desc_text">
+        <p class="prize">GRAND PRIZE</p>
+        <h2>ROCK THE BIRD LIKE A PRO WITH THE PROS</h2>
+        <p>Win a trip for two, including airfare, to ski with GoPro athletes at the
+            world-renowned Snowbird Mountain Resort in Utah's Wasatch Mountains.
+            We'll also hook you up with complete ski kit including:</p>
+        <p>+ GoPro Hero 3 Black Edition</p>
+        <p>+ Icelantic Skis<p>
+        <p>+ Custom Boots from Daleboot<p>
+        <p>+ Complete Spyder Outerwear and Baselayer Package<p>
+        <p>+ Apres Apparel by Discrete<p>
+      </div>
+      <img src="imgs/win_grand_prize.jpg" />
+    </div>
+  </div>
 
     <?php if ($user): ?>
       <a href="<?php echo $logoutUrl; ?>">Logout</a>
