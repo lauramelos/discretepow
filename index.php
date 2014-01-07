@@ -57,7 +57,9 @@ if ($user) {
     <?php endif ?>
 
     <?php if ($user): ?>
-      <img class="fb_thumb" src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+      <?php if ($isFan): ?>
+        <img class="fb_thumb" src="https://graph.facebook.com/<?php echo $user; ?>/picture">
+      <?php endif ?>
     <?php else: ?>
       <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
