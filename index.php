@@ -132,6 +132,8 @@ FB.Canvas.setAutoGrow(1000);
     </div>
     <div class="step two">
       <div class="title">
+        <p>STEP TWO</p>
+        <h2>INSTAGRAM #UnitedWePOW</h2>
       </div>
       <img src="imgs/wantin_step2.jpg" />
       <div class="qualification">
@@ -140,7 +142,7 @@ FB.Canvas.setAutoGrow(1000);
       <div class="caption">
         <h2>WIN THE ULTIMATE SKI WEEKEND IN UTAH</h2>
         <p>Tag your ski, snowboard and general winter-loving pics on
-          <strong> Instagram</strong> with <strong class="wantin">#UniedWePOW</strong>
+          <strong> Instagram</strong> with <strong class="wantin">#UnitedWePOW</strong>
            and <strong class="wantin">@ProtectOurWinters</strong>. Hit it hard all 
           season long. In March, we'll invete our favorite 
           <strong class="wantin">#UnitedWePow</strong> Instagrammer and a freind
