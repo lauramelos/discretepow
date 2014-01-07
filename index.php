@@ -19,7 +19,7 @@ $isFan = $request['page']['liked'];
   </script>
 </head>
 <body>
-
+<div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
     // init the FB JS SDK
