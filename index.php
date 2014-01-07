@@ -18,7 +18,7 @@ if ($user) {
   }
 }
 
-$pageFanId=110868665603709;
+$pageFanId=226931190751436;
 $isFan = $facebook->api(array(
   "method" => "fql.query",
   "query"  => "SELECT uid, page_id FROM page_fan WHERE page_id = $pageFanId AND uid = $user"
