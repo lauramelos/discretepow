@@ -164,8 +164,9 @@ div.want_in .step img {
 
 .qualification p {
   width: 100%;
-  color: white;
-  padding-left: 10px;
+  height: 37px;
+  margin: 0px;
+  display: inline-block;
 }
 
 div.want_in .step .caption p,
