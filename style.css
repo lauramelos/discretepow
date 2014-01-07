@@ -84,6 +84,10 @@ div.win img {
   display: block;
 }
 
+div.win .grand_prize img {
+  margin-right: 35px;
+}
+
 div.desc_text {
   width: 335px;
   float: left;
