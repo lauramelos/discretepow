@@ -117,13 +117,15 @@ FB.Canvas.setAutoGrow(1000);
   <div class="want_in">
     <div class="step one">
       <div class="title">
+        <p>STEP ONE</p>
+        <h2>POW SEVEN PLEDGE</h2>
       </div>
       <img src="imgs/wantin_step1.jpg" />
       <div class="qualification">
       </div>
       <div class="caption">
       </div>
-    <div>
+    </div>
     <div class="step two">
       <div class="title">
       </div>
