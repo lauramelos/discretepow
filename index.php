@@ -48,11 +48,7 @@ if ($user) {
       status     : true,                                 // Check Facebook Login status
       xfbml      : true                                  // Look for social plugins on the page
     });
-
-    // Additional initialization code such as adding Event Listeners goes here
-
 FB.Canvas.setAutoGrow(1000);
-
   };
 
   // Load the SDK asynchronously
@@ -71,6 +67,7 @@ FB.Canvas.setAutoGrow(1000);
   <?php endif ?>
     <?php print_r($isFan); ?>
     <?php print_r($user); ?>
+    <?php echo $loginUrl; ?>
 
   <div class="top_image">
     <div class="top_logo"></div>
