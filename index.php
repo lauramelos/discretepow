@@ -39,6 +39,11 @@ if ($user) {
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+  <?php if (!$isFan): ?>
+    <div class="fb_like_mask"></div>
+  <?php endif ?>
+
   <div class="top_image">
     <div class="top_logo"></div>
     <div class="title_under_logo">

@@ -43,3 +43,11 @@ img.fb_thumb {
   border: 1px solid red;
 }
 
+div.fb_like_mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
