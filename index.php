@@ -21,7 +21,7 @@ if ($user) {
 $pageFanId=226931190751436;
 $isFan = $facebook->api(array(
   "method" => "fql.query",
-  "query"  => "SELECT uid, page_id FROM page_fan WHERE page_id = $pageFanId AND uid = $user"
+  "query"  => "SELECT uid, page_id FROM page_fan WHERE page_id = '$pageFanId' AND uid = '$user'"
 ));
 
 // Login or logout url will be needed depending on current user state.
