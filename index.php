@@ -121,9 +121,7 @@ FB.Canvas.setAutoGrow(1000);
         <h2>POW SEVEN PLEDGE</h2>
       </div>
       <img src="imgs/wantin_step1.jpg" />
-      <div class="qualification">
-        <p>WEEKLY PRIZE QUALIFICATION</p>
-      </div>
+        <p class="qualification">WEEKLY PRIZE QUALIFICATION</p>
       <div class="caption">
         <h2>TAKE THE POW SEVEN PLEDGE</h2>
         <p>As a thank you for taking the pledge, you're entered in each of our
