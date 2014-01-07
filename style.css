@@ -113,7 +113,6 @@ div.win h2 {
   padding-left: 10px;
 }
 
-.qualification p,
 p.qualification,
 div.win p.prize {
   background-color: #231f20;
@@ -163,8 +162,6 @@ div.want_in .step img {
   float: right;
 }
 
-.qualification,
-.qualification p,
 p.qualification {
   width: 100%;
   height: 37px;
