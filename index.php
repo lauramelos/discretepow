@@ -20,7 +20,6 @@ if ($user) {
 
 $request = $facebook->getSignedRequest();
 $isFan = $request['page']['liked'];
-echo 'es fan: '.$IsFan;
 
 // Login or logout url will be needed depending on current user state.
 if ($user) {
@@ -144,23 +143,6 @@ FB.Canvas.setAutoGrow(1000);
       </div>
     <div>
   </div>
-
-    <?php if ($user): ?>
-      <a href="<?php echo $logoutUrl; ?>">Logout</a>
-    <?php else: ?>
-      <div>
-        Login using OAuth 2.0 handled by the PHP SDK:
-        <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
-      </div>
-    <?php endif ?>
-
-    <?php if ($user): ?>
-      <?php if ($isFan): ?>
-        <img class="fb_thumb" src="https://graph.facebook.com/<?php echo $user; ?>/picture">
-      <?php endif ?>
-    <?php else: ?>
-      <strong><em>You are not Connected.</em></strong>
-    <?php endif ?>
 
 </body>
 </html>
