@@ -94,13 +94,5 @@ FB.Canvas.setAutoGrow(1000);
       <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
 
-<?php
-
-if ($isFan) {
-print_r($isFan);
-}
-
-?>
-
 </body>
 </html>
