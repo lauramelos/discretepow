@@ -45,10 +45,6 @@ if ($user) {
       <a href="<?php echo $logoutUrl; ?>">Logout</a>
     <?php else: ?>
       <div>
-        Check the login status using OAuth 2.0 handled by the PHP SDK:
-        <a href="<?php echo $statusUrl; ?>">Check the login status</a>
-      </div>
-      <div>
         Login using OAuth 2.0 handled by the PHP SDK:
         <a href="<?php echo $loginUrl; ?>">Login with Facebook</a>
       </div>
@@ -59,6 +55,16 @@ if ($user) {
     <?php else: ?>
       <strong><em>You are not Connected.</em></strong>
     <?php endif ?>
+
+<?php
+$isFan = $facebook->api(array(
+  "method" => "fql.query",
+  "query"  => "SELECT uid FROM page_fan WHERE page_id = '552821881436791' AND uid = $user"
+));
+
+echo $isFan;
+
+?>
 
 </body>
 </html>
