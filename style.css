@@ -76,5 +76,11 @@ div.win {
   height: 639px;
   background-image: url('imgs/win_bg.jpg');
   width: 100%;
+  padding-top: 1px;
+}
+
+div.win img {
+  float: right;
+  display: block;
 }
 
