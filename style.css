@@ -12,6 +12,10 @@ h2 {
   color: #8bc83f;
 }
 
+p {
+  margin: 5px 0px;
+}
+
 div.top_image {
   width: 100%;
   height: 786px;
