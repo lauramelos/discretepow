@@ -93,3 +93,12 @@ div.desc_text {
   float: left;
   display: block;
 }
+
+div.win p {
+  color: white;
+}
+
+div.win p.prize {
+  background-color: #231f20;
+}
+
