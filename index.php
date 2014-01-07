@@ -115,7 +115,10 @@ FB.Canvas.setAutoGrow(1000);
   </div>
 
   <div class="want_in">
-
+  <?php
+  $host = $_SERVER['HTTP_HOST'];
+  echo $host;
+  ?>
   </div>
 
     <?php if ($user): ?>
