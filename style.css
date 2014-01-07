@@ -166,7 +166,11 @@ div.want_in .step img {
   padding-left: 10px;
 }
 
-.caption {
+.caption h2,
+.caption p {
   color: #211f20;
 }
 
+strong .wantin {
+  background-color: #34582c;
+}
