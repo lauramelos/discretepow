@@ -134,6 +134,7 @@ div.want_in {
 div.want_in .step {
   width: 470px;
   margin: 44px 85px 0px 0px;
+  float: right;
 }
 
 div.want_in .step .title {
@@ -149,6 +150,6 @@ div.want_in .step img {
   float: right;
 }
 
-.quialification p {
+.qualification p {
   width: 100%;
 }
