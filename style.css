@@ -114,6 +114,7 @@ div.win h2 {
 }
 
 .qualification p,
+p.qualification,
 div.win p.prize {
   background-color: #231f20;
   width: 140px;
