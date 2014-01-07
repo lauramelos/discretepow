@@ -62,7 +62,7 @@ $isFan = $facebook->api(array(
   "query"  => "SELECT uid FROM page_fan WHERE page_id = '552821881436791' AND uid = $user"
 ));
 
-echo $isFan;
+print_r($isFan);
 
 ?>
 
