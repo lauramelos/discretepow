@@ -16,7 +16,6 @@ h2 {
 p {
   margin: 5px 0px;
   font-size: 11px;
-  padding-left: 10px;
 }
 
 div.top_image {
@@ -149,6 +148,7 @@ div.want_in .step .title {
 div.want_in .step  p,
 div.want_in .step  h2 {
   color: white;
+  padding-left: 10px;
 }
 
 div.want_in .step  h2 {

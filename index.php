@@ -125,6 +125,9 @@ FB.Canvas.setAutoGrow(1000);
         <p>WEEKLY PRIZE QUALIFICATION</p>
       </div>
       <div class="caption">
+        <h2>TAKE THE POW SEVEN PLEDGE</h2>
+        <p>As a thank you for taking the pledge, you're entered in each of our
+            weekly prize deawing from GoPro and Discrete</p>
       </div>
     </div>
     <div class="step two">
@@ -135,6 +138,15 @@ FB.Canvas.setAutoGrow(1000);
         <p>GRAND PRIZE QUALIFICATION</p>
       </div>
       <div class="caption">
+        <h2>WIN THE ULTIMATE SKI WEEKEND IN UTAH</h2>
+        <p>Tag your ski, snowboard and general winter-loving pics on
+          <strong> Instagram</strong> with <strong class="wantin">#UniedWePOW</strong>
+           and <strong class="wantin">@ProtectOurWinters</strong>. Hit it hard all 
+          season long. In March, we'll invete our favorite 
+          <strong class="wantin">#UnitedWePow</strong> Instagrammer and a freind
+          to join us in the Wasatch Mountains of Utah for an all-expense-paid
+          trip to ski with GoPro athlete Julian Carr and friends on the world-cass
+          terrain of Snowbird Mountain Resort.</p>
       </div>
     <div>
   </div>
