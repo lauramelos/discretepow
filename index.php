@@ -203,10 +203,10 @@ FB.Canvas.setAutoGrow(1000);
         <input class="inp-text" placeholder="Full Name" name="one" id="one" type="text" size="30" /><br />
 
         <label for="input-two" class="float"></label><br />
-        <input class="inp-text" name="two"  id="two" type="text" size="30" /><br />
+        <input class="inp-text" placeholder="Email address" name="two"  id="two" type="text" size="30" /><br />
 
         <label for="input-three" class="float"></label><br />
-        <input class="inp-text" name="three"  id="three" type="text" size="30" /><br />
+        <input class="inp-text" placeholder="Instagram" name="three"  id="three" type="text" size="30" /><br />
 
         <label for="option1">
           <input class="choose" name="option[]" id="option1" type="checkbox" value="1" />
