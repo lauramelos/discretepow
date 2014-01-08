@@ -341,3 +341,13 @@ div.signup {
 .want_in .ready p {
   font-size: 25px;
 }
+
+div.footer_img {
+  background-image: url('imgs/footer_bg.jpg');
+  height: 255px;
+}
+
+div.sponsors_footer {
+  background-image: url('imgs/sponsors_footer__bg.jpg');
+  height: 116px;
+}

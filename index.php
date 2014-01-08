@@ -199,5 +199,9 @@ FB.Canvas.setAutoGrow(1000);
 
   </div>
 
+  <div class="footer_img">
+  </div>
+  <div class="sponsors_footer">
+  </div>
 </body>
 </html>
