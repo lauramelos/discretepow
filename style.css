@@ -207,12 +207,19 @@ div.want_in .step .title {
   display: block;
   float: left;
   background-color: #34582c;
+  padding-top: 15px;
 }
 
 div.want_in .step  p,
 div.want_in .step  h2 {
   color: white;
   padding-left: 10px;
+  font-size: 15;
+}
+
+div.want_in .step  h2 {
+  font-size: 17px;
+  font-family:'TradeGothicW01-BoldCn20 675337';
 }
 
 div.want_in .step  h2 {
