@@ -283,6 +283,14 @@ div.pledge {
   padding: 12px;
 }
 
+.pledge_child h2 {
+  font-size: 20px;
+}
+
+.pledge_child p {
+  font-size: 16px;
+}
+
 .pledge_child.right {
   float: right;
   margin-left: 10px;
@@ -295,6 +303,8 @@ div.pledge {
 }
 
 .pledge_child.powseven {
+  width: 228px;
+  background-position: center top;
   background-color: transparent;
   background-image: url('imgs/powseven.png')
 }
