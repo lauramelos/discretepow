@@ -252,6 +252,7 @@ strong.wantin {
 div.pledge {
   background-image: url('imgs/pledge_bg.jpg');
   height: 708px;
+  padding-top: 1px;
 }
 
 .top_pledge {
