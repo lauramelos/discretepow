@@ -296,6 +296,7 @@ div.pledge {
 
 .pledge_child.join {
   background-color: #34582c;
+  color: white;
 }
 
 .pledge_child.join h2 {
