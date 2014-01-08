@@ -382,9 +382,10 @@ div.signup .bottom p {
 }
 
 div.signup .bottom p {
-  line-height: 21px;
+  line-height: 22px;
   color: white;
   margin: 0px 0px 0px 10px;
+  font-size: 19px;
 }
 
 .want_in .ready {
