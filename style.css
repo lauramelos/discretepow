@@ -288,10 +288,6 @@ div.pledge {
   font-size: 20px;
 }
 
-.pledge_child p {
-  font-size: 16px;
-}
-
 .pledge_child.right {
   float: right;
   margin-left: 10px;
