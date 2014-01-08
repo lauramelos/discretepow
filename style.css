@@ -149,6 +149,10 @@ div.want_in .step {
   float: right;
 }
 
+div.want_in .step.two {
+  margin: 20px 60px 0px 0px;
+}
+
 div.want_in .step .title {
   height: 162px;
   width: 137px;
