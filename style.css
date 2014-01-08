@@ -278,11 +278,14 @@ div.pledge {
   height: 215px;
   float: left;
   margin-right: 10px;
+  background-color: #e0e0e0;
 }
 
 .pledge_child.right {
   float: right;
   margin-left: 10px;
   margin-right: 0px;
+  color: #e0e0e0;
+  background-color: #34582c;
 }
 
