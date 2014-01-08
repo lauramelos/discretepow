@@ -333,6 +333,14 @@ div.signup .title {
   margin: 45px 0 0 60px;
 }
 
+div.signup .title h2 {
+  color: white;
+}
+
+div.signup .title h2 f {
+  color: inherit;
+}
+
 div.signup fieldset {
   width: 375px;
   height: 270px;
