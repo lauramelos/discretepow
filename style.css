@@ -372,6 +372,13 @@ div.signup .bottom {
   height: 18px;
   clear: both;
   margin: 0px auto;
+  width: 700px;
+}
+
+div.signup .bottom img,
+div.signup .bottom p {
+  float: left;
+  margin-left: 10px;
 }
 
 .want_in .ready {
