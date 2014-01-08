@@ -197,6 +197,35 @@ FB.Canvas.setAutoGrow(1000);
 
   <div class="signup">
 
+    <form action="odeslat.php" method="post" id="formular">
+      <fieldset>
+        <label for="input-one" class="float"></label><br />
+        <input class="inp-text" name="input-one-name" id="input-one" type="text" size="30" /><br />
+
+        <label for="input-two" class="float"></label><br />
+        <input class="inp-text" name="input-two-name"  id="input-two" type="text" size="30" /><br />
+
+        <label for="input-three" class="float"></label><br />
+        <input class="inp-text" name="input-three-name"  id="input-three" type="text" size="30" /><br />
+
+        <label for="option1">
+          <input class="choose" name="option[]" id="option1" type="checkbox" value="1" />
+            &nbsp;I TOOK THE POW SEVEN PLEDGE
+        </label><br />
+
+        <label for="option2">
+          <input class="choose" name="option[]" id="option2" type="checkbox" value="2" />
+            &nbsp; SEND ME MORE INFORMATION FROM POW AND PARTNERS
+        </label><br />
+
+        <label for="option3">
+          <input class="choose" name="option[]" id="option3" type="checkbox" value="3" />
+          &nbsp; I AGREE TO THE TERMS AND CONDITIONS
+        </label><br />
+        <p><input class="submit-button" type="submit" alt="SUBMIT" name="Submit" value="SUBMIT" /></p>
+      </fieldset>
+    </form>
+
   </div>
 
   <div class="footer_img">
