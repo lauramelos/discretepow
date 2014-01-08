@@ -287,6 +287,9 @@ div.pledge {
   float: right;
   margin-left: 10px;
   margin-right: 0px;
+}
+
+.pledge_child.join {
   color: #e0e0e0;
   background-color: #34582c;
 }
