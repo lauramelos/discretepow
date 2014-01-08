@@ -95,7 +95,7 @@ FB.Canvas.setAutoGrow(1000);
   <div class="want_in">
     <div class="ready">
       <h2>READY?</h2>
-      <p>HERE'S HOW IT WORKS</p>
+      <p>HERE'S HOW IT WORKS:</p>
     </div>
     <div class="step one">
       <div class="title">
