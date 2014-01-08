@@ -345,6 +345,9 @@ div.signup fieldset input {
   border: 0px;
   height: 25px;
   margin: 6px 0px;
+}
+
+div.signup fieldset input[type="text"] {
   font-family:'TradeGothicW01-Cn18Obl';
 }
 
