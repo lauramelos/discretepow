@@ -324,11 +324,14 @@ div.pledge {
 div.signup {
   background-image: url('imgs/mailform_bg.jpg');
   height: 364px;
+  padding-top: 1px;
 }
 
 div.signup fieldset {
   width: 375px;
   height: 270px;
+  float: right;
+  margin-right: 70px;
 }
 
 .want_in .ready {
