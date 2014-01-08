@@ -182,6 +182,11 @@ p.qualification {
 div.want_in .step .caption p,
 div.want_in .step .caption h2 {
   color: #211f20;
+  font-size: 16px;
+}
+
+div.want_in .step .caption h2 {
+  font-size: 18px;
 }
 
 strong.wantin {
