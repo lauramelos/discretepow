@@ -326,6 +326,11 @@ div.signup {
   height: 364px;
 }
 
+div.signup fieldset {
+  width: 375px;
+  height: 270px;
+}
+
 .want_in .ready {
   width: 130px;
   height: 100px;
