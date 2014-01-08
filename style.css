@@ -326,6 +326,13 @@ div.signup {
   padding-top: 1px;
 }
 
+div.signup .title {
+  width: 275px;
+  height: 165px;
+  float: left;
+  margin: 45px 0 0 60px;
+}
+
 div.signup fieldset {
   width: 375px;
   height: 270px;
