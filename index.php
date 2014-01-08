@@ -169,11 +169,10 @@ FB.Canvas.setAutoGrow(1000);
       <div class="pledge_child powseven">
       </div>
 
-      <div class="pledge_child right">
-        <p>05</p>
-        <h2>TALK TO BUSINESSES</h2>
-        <p>Support businesses taht embrace sustainability. Talk to others about
-            what they could be doing.</p>
+      <div class="pledge_child join right">
+        <p>07</p>
+        <h2>JOIN NOW</h2>
+        <p>Help us go teototoe with the oil & gas lobby to Protect Our Winters.</p>
       </div>
 
       <div class="pledge_child right">
@@ -183,11 +182,13 @@ FB.Canvas.setAutoGrow(1000);
             Using fewer resources means paying for fewer resources.</p>
       </div>
 
-      <div class="pledge_child join right">
-        <p>07</p>
-        <h2>JOIN NOW</h2>
-        <p>Help us go teototoe with the ois & gas lobby to Protect Our Winters.</p>
+      <div class="pledge_child right">
+        <p>05</p>
+        <h2>TALK TO BUSINESSES</h2>
+        <p>Support businesses taht embrace sustainability. Talk to others about
+            what they could be doing.</p>
       </div>
+
     </div>
 
 </body>

@@ -283,5 +283,6 @@ div.pledge {
 .pledge_child.right {
   float: right;
   margin-left: 10px;
+  margin-right: 0px;
 }
 
