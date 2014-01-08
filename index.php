@@ -124,7 +124,7 @@ FB.Canvas.setAutoGrow(1000);
           trip to ski with GoPro athlete Julian Carr and friends on the world-cass
           terrain of Snowbird Mountain Resort.</p>
       </div>
-    <div>
+    </div>
   </div>
 
   <div class="pledge">
