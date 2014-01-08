@@ -193,12 +193,12 @@ div.want_in {
 
 div.want_in .step {
   width: 470px;
-  margin: 44px 60px 0px 0px;
+  margin: 44px 44px 0px 0px;
   float: right;
 }
 
 div.want_in .step.two {
-  margin: 20px 60px 0px 0px;
+  margin: 20px 44px 0px 0px;
 }
 
 div.want_in .step .title {
