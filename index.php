@@ -198,7 +198,7 @@ FB.Canvas.setAutoGrow(1000);
   <div class="signup">
 
     <div class="title">
-      <h2>TAKE THE PLEDGE.</h2>
+      <h2>TAKE<br />THE PLEDGE.</h2>
       <br />
       <h2>TAG <span>#UnitedWePOW</span></h2>
     </div>
