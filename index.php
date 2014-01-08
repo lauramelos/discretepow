@@ -197,6 +197,11 @@ FB.Canvas.setAutoGrow(1000);
 
   <div class="signup">
 
+    <div class="title">
+      <h2>TAKE THE PLEDGE.</h2>
+      <h2>TAG </h2><h2 class="hashed">#UnitedWePOW</h2>
+    </div>
+
     <form action="odeslat.php" method="post" id="formular">
       <fieldset>
         <label for="input-one" class="float"></label>
