@@ -232,6 +232,11 @@ FB.Canvas.setAutoGrow(1000);
       </fieldset>
     </form>
 
+    <div class="bottom">
+      <img src="imgs/discrete_logo.png" />
+      <p><span>BONUS! </span>25% OFF DISCRETE JUST FOR SIGNING THE POW SEVEN PLEDGE!<p>
+    </div>
+
   </div>
 
   <div class="footer_img">

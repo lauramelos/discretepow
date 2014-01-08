@@ -368,6 +368,10 @@ div.signup fieldset input[type="submit"] {
   color: #fefefe;
 }
 
+div.signup .bottom {
+  height: 18px;
+}
+
 .want_in .ready {
   width: 130px;
   height: 100px;
