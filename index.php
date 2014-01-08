@@ -211,7 +211,7 @@ FB.Canvas.setAutoGrow(1000);
         <label for="option1">
           <input class="choose" name="option[]" id="option1" type="checkbox" value="1" />
             &nbsp;I TOOK THE POW SEVEN PLEDGE
-        </label><br /><br />
+        </label><br />
 
         <label for="option2">
           <input class="choose" name="option[]" id="option2" type="checkbox" value="2" />
