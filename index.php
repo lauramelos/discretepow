@@ -199,13 +199,13 @@ FB.Canvas.setAutoGrow(1000);
 
     <form action="odeslat.php" method="post" id="formular">
       <fieldset>
-        <label for="input-one" class="float"></label><br />
+        <label for="input-one" class="float"></label>
         <input class="inp-text" placeholder="Full Name" name="one" id="one" type="text" size="30" /><br />
 
-        <label for="input-two" class="float"></label><br />
+        <label for="input-two" class="float"></label>
         <input class="inp-text" placeholder="Email address" name="two"  id="two" type="text" size="30" /><br />
 
-        <label for="input-three" class="float"></label><br />
+        <label for="input-three" class="float"></label>
         <input class="inp-text" placeholder="Instagram" name="three"  id="three" type="text" size="30" /><br />
 
         <label for="option1">
