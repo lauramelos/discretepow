@@ -248,3 +248,9 @@ strong.wantin {
   background-color: #34582c;
   color: white;
 }
+
+div.pledge {
+  background-image: url('imgs/pledge_bg.jpg');
+  height: 708px;
+}
+
