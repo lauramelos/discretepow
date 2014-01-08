@@ -328,16 +328,17 @@ div.signup {
 
 div.signup .title {
   width: 275px;
-  height: 165px;
+  height: 190px;
   float: left;
-  margin: 45px 0 0 60px;
+  margin: 45px 0 0 50px;
 }
 
 div.signup .title h2 {
   color: white;
+  font-size: 38px;
 }
 
-div.signup .title h2 span {
+div.signup .title span {
   color: #8bc83f;
 }
 
