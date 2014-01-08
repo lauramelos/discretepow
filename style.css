@@ -378,7 +378,8 @@ div.signup .bottom {
 div.signup .bottom img,
 div.signup .bottom p {
   float: left;
-  margin-left: 10px;
+  margin: 0px 0px 0px 10px;
+  line-height: 21px;
 }
 
 .want_in .ready {

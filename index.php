@@ -234,7 +234,7 @@ FB.Canvas.setAutoGrow(1000);
 
     <div class="bottom">
       <img src="imgs/discrete_logo.png" />
-      <p><span>BONUS! </span>25% OFF DISCRETE JUST FOR SIGNING THE POW SEVEN PLEDGE!</p>
+      <p><span><strong>BONUS!</strong> </span>25% OFF DISCRETE JUST FOR SIGNING THE POW SEVEN PLEDGE!</p>
     </div>
 
   </div>
