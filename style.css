@@ -268,3 +268,8 @@ div.pledge {
   float: right;
   width: 600px;
 }
+
+.pledges_container {
+  margin-top: 100px;
+}
+
