@@ -105,13 +105,6 @@ div.title_under_logo p {
   font-size: 30px;
 }
 
-img.fb_thumb {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  border: 1px solid #34582c;
-}
-
 div.fb_like_mask {
   width: 100%;
   height: 100%;
@@ -339,12 +332,13 @@ div.signup fieldset {
   float: right;
   margin-right: 70px;
   margin-top: 25px;
+  border: 0px;
 }
 
 div.signup fieldset input {
   border: 0px;
   height: 25px;
-  margin: 6px 0px;
+  margin: 6px;
 }
 
 div.signup fieldset input[type="text"] {
