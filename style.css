@@ -19,6 +19,7 @@ p {
   margin: 5px 0px;
   font-size: 17px;
   font-family:'Trade Gothic W01 Cn 18';
+  //text-align: justify;
 }
 
 div.top_image {
@@ -110,6 +111,7 @@ div.desc_text {
 div.win p {
   color: white;
   padding-left: 10px;
+  font-size: 16px;
 }
 
 div.win h2 {
