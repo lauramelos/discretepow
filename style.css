@@ -295,8 +295,11 @@ div.pledge {
 }
 
 .pledge_child.join {
-  color: white;
   background-color: #34582c;
+}
+
+.pledge_child.join h2 {
+  color: white;
 }
 
 .pledge_child.powseven {
