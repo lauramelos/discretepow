@@ -265,5 +265,6 @@ div.pledge {
 }
 
 .top_pledge .pledge_text {
-  margin-left: 25px;
+  float: right;
+  width: 600px;
 }
