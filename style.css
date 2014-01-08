@@ -254,3 +254,8 @@ div.pledge {
   height: 708px;
 }
 
+.top_pledge img {
+  float: left;
+  margin-left: 35px;
+}
+
