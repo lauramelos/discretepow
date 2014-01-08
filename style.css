@@ -71,6 +71,11 @@ p {
   //text-align: justify;
 }
 
+label {
+  color: white;
+  font-size: 15px;
+}
+
 div.top_image {
   width: 100%;
   height: 786px;
