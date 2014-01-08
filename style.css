@@ -277,6 +277,11 @@ div.pledge {
   width: 175px;
   height: 215px;
   float: left;
+  margin-right: 10px;
+}
+
+.pledge_child.right {
+  float: right;
   margin-left: 10px;
 }
 
