@@ -279,6 +279,7 @@ div.pledge {
   float: left;
   margin-right: 10px;
   background-color: #e0e0e0;
+  margin-bottom: 10px;
 }
 
 .pledge_child.right {
