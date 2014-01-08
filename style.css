@@ -321,3 +321,8 @@ div.pledge {
   background-repeat: no-repeat;
 }
 
+div.signup {
+  background-image: url('imgs/mailform_bg.jpg');
+  height: 364px;
+}
+

@@ -188,6 +188,9 @@ FB.Canvas.setAutoGrow(1000);
         <p>Support businesses taht embrace sustainability. Talk to others about
             what they could be doing.</p>
       </div>
+    </div>
+
+    <div class="signup">
 
     </div>
 
