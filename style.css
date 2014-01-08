@@ -344,6 +344,7 @@ div.signup fieldset {
 div.signup fieldset input {
   border: 0px;
   height: 25px;
+  margin: 6px 0px;
 }
 
 .want_in .ready {
