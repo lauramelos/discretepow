@@ -171,7 +171,7 @@ FB.Canvas.setAutoGrow(1000);
 
       <div class="pledge_child join right">
         <p>07</p>
-        <h2>JOIN NOW</h2>
+        <h2>JOIN POW</h2>
         <p>Help us go teototoe with the oil & gas lobby to Protect Our Winters.</p>
       </div>
 

@@ -295,6 +295,7 @@ div.pledge {
 
 .pledge_child h2 {
   font-size: 20px;
+  color: #34582a;
 }
 
 .pledge_child.right {
@@ -317,5 +318,6 @@ div.pledge {
   background-position: center top;
   background-color: transparent;
   background-image: url('imgs/powseven.png')
+  background-repeat: no-repeat;
 }
 
