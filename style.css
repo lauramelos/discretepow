@@ -269,6 +269,15 @@ div.pledge {
   width: 600px;
 }
 
+.top_pledge .pledge_text h2 {
+  font-size: 45px;
+  margin: 0px;
+}
+
+.top_pledge .pledge_text p {
+  color: white:
+}
+
 .pledges_container {
   margin-top: 180px;
 }
