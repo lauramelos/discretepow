@@ -141,49 +141,49 @@ FB.Canvas.setAutoGrow(1000);
     </div>
 
     <div class="pledges_container">
-      <div class="pledge">
+      <div class="pledge_child">
         <p>01</p>
         <h2>GET POLITICAL</h2>
         <p>Contact your elected official and encourage them to take action on
             climate change.</p>
       </div>
 
-      <div class="pledge">
+      <div class="pledge_child">
         <p>02</p>
         <h2>EDUCATE YOURSELF</h2>
         <p>Read books. Check out NASA and NOAA. Talk to others.</p>
       </div>
 
-      <div class="pledge">
+      <div class="pledge_child">
         <p>03</p>
         <h2>FIND YOUR BIGGEST LEVER</h2>
         <p>Discover your sphere of influence and start influencing.</p>
       </div>
 
-      <div class="pledge">
+      <div class="pledge_child">
         <p>04</p>
         <h2>BE VOCAL, BUG YOUR FRIENDS</h2>
         <p>Turn your annual Pray For Snow party into a POW Party.</p>
       </div>
 
-      <div class="pledge powseven">
+      <div class="pledge_child powseven">
       </div>
 
-      <div class="pledge">
+      <div class="pledge_child">
         <p>05</p>
         <h2>TALK TO BUSINESSES</h2>
         <p>Support businesses taht embrace sustainability. Talk to others about
             what they could be doing.</p>
       </div>
 
-      <div class="pledge">
+      <div class="pledge_child">
         <p>06</p>
         <h2>CHANGE YOUR LIFE AND SAVE MONEY</h2>
         <p>Saving the planet isn't hard. In fact, it'll probably save you money.
             Using fewer resources means paying for fewer resources.</p>
       </div>
 
-      <div class="pledge join">
+      <div class="pledge_child join">
         <p>07</p>
         <h2>JOIN NOW</h2>
         <p>Help us go teototoe with the ois & gas lobby to Protect Our Winters.</p>
