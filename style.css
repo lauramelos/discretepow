@@ -289,3 +289,7 @@ div.pledge {
   background-color: #34582c;
 }
 
+.pledge_child.powseven {
+  background-color: transparent;
+}
+
