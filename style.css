@@ -326,3 +326,9 @@ div.signup {
   height: 364px;
 }
 
+.wantin .ready {
+  width: 140px;
+  height: 100px;
+  float: left;
+  margin-left: 30px;
+}
