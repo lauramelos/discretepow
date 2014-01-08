@@ -108,10 +108,15 @@ div.desc_text {
   padding-left: 25px;
 }
 
+.weekly_prize .desc_text {
+  padding-top: 20px;
+}
+
 div.win p {
   color: white;
   padding-left: 10px;
   font-size: 16px;
+  margin: 0px;
 }
 
 div.win h2 {
