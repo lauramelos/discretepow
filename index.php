@@ -127,5 +127,68 @@ FB.Canvas.setAutoGrow(1000);
     <div>
   </div>
 
+  <div class="pledge">
+    <div class="top_pledge">
+      <img src="imgs/pow_logo.png" class="powlogo" />
+      <div class="pledge_text">
+        <h2>OWR TIME IS NOW.</h2>
+        <p>There is no much information out there, it's tough to know that youŕe
+            actally making a difference. We'll make it super-ease for you. We'll
+            consolidated the best and most effective actions into one short list.
+            The POW SEVEN is simple and effective.<br /><strong>Pledge to do POW
+            SEVEN once a month and you'll make a difference</strong></p>
+      </div>
+    </div>
+
+    <div class="pledges_container">
+      <div class="pledge">
+        <p>01</p>
+        <h2>GET POLITICAL</h2>
+        <p>Contact your elected official and encourage them to take action on
+            climate change.</p>
+      </div>
+
+      <div class="pledge">
+        <p>02</p>
+        <h2>EDUCATE YOURSELF</h2>
+        <p>Read books. Check out NASA and NOAA. Talk to others.</p>
+      </div>
+
+      <div class="pledge">
+        <p>03</p>
+        <h2>FIND YOUR BIGGEST LEVER</h2>
+        <p>Discover your sphere of influence and start influencing.</p>
+      </div>
+
+      <div class="pledge">
+        <p>04</p>
+        <h2>BE VOCAL, BUG YOUR FRIENDS</h2>
+        <p>Turn your annual Pray For Snow party into a POW Party.</p>
+      </div>
+
+      <div class="pledge powseven">
+      </div>
+
+      <div class="pledge">
+        <p>05</p>
+        <h2>TALK TO BUSINESSES</h2>
+        <p>Support businesses taht embrace sustainability. Talk to others about
+            what they could be doing.</p>
+      </div>
+
+      <div class="pledge">
+        <p>06</p>
+        <h2>CHANGE YOUR LIFE AND SAVE MONEY</h2>
+        <p>Saving the planet isn't hard. In fact, it'll probably save you money.
+            Using fewer resources means paying for fewer resources.</p>
+      </div>
+
+      <div class="pledge join">
+        <p>07</p>
+        <h2>JOIN NOW</h2>
+        <p>Help us go teototoe with the ois & gas lobby to Protect Our Winters.</p>
+      </div>
+    </div>
+
 </body>
 </html>
