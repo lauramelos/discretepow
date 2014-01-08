@@ -338,7 +338,7 @@ div.signup .title h2 {
   font-size: 38px;
 }
 
-div.signup .title span {
+div.signup span {
   color: #8bc83f;
 }
 
@@ -370,6 +370,8 @@ div.signup fieldset input[type="submit"] {
 
 div.signup .bottom {
   height: 18px;
+  clear: both;
+  margin: 0px auto;
 }
 
 .want_in .ready {
