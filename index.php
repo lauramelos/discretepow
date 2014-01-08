@@ -189,10 +189,11 @@ FB.Canvas.setAutoGrow(1000);
             what they could be doing.</p>
       </div>
     </div>
+  </div>
 
-    <div class="signup">
+  <div class="signup">
 
-    </div>
+  </div>
 
 </body>
 </html>
