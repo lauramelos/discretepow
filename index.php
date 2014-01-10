@@ -155,7 +155,8 @@ FB.Canvas.setAutoGrow(1000);
       <div class="pledge_child">
         <p>02</p>
         <h2>EDUCATE<br />YOURSELF</h2>
-        <p>Read books. Check out NASA and NOAA. Talk to others.</p>
+        <p>Read as much as possible and talk to others.
+Visit: climate.nasa.gov and grist.org</p>
       </div>
 
       <div class="pledge_child">
@@ -167,7 +168,8 @@ FB.Canvas.setAutoGrow(1000);
       <div class="pledge_child">
         <p>04</p>
         <h2>BE VOCAL, BUG<br />YOUR FRIENDS</h2>
-        <p>Turn your annual Pray For Snow party into a POW Party.</p>
+        <p>Speak up about climate change to your
+family, friends and co-workers. Have a POW party.</p>
       </div>
 
       <div class="pledge_child powseven">
@@ -176,14 +178,16 @@ FB.Canvas.setAutoGrow(1000);
       <div class="pledge_child join right">
         <p>07</p>
         <h2>JOIN<br />POW</h2>
-        <p>Help us go teototoe with the oil & gas lobby to Protect Our Winters.</p>
+        <p>Help us create a movement against climate change, and
+keep our winters white.</p>
       </div>
 
       <div class="pledge_child right">
         <p>06</p>
         <h2>CHANGE YOUR LIFE AND SAVE MONEY</h2>
-        <p>Saving the planet isn't hard. In fact, it'll probably save you money.
-            Using fewer resources means paying for fewer resources.</p>
+        <p>Saving the planet isn’t hard.
+In fact it’ll save you money. Look around you and see where you can find
+less carbon intensive options.</p>
       </div>
 
       <div class="pledge_child right">
