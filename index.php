@@ -135,8 +135,8 @@ FB.Canvas.setAutoGrow(1000);
     <div class="top_pledge">
       <img src="imgs/pow_logo.png" class="powlogo" />
       <div class="pledge_text">
-        <h2>OWR TIME IS NOW.</h2>
-        <p>There is no much information out there, it's tough to know that youŕe
+        <h2>OUR TIME IS NOW.</h2>
+        <p>There is no much information out there, it's tough to know that you're
             actally making a difference. We'll make it super-ease for you. We'll
             consolidated the best and most effective actions into one short list.
             The POW SEVEN is simple and effective.<br /><strong>Pledge to do POW
