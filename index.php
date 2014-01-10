@@ -49,8 +49,8 @@ FB.Canvas.setAutoGrow(1000);
         data-layout="standard"
         data-action="like"
         data-show-faces="true"
-        data-share="true"
-        data-colorscheme="light">
+        data-share="false"
+        data-colorscheme="dark">
       </div>
     </div>
   <?php endif ?>
