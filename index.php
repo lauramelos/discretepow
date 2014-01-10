@@ -204,6 +204,7 @@ FB.Canvas.setAutoGrow(1000);
     </div>
 
     <form action="odeslat.php" method="post" id="formular">
+      <div class="fieldset_container">
       <fieldset>
         <label for="input-one" class="float"></label>
         <input class="inp-text" placeholder="Full Name" name="one" id="one" type="text" size="40" /><br />
@@ -230,6 +231,7 @@ FB.Canvas.setAutoGrow(1000);
         </label><br />
         <p><input class="submit-button" type="submit" alt="SUBMIT" name="Submit" value="SUBMIT" /></p>
       </fieldset>
+      </div>
     </form>
 
     <div class="bottom">

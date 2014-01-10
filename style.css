@@ -347,7 +347,7 @@ div.signup span {
   color: #8bc83f;
 }
 
-div.signup fieldset {
+div.signup .fieldset_container {
   width: 375px;
   height: 270px;
   float: right;
