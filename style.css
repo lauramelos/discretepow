@@ -105,13 +105,6 @@ div.title_under_logo {
   width: 600px;
 }
 
-.fb_like_mask input[type="submit"] {
-  z-index: 1010;
-  position: absolute;
-  top: 130px;
-  left: 105px;
-}
-
 div.title_under_logo p {
   color: white;
   background-color: #34582c;

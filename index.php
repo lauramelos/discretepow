@@ -53,11 +53,6 @@ FB.Canvas.setAutoGrow(1000);
         data-colorscheme="dark">
       </div>
     </div>
-    <input class="likebutton"
-            type="submit" id="u_0_1k"
-            data-ownerid="u_0_1i" 
-            data-profileid="399004496820979"
-            value="Te gusta">
   <?php endif ?>
 
 
