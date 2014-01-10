@@ -97,6 +97,11 @@ div.title_under_logo {
   margin-left: 43px;
 }
 
+.fb-like {
+  margin: 200px;
+  z-index: 1010;
+}
+
 div.title_under_logo p {
   color: white;
   background-color: #34582c;
