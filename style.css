@@ -105,6 +105,10 @@ div.title_under_logo {
   width: 600px;
 }
 
+
+.fb-like .blueButton.blue .pluginButton .pluginButtonLabel {
+  padding: 0 10px 0 8px;
+}
 div.title_under_logo p {
   color: white;
   background-color: #34582c;
