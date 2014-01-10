@@ -101,7 +101,8 @@ div.title_under_logo {
   z-index: 1010;
   position: absolute;
   top: 100px;
-  left: 10px;
+  left: 205px;
+  width: 600px;
 }
 
 div.title_under_logo p {
