@@ -347,24 +347,13 @@ div.signup span {
   color: #8bc83f;
 }
 
-div.signup .fieldset_container {
+div.signup fieldset {
   width: 375px;
   height: 270px;
   float: right;
   margin-right: 70px;
   margin-top: 25px;
-  border: 1px solid grey;
-  position: relative;
-}
-
-div.signup .fieldset_container fieldset {
   border: 0px;
-  width: 377px;
-  height: 272px;
-  position: absolute;
-  top: -1px;
-  left: -1px;
-
 }
 
 div.signup fieldset input {
