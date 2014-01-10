@@ -313,6 +313,10 @@ div.pledge {
   font-size: 28px;
 }
 
+.pledge_child.join p {
+  font-weight: bold;
+}
+
 .pledge_child.powseven {
   width: 228px;
   background-position: center top;
