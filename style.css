@@ -357,7 +357,7 @@ div.signup .fieldset_container {
   position: relative;
 }
 
-div.signup .fieldset_container {
+div.signup .fieldset_container fieldset {
   border: 0px;
   width: 377px;
   height: 272px;
