@@ -147,7 +147,7 @@ FB.Canvas.setAutoGrow(1000);
     <div class="pledges_container">
       <div class="pledge_child">
         <p>01</p>
-        <h2>GET POLITICAL</h2>
+        <h2>GET<br />POLITICAL</h2>
         <p>Contact your elected official and encourage them to take action on
             climate change.</p>
       </div>
