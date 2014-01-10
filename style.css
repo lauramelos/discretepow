@@ -353,7 +353,18 @@ div.signup .fieldset_container {
   float: right;
   margin-right: 70px;
   margin-top: 25px;
+  border: 1px solid grey;
+  position: relative;
+}
+
+div.signup .fieldset_container {
   border: 0px;
+  width: 377px;
+  height: 272px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+
 }
 
 div.signup fieldset input {
