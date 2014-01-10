@@ -185,8 +185,8 @@ keep our winters white.</p>
       <div class="pledge_child right">
         <p>06</p>
         <h2>CHANGE YOUR LIFE AND SAVE MONEY</h2>
-        <p>Saving the planet isn’t hard.
-In fact it’ll save you money. Look around you and see where you can find
+        <p>Saving the planet isn't hard.
+In fact it'll save you money. Look around you and see where you can find
 less carbon intensive options.</p>
       </div>
 
