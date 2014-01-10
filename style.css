@@ -368,6 +368,12 @@ div.signup fieldset input[type="submit"] {
   color: #fefefe;
 }
 
+div.signup fieldset input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+  width: 160px;
 div.signup .bottom {
   height: 18px;
   clear: both;
