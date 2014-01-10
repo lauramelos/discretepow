@@ -366,6 +366,8 @@ div.signup fieldset input[type="submit"] {
   height: 40px;
   background-color: #888;
   color: #fefefe;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 div.signup fieldset input[type="checkbox"] {
@@ -388,7 +390,7 @@ div.signup .bottom p {
 
 div.signup .bottom p {
   line-height: 22px;
-  color: white;
+  color: #cbcbcb;
   margin: 0px 0px 0px 10px;
   font-size: 19px;
 }
