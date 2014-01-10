@@ -154,19 +154,19 @@ FB.Canvas.setAutoGrow(1000);
 
       <div class="pledge_child">
         <p>02</p>
-        <h2>EDUCATE YOURSELF</h2>
+        <h2>EDUCATE<br />YOURSELF</h2>
         <p>Read books. Check out NASA and NOAA. Talk to others.</p>
       </div>
 
       <div class="pledge_child">
         <p>03</p>
-        <h2>FIND YOUR BIGGEST LEVER</h2>
+        <h2>FIND YOUR<br />BIGGEST LEVER</h2>
         <p>Discover your sphere of influence and start influencing.</p>
       </div>
 
       <div class="pledge_child">
         <p>04</p>
-        <h2>BE VOCAL, BUG YOUR FRIENDS</h2>
+        <h2>BE VOCAL, BUG<br />YOUR FRIENDS</h2>
         <p>Turn your annual Pray For Snow party into a POW Party.</p>
       </div>
 
@@ -175,7 +175,7 @@ FB.Canvas.setAutoGrow(1000);
 
       <div class="pledge_child join right">
         <p>07</p>
-        <h2>JOIN POW</h2>
+        <h2>JOIN<br />POW</h2>
         <p>Help us go teototoe with the oil & gas lobby to Protect Our Winters.</p>
       </div>
 
@@ -188,7 +188,7 @@ FB.Canvas.setAutoGrow(1000);
 
       <div class="pledge_child right">
         <p>05</p>
-        <h2>TALK TO BUSINESSES</h2>
+        <h2>TALK TO<br />BUSINESSES</h2>
         <p>Support businesses taht embrace sustainability. Talk to others about
             what they could be doing.</p>
       </div>
