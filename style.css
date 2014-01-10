@@ -99,7 +99,7 @@ div.title_under_logo {
 
 .fb-like {
   z-index: 1010;
-  position: absolute;
+  position: absolute !important;
   top: 100px;
   left: 105px;
   width: 600px;
