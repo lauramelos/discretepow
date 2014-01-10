@@ -98,8 +98,10 @@ div.title_under_logo {
 }
 
 .fb-like {
-  margin: 200px;
   z-index: 1010;
+  position: absolute;
+  top: 100px;
+  left: 10px;
 }
 
 div.title_under_logo p {
