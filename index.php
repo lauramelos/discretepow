@@ -43,15 +43,15 @@ FB.Canvas.setAutoGrow(1000);
 
   <?php if (!$isFan): ?>
     <div class="fb_like_mask">
-      <div class="fb-like"
-        data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&amp;sk=app_191151347752624"
-        data-width="600"
-        data-layout="standard"
-        data-action="like"
-        data-show-faces="true"
-        data-share="false"
-        data-colorscheme="dark">
-      </div>
+    </div>
+    <div class="fb-like"
+      data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&amp;sk=app_191151347752624"
+      data-width="600"
+      data-layout="standard"
+      data-action="like"
+      data-show-faces="true"
+      data-share="false"
+      data-colorscheme="dark">
     </div>
   <?php endif ?>
 
