@@ -156,7 +156,8 @@ FB.Canvas.setAutoGrow(1000);
         <p>02</p>
         <h2>EDUCATE<br />YOURSELF</h2>
         <p>Read as much as possible and talk to others.
-Visit: <a href="http://climate.nasa.gov/">climate.nasa.gov</a> and <a href="http://grist.org/">grist.org</a></p>
+Visit: <a href="http://climate.nasa.gov/" target="_blank">climate.nasa.gov</a>
+ and <a href="http://grist.org/" target="_blank">grist.org</a></p>
       </div>
 
       <div class="pledge_child">
