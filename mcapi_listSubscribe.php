@@ -8,23 +8,23 @@ require_once 'inc/config.inc.php'; //contains apikey
 
 $api = new MCAPI($apikey);
 
-$merge_vars = array('FNAME'=>'Test', 'LNAME'=>'Account', 
-                  'GROUPINGS'=>array(
-                        array('name'=>'Your Interests:', 'groups'=>'Bananas,Apples'),
-                        array('id'=>22, 'groups'=>'Trains'),
-                        )
+$merge_vars = array('FNAME'=>$_POST['FNAME'], 
+                    'INSTA'=>$_POST['INSTA'], 
+                    'SEVENP'=>$_POST['SEVENP'], 
+                    'SUBSCRIBE'=>$_POST['SUBSCRIBE'], 
+                    'AGREE'=>$_POST['AGREE'], 
                     );
+$subscriberemailID = $_POST["EMAIL"];
 
 // By default this sends a confirmation email - you will not see new members
 // until the link contained in it is clicked!
-$retval = $api->listSubscribe( $listId, $my_email, $merge_vars );
+$retval = $api->listSubscribe( $listId, $subscriberemailID, $merge_vars, 'html', false, true, true, true );
 
 if ($api->errorCode){
-	echo "Unable to load listSubscribe()!\n";
-	echo "\tCode=".$api->errorCode."\n";
+//	echo "\tCode=".$api->errorCode."\n";
 	echo "\tMsg=".$api->errorMessage."\n";
 } else {
-    echo "Subscribed - look for the confirmation email!\n";
+    echo 'true';
 }
 
 ?>

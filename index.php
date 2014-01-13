@@ -23,12 +23,12 @@ $isFan = $request['page']['liked'];
   $(document).ready(function() {
     var form = $('#formular');
     var inputs = $('input[type=text]');
-    var send = true;
     inputs.on('focus', function(e){
       $(this).parent().removeClass('error');
     });
     form.on('click', '#mc-embedded-subscribe', function(e){
       e.preventDefault();
+      var send = true;
       var email     = $("#two").val();
       var fname     = $("#one").val();
       var insta     = $("#three").val();
@@ -49,28 +49,28 @@ $isFan = $request['page']['liked'];
         send = false;
       }
       if ( fname=="" || fname ==null) {
-        var node = $("#one");
-        node.addClass('error');
+        var node1 = $("#one");
+        node1.addClass('error');
         send = false;
       }
       if ( insta=="" || insta==null) {
-        var node = $("#three");
-        node.addClass('error');
+        var node2 = $("#three");
+        node2.addClass('error');
         send = false;
       }
       if ( !sevenp ) {
-        var node = $("#option1");
-        node.addClass('error');
+        var node3 = $("#option1");
+        node3.addClass('error');
         send = false;
       }
       if ( !subscribe ) {
-        var node = $("#option2");
-        node.addClass('error');
+        var node4 = $("#option2");
+        node4.addClass('error');
         send = false;
       }
       if ( !agree ) {
-        var node = $("#option3");
-        node.addClass('error');
+        var node5 = $("#option3");
+        node5.addClass('error');
         send = false;
       }
 
