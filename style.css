@@ -71,7 +71,7 @@ label,
 p {
   margin: 5px 0px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
 }
 
@@ -140,7 +140,11 @@ div.bottom_text p {
   color: white;
   margin: 5px 0px;
 }
-
+div.bottom_text p strong{
+font-style:oblique;
+font-weight: 400;
+font-size:16px;
+}
 div.bottom_text h2 {
   color: #8bc83f;
 }
@@ -175,8 +179,7 @@ div.desc_text {
 div.win p {
   color: white;
   padding-left: 10px;
-  font-size: 16px;
-  margin: 0px;
+  margin: 5px 0px;
 }
 
 div.win h2 {
@@ -189,6 +192,7 @@ div.win p.prize {
   width: 140px;
   line-height: 37px;
   font-size: 18px;
+  font-weight:400;
 }
 
 div.grand_prize,
