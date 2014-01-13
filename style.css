@@ -475,7 +475,7 @@ div.sponsors_footer {
   background-size: 100%;
 }
 .error{
-border-color: red;
+outline:1px solid red;
 }
 .error-msg{
 display: none

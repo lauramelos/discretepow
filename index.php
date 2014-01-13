@@ -58,17 +58,17 @@ $isFan = $request['page']['liked'];
         node.addClass('error');
         send = false;
       }
-      if ( sevenp=="" || sevenp==null) {
+      if ( !sevenp ) {
         var node = $("#option1");
         node.addClass('error');
         send = false;
       }
-      if ( subscribe=="" || subscribe==null) {
+      if ( !subscribe ) {
         var node = $("#option2");
         node.addClass('error');
         send = false;
       }
-      if ( agree=="" || agree==null) {
+      if ( !agree ) {
         var node = $("#option3");
         node.addClass('error');
         send = false;
