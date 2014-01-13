@@ -23,6 +23,7 @@ $isFan = $request['page']['liked'];
   $(document).ready(function() {
     var form = $('#formular');
     var inputs = $('input[type=text]');
+    var send = true;
     inputs.on('focus', function(e){
       $(this).parent().removeClass('error');
     });
