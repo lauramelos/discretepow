@@ -78,7 +78,7 @@ $isFan = $request['page']['liked'];
           dataType: "text" 
         }).done(function(data){
           $('.subscribe_mask').show()
-          $("html, body").animate({ scrollTop: 0 }, "slow");
+          window.scrollto( 0 , 0);
         });
         //fadeEffect.init('demoFADE',1);
         //disablePopup();
