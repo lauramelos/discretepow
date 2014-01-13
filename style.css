@@ -89,7 +89,8 @@ label {
   color: white;
   font-size: 13px;
   font-weight: 400;
-  
+  display: block;
+  height: 40px;
 }
 
 label span {
@@ -303,7 +304,7 @@ div.pledge {
 
 .top_pledge .pledge_text {
   float: right;
-  width: 600px;
+  width: 500px;
   margin-right: 100px;
 }
 
