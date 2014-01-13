@@ -237,12 +237,13 @@ less carbon intensive options.</p>
 
         <label for="option2">
           <input class="choose" name="option[]" id="option2" type="checkbox" value="2" />
-            &nbsp; SEND ME MORE INFORMATION FROM POW AND PARTNERS
+            &nbsp;SEND ME MORE INFORMATION FROM POW AND PARTNERS
+            <span>25% off Discrete Promo Code Comes in First POW EMAil</span>
         </label><br />
 
         <label for="option3">
           <input class="choose" name="option[]" id="option3" type="checkbox" value="3" />
-          &nbsp; I AGREE TO THE TERMS AND CONDITIONS
+          &nbsp;I AGREE TO THE TERMS AND CONDITIONS
         </label><br />
         <p><input class="submit-button" type="submit" alt="SUBMIT" name="Submit" value="SUBMIT" /></p>
       </fieldset>

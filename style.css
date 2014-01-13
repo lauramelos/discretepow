@@ -87,9 +87,15 @@ ul li{
 }
 label {
   color: white;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  
 }
 
+label span {
+color:#8ec549;
+font-size: 11px;
+}
 div.top_image {
   width: 100%;
   height: 786px;
@@ -241,6 +247,7 @@ div.want_in .step  h2 {
   color: white;
   padding-left: 10px;
   font-size: 12px;
+  margin: 0;
 }
 
 div.want_in .step  h2 {
@@ -271,7 +278,7 @@ div.want_in .step .caption h2 {
   color: #211f20;
   font-weight:400
   font-size: 20px;
-  margin: 10px 0
+  margin: 10px 0 5px;
 }
 
 strong.wantin {
@@ -297,6 +304,7 @@ div.pledge {
 .top_pledge .pledge_text {
   float: right;
   width: 600px;
+  margin-right: 100px;
 }
 
 .top_pledge .pledge_text h2 {
