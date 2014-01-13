@@ -240,7 +240,7 @@ div.want_in .step  p,
 div.want_in .step  h2 {
   color: white;
   padding-left: 10px;
-  font-size: 15;
+  font-size: 13px;
 }
 
 div.want_in .step  h2 {
@@ -257,6 +257,8 @@ p.qualification {
   height: 37px;
   margin: 0px;
   display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 div.want_in .step .caption p,
@@ -442,6 +444,8 @@ div.signup .bottom p {
 
 .want_in .ready p {
   font-size: 25px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 div.footer_img {
