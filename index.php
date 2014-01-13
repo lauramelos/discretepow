@@ -15,8 +15,80 @@ $isFan = $request['page']['liked'];
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="inc/jquery-1.10.2.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://fast.fonts.net/jsapi/c71e20be-219a-4a86-8783-74514d0a6982.js">
   </script>
+<script>
+;(function($){
+  $(document).ready(function() {
+    var form = $('#formular');
+    var inputs = $('input[type=text]');
+    inputs.on('focus', function(e){
+      $(this).parent().removeClass('error');
+    });
+    form.on('click', '#mc-embedded-subscribe', function(e){
+      e.preventDefault();
+      var email     = $("#two").val();
+      var fname     = $("#one").val();
+      var insta     = $("#three").val();
+      var sevenp    = $("#option1").val();
+      var subscribe = $("#option3").val();
+      var agree     = $("#option3").val();
+
+      if ( !(/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) {
+        var node = $("#two").parent();
+        node.addClass('error');
+        send = false;
+      }
+      if ( fname=="" || fname ==null) {
+        var node = $("#one").parent();
+        node.addClass('error');
+        send = false;
+      }
+      if ( insta=="" || insta==null) {
+        var node = $("#three").parent();
+        node.addClass('error');
+        send = false;
+      }
+      if ( sevenp=="" || sevenp==null) {
+        var node = $("#option1").parent();
+        node.addClass('error');
+        send = false;
+      }
+      if ( subscribe=="" || subscribe==null) {
+        var node = $("#option2").parent();
+        node.addClass('error');
+        send = false;
+      }
+      if ( agree=="" || agree==null) {
+        var node = $("#option3").parent();
+        node.addClass('error');
+        send = false;
+      }
+
+      if (send){
+        $.ajax({
+          url: form.attr('action'),
+          type: 'post',
+          data:  { 'FNAME' : fname , 'INSTA' : insta, 'EMAIL' : email, 
+          'SEVENP': sevenp, 'SUBSCRIBE': suscribe, 'AGREE': agree },
+          dataType: "text" 
+        });
+        //fadeEffect.init('demoFADE',1);
+        //disablePopup();
+        //$('.lau').hide();ddsdd
+        //$('.txtmsg').hide();
+        //var txt = 'Thank you for your subscription. We\'ll be in touch"';
+        //var txstxt = $('<div>', { class:'txtmsg' }).html(txt);
+       // $('#button').append(txstxt);
+      } 
+      else $(".error-msg").show(); 
+    })
+  });
+
+})(jQuery);
+</script>
+
 </head>
 <body>
 <div id="fb-root"></div>
@@ -219,7 +291,7 @@ less carbon intensive options.</p>
       <h2>TAG <span>#UnitedWePOW</span></h2>
     </div>
 
-    <form action="odeslat.php" method="post" id="formular">
+    <form action="mcapi_listSubscribe.php" method="post" id="formular">
       <fieldset>
         <input class="inp-text" placeholder="Full Name" name="one" id="one" type="text" size="40" /><br />
 
@@ -240,7 +312,13 @@ less carbon intensive options.</p>
           <input class="choose" name="option[]" id="option3" type="checkbox" value="3" />
           &nbsp;I AGREE TO THE TERMS AND CONDITIONS
         </label> 
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div> 
+
         <p><input class="submit-button" type="submit" alt="SUBMIT" name="Submit" value="SUBMIT" /></p>
+        <p class="error-msg">Please fill all fields or check the red bordered ones.</p>
       </fieldset>
     </form>
 
