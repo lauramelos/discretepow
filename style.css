@@ -137,17 +137,19 @@ div.title_under_logo p {
   font-size: 30px;
   font-weight:400;
 }
-
+div.subscribe_mask,
 div.fb_like_mask {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
-  background: url('imgs/fb_like_mask2.png') no-repeat top;
+  background: rgba(0,0,0,0.85) url('imgs/fb_like_mask2.png') no-repeat top;
   z-index: 1000;
-  background-color: black;
-  opacity: 0.85;
+}
+div.subscribe_mask{
+  display: none;
+  background: rgba(0,0,0,0.85) url('imgs/suscribe_mask.png') no-repeat top;
 }
 
 div.bottom_text {
@@ -480,3 +482,4 @@ outline:1px solid red;
 .error-msg{
 display: none
 }
+

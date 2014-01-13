@@ -24,7 +24,7 @@ $isFan = $request['page']['liked'];
     var form = $('#formular');
     var inputs = $('input[type=text]');
     inputs.on('focus', function(e){
-      $(this).parent().removeClass('error');
+      $(this).removeClass('error');
     });
     form.on('click', '#mc-embedded-subscribe', function(e){
       e.preventDefault();
@@ -36,12 +36,6 @@ $isFan = $request['page']['liked'];
       var subscribe = $("#option2").is(':checked');
       var agree     = $("#option3").is(':checked');
 
-      console.log('email', email);
-      console.log('fname', fname);
-      console.log('insta', insta);
-      console.log('sevenp',sevenp);
-      console.log('subscribe',subscribe);
-      console.log('agree',agree);
 
       if ( !(/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) {
         var node = $("#two").parent();
@@ -58,7 +52,7 @@ $isFan = $request['page']['liked'];
         node2.addClass('error');
         send = false;
       }
-      if ( !sevenp ) {
+      /* if ( !sevenp ) {
         var node3 = $("#option1");
         node3.addClass('error');
         send = false;
@@ -67,7 +61,7 @@ $isFan = $request['page']['liked'];
         var node4 = $("#option2");
         node4.addClass('error');
         send = false;
-      }
+      }*/
       if ( !agree ) {
         var node5 = $("#option3");
         node5.addClass('error');
@@ -75,6 +69,7 @@ $isFan = $request['page']['liked'];
       }
 
       if (send){
+        $(".error-msg").hide();
         $.ajax({
           url: form.attr('action'),
           type: 'post',
@@ -82,7 +77,7 @@ $isFan = $request['page']['liked'];
           'SEVENP': sevenp, 'SUBSCRIBE': subscribe, 'AGREE': agree },
           dataType: "text" 
         }).done(function(data){
-          console.log(data);
+          $('.subscribe_mask').show()
         });
         //fadeEffect.init('demoFADE',1);
         //disablePopup();
@@ -136,7 +131,10 @@ FB.Canvas.setAutoGrow(1000);
       data-colorscheme="dark">
     </div>
   <?php endif ?>
+  <div class="subscribe_mask">
 
+  </div>
+ 
 
   <div class="top_image">
     <div class="top_logo"></div>
