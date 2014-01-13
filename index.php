@@ -35,6 +35,13 @@ $isFan = $request['page']['liked'];
       var subscribe = $("#option3").val();
       var agree     = $("#option3").val();
 
+      console.log('email', email);
+      console.log('fname', fname);
+      console.log('insta', insta);
+      console.log('sevenp',sevenp);
+      console.log('subscribe',subscribe);
+      console.log('agree',agree);
+
       if ( !(/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) {
         var node = $("#two").parent();
         node.addClass('error');
@@ -302,16 +309,16 @@ less carbon intensive options.</p>
         <input class="inp-text" placeholder="Instagram" name="three"  id="three" type="text" size="40" /><br />
 
         <label for="option1">
-          <input class="choose" name="option[]" id="option1" type="checkbox" value="1" />
+          <input class="choose" name="option[]" id="option1" type="checkbox" value="true" />
             &nbsp;I TOOK THE POW SEVEN PLEDGE
         </label>
         <label for="option2">
-          <input class="choose" name="option[]" id="option2" type="checkbox" value="2" />
+          <input class="choose" name="option[]" id="option2" type="checkbox" value="true" />
             &nbsp;SEND ME MORE INFORMATION FROM POW AND PARTNERS
             <span>25% off Discrete Promo Code Comes in First POW EMAil</span>
         </label>
         <label for="option3">
-          <input class="choose" name="option[]" id="option3" type="checkbox" value="3" />
+          <input class="choose" name="option[]" id="option3" type="checkbox" value="true" />
           &nbsp;I AGREE TO THE TERMS AND CONDITIONS
         </label> 
         <div id="mce-responses" class="clear">

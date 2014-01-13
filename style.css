@@ -474,6 +474,9 @@ div.sponsors_footer {
   height: 102px;
   background-size: 100%;
 }
+.error{
+border-color: red;
+}
 .error-msg{
 display: none
 }
