@@ -91,11 +91,13 @@ FB.Canvas.setAutoGrow(1000);
         <p>Win a trip for two, including airfare, to ski with GoPro athletes at the
             world-renowned Snowbird Mountain Resort in Utah's Wasatch Mountains.
             We'll also hook you up with complete ski kit including:</p>
-        <p>+ GoPro Hero 3 Black Edition</p>
-        <p>+ Icelantic Skis<p>
-        <p>+ Custom Boots from Daleboot<p>
-        <p>+ Complete Spyder Outerwear and Baselayer Package<p>
-        <p>+ Apres Apparel by Discrete<p>
+        <ul>
+          <li>+ GoPro Hero 3 Black Edition</li>
+          <li>+ Icelantic Skis</li>
+          <li>+ Custom Boots from Daleboot</li>
+          <li>+ Complete Spyder Outerwear and Baselayer Package</li>
+          <li>+ Apres Apparel by Discrete</li>
+        </ul>
       </div>
       <img src="imgs/win_grand_prize.jpg" />
     </div>
