@@ -48,27 +48,27 @@ $isFan = $request['page']['liked'];
         send = false;
       }
       if ( fname=="" || fname ==null) {
-        var node = $("#one").parent();
+        var node = $("#one");
         node.addClass('error');
         send = false;
       }
       if ( insta=="" || insta==null) {
-        var node = $("#three").parent();
+        var node = $("#three");
         node.addClass('error');
         send = false;
       }
       if ( sevenp=="" || sevenp==null) {
-        var node = $("#option1").parent();
+        var node = $("#option1");
         node.addClass('error');
         send = false;
       }
       if ( subscribe=="" || subscribe==null) {
-        var node = $("#option2").parent();
+        var node = $("#option2");
         node.addClass('error');
         send = false;
       }
       if ( agree=="" || agree==null) {
-        var node = $("#option3").parent();
+        var node = $("#option3");
         node.addClass('error');
         send = false;
       }
