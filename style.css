@@ -326,7 +326,7 @@ div.pledge {
 }
 
 .pledge_child.join p {
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .pledge_child.powseven {
@@ -386,7 +386,6 @@ div.signup fieldset input[type="submit"] {
   background-color: #888;
   color: #fefefe;
   font-size: 20px;
-  font-weight: bold;
 }
 
 div.signup fieldset input[type="checkbox"] {
