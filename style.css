@@ -87,15 +87,18 @@ ul li{
 }
 label {
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   display: block;
-  height: 40px;
+  height: 26px;
 }
 
 label span {
 color:#8ec549;
 font-size: 11px;
+display: block;
+margin: -6px 0 0 38px;
+line-height: 11px;
 }
 div.top_image {
   width: 100%;
@@ -463,9 +466,11 @@ div.signup .bottom p {
 div.footer_img {
   background-image: url('imgs/footer_bg.jpg');
   height: 255px;
+  background-size: 100%;
 }
 
 div.sponsors_footer {
   background-image: url('imgs/sponsors_footer_bg.jpg');
-  height: 116px;
+  height: 102px;
+  background-size: 100%;
 }
