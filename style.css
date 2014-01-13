@@ -50,6 +50,9 @@ body {
   width: 810px;
   margin: 0px;
   position: relative;
+  font-family:'Trade Gothic W01';
+  font-weight: 200;
+
 }
 body * {
   -moz-box-sizing: border-box;
@@ -59,7 +62,8 @@ body * {
 h2 {
   color: #8bc83f;
   margin: 5px 0px;
-  font-family:'Trade Gothic W01 Cn 18';
+  font-family:'Trade Gothic W01';
+  font-weight: 200;
   font-size: 28px;
 }
 
@@ -67,8 +71,8 @@ label,
 p {
   margin: 5px 0px;
   font-size: 17px;
-  font-family:'Trade Gothic W01 Cn 18';
-  //text-align: justify;
+  font-family:'Trade Gothic W01';
+  font-weight: 200;
 }
 
 label {
@@ -214,11 +218,11 @@ div.want_in .step  h2 {
   color: white;
   padding-left: 10px;
   font-size: 15;
+  font-weight: 200;
 }
 
 div.want_in .step  h2 {
   font-size: 20px;
-  //font-family:'TradeGothicW01-BoldCn20 675337';
 }
 
 div.want_in .step img {
@@ -358,7 +362,9 @@ div.signup fieldset input {
 }
 
 div.signup fieldset input[type="text"] {
-  font-family:'TradeGothicW01-Cn18Obl';
+  font-family:'Trade Gothic W01';
+  font-weight: 200;
+  font-style:oblique;
 }
 
 div.signup fieldset input[type="submit"] {
