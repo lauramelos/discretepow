@@ -33,7 +33,7 @@ $isFan = $request['page']['liked'];
       var fname     = $("#one").val();
       var insta     = $("#three").val();
       var sevenp    = $("#option1").is(':checked');
-      var subscribe = $("#option3").is(':checked');
+      var subscribe = $("#option2").is(':checked');
       var agree     = $("#option3").is(':checked');
 
       console.log('email', email);
@@ -79,7 +79,7 @@ $isFan = $request['page']['liked'];
           url: form.attr('action'),
           type: 'post',
           data:  { 'FNAME' : fname , 'INSTA' : insta, 'EMAIL' : email, 
-          'SEVENP': sevenp, 'SUBSCRIBE': suscribe, 'AGREE': agree },
+          'SEVENP': sevenp, 'SUBSCRIBE': subscribe, 'AGREE': agree },
           dataType: "text" 
         }).done(function(data){
           console.log(data);
