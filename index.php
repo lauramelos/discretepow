@@ -44,6 +44,15 @@ FB.Canvas.setAutoGrow(1000);
   <?php if (!$isFan): ?>
     <div class="fb_like_mask">
     </div>
+    <div class="fb-like"
+      data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&amp;sk=app_191151347752624"
+      data-width="600"
+      data-layout="standard"
+      data-action="like"
+      data-show-faces="true"
+      data-share="false"
+      data-colorscheme="dark">
+    </div>
   <?php endif ?>
 
 
@@ -135,8 +144,8 @@ FB.Canvas.setAutoGrow(1000);
     <div class="top_pledge">
       <img src="imgs/pow_logo.png" class="powlogo" />
       <div class="pledge_text">
-        <h2>OWR TIME IS NOW.</h2>
-        <p>There is no much information out there, it's tough to know that youŕe
+        <h2>OUR TIME IS NOW.</h2>
+        <p>There is no much information out there, it's tough to know that you're
             actally making a difference. We'll make it super-ease for you. We'll
             consolidated the best and most effective actions into one short list.
             The POW SEVEN is simple and effective.<br /><strong>Pledge to do POW
@@ -147,27 +156,30 @@ FB.Canvas.setAutoGrow(1000);
     <div class="pledges_container">
       <div class="pledge_child">
         <p>01</p>
-        <h2>GET POLITICAL</h2>
+        <h2>GET<br />POLITICAL</h2>
         <p>Contact your elected official and encourage them to take action on
             climate change.</p>
       </div>
 
       <div class="pledge_child">
         <p>02</p>
-        <h2>EDUCATE YOURSELF</h2>
-        <p>Read books. Check out NASA and NOAA. Talk to others.</p>
+        <h2>EDUCATE<br />YOURSELF</h2>
+        <p>Read as much as possible and talk to others.
+Visit: <a href="http://climate.nasa.gov/" target="_blank">climate.nasa.gov</a>
+ and <a href="http://grist.org/" target="_blank">grist.org</a></p>
       </div>
 
       <div class="pledge_child">
         <p>03</p>
-        <h2>FIND YOUR BIGGEST LEVER</h2>
+        <h2>FIND YOUR<br />BIGGEST LEVER</h2>
         <p>Discover your sphere of influence and start influencing.</p>
       </div>
 
       <div class="pledge_child">
         <p>04</p>
-        <h2>BE VOCAL, BUG YOUR FRIENDS</h2>
-        <p>Turn your annual Pray For Snow party into a POW Party.</p>
+        <h2>BE VOCAL, BUG<br />YOUR FRIENDS</h2>
+        <p>Speak up about climate change to your
+family, friends and co-workers. Have a POW party.</p>
       </div>
 
       <div class="pledge_child powseven">
@@ -175,20 +187,22 @@ FB.Canvas.setAutoGrow(1000);
 
       <div class="pledge_child join right">
         <p>07</p>
-        <h2>JOIN POW</h2>
-        <p>Help us go teototoe with the oil & gas lobby to Protect Our Winters.</p>
+        <h2>JOIN<br />POW</h2>
+        <p>Help us create a movement against climate change, and
+keep our winters white.</p>
       </div>
 
       <div class="pledge_child right">
         <p>06</p>
         <h2>CHANGE YOUR LIFE AND SAVE MONEY</h2>
-        <p>Saving the planet isn't hard. In fact, it'll probably save you money.
-            Using fewer resources means paying for fewer resources.</p>
+        <p>Saving the planet isn't hard.
+In fact it'll save you money. Look around you and see where you can find
+less carbon intensive options.</p>
       </div>
 
       <div class="pledge_child right">
         <p>05</p>
-        <h2>TALK TO BUSINESSES</h2>
+        <h2>TALK TO<br />BUSINESSES</h2>
         <p>Support businesses taht embrace sustainability. Talk to others about
             what they could be doing.</p>
       </div>
