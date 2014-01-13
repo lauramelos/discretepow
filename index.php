@@ -31,9 +31,9 @@ $isFan = $request['page']['liked'];
       var email     = $("#two").val();
       var fname     = $("#one").val();
       var insta     = $("#three").val();
-      var sevenp    = $("#option1").val();
-      var subscribe = $("#option3").val();
-      var agree     = $("#option3").val();
+      var sevenp    = $("#option1").checked;
+      var subscribe = $("#option3").checked;
+      var agree     = $("#option3").checked;
 
       console.log('email', email);
       console.log('fname', fname);
