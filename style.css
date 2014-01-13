@@ -50,7 +50,7 @@ body {
   width: 810px;
   margin: 0px;
   position: relative;
-  font-family:'Trade Gothic W01';
+  font-family:'Trade Gothic W01 Cn 18','Trade Gothic W01', sans-serif;
   font-weight: 200;
 
 }
@@ -62,7 +62,7 @@ body * {
 h2 {
   color: #8bc83f;
   margin: 5px 0px;
-  font-family:'Trade Gothic W01';
+  font-family:'Trade Gothic W01 Cn 18','Trade Gothic W01', sans-serif;
   font-weight: 200;
   font-size: 28px;
 }
@@ -71,7 +71,7 @@ label,
 p {
   margin: 5px 0px;
   font-size: 17px;
-  font-family:'Trade Gothic W01';
+  font-family:'Trade Gothic W01 Cn 18','Trade Gothic W01', sans-serif;
   font-weight: 200;
 }
 
@@ -375,7 +375,7 @@ div.signup fieldset input {
 }
 
 div.signup fieldset input[type="text"] {
-  font-family:'Trade Gothic W01';
+  font-family:'Trade Gothic W01 Cn 18','Trade Gothic W01', sans-serif;
   font-weight: 200;
   font-style:oblique;
 }
