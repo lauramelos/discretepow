@@ -77,7 +77,8 @@ $isFan = $request['page']['liked'];
           'SEVENP': sevenp, 'SUBSCRIBE': subscribe, 'AGREE': agree },
           dataType: "text" 
         }).done(function(data){
-          $('.subscribe_mask').show().scrollTop();
+          $('.subscribe_mask').show();
+          window.scrollTo(0,0);
         });
         //fadeEffect.init('demoFADE',1);
         //disablePopup();
