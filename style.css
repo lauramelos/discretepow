@@ -74,7 +74,13 @@ p {
   line-height: 18px;
   font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
 }
+ul li{
+  margin: 0px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
 
+}
 label {
   color: white;
   font-size: 15px;
