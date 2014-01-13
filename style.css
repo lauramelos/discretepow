@@ -252,7 +252,7 @@ div.want_in .step img {
   float: right;
 }
 
-p.qualification {
+div.want_in p.qualification {
   width: 100%;
   height: 37px;
   margin: 0px;
@@ -261,11 +261,16 @@ p.qualification {
   font-weight: 400;
 }
 
-div.want_in .step .caption p,
+div.want_in .step .caption p{
+ color: #211f20;
+  font-size: 13px;
+  font-weight:200
+
+}
 div.want_in .step .caption h2 {
   color: #211f20;
   font-size: 16px;
-  font-weight:400
+  font-weight:200
 }
 
 div.want_in .step .caption h2 {
