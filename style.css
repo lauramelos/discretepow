@@ -227,7 +227,6 @@ div.want_in .step  h2 {
   color: white;
   padding-left: 10px;
   font-size: 15;
-  font-weight: 200;
 }
 
 div.want_in .step  h2 {
@@ -378,7 +377,6 @@ div.signup fieldset input {
 div.signup fieldset input[type="text"] {
   font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
   font-family:'Trade Gothic W01'; font-weight:400; font-style:normal;
-  font-weight: 200;
   font-style:oblique;
 }
 
