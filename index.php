@@ -73,6 +73,8 @@ $isFan = $request['page']['liked'];
           data:  { 'FNAME' : fname , 'INSTA' : insta, 'EMAIL' : email, 
           'SEVENP': sevenp, 'SUBSCRIBE': suscribe, 'AGREE': agree },
           dataType: "text" 
+        }).done(function(data){
+          console.log(data);
         });
         //fadeEffect.init('demoFADE',1);
         //disablePopup();
@@ -317,7 +319,7 @@ less carbon intensive options.</p>
           <div class="response" id="mce-success-response" style="display:none"></div>
         </div> 
 
-        <p><input class="submit-button" type="submit" alt="SUBMIT" name="Submit" value="SUBMIT" /></p>
+        <p><input id="mc-embedded-subscribe" class="submit-button" type="submit" alt="SUBMIT" name="Submit" value="SUBMIT" /></p>
         <p class="error-msg">Please fill all fields or check the red bordered ones.</p>
       </fieldset>
     </form>
