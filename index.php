@@ -78,7 +78,7 @@ $isFan = $request['page']['liked'];
           dataType: "text" 
         }).done(function(data){
           $('.subscribe_mask').show();
-          window.scrollTo(0,0);
+          FB.Canvas.scrollTo(0,0);
         });
         //fadeEffect.init('demoFADE',1);
         //disablePopup();
