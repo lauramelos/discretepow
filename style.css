@@ -115,6 +115,7 @@ div.title_under_logo p {
   line-height: 33px;
   margin: 7px 0px;
   font-size: 30px;
+  font-weight:400;
 }
 
 div.fb_like_mask {
