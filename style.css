@@ -406,9 +406,9 @@ div.signup fieldset input {
 }
 
 div.signup fieldset input[type="text"] {
-  font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
   font-family:'Trade Gothic W01'; font-weight:400; font-style:normal;
   font-style:oblique;
+  padding: 0 5px;
 }
 
 div.signup fieldset input[type="submit"] {
