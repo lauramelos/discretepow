@@ -127,13 +127,11 @@ $isFan = $request['page']['liked'];
   };
   function verifyUserLikesPage() {
     FB.api("/me/likes/"+"399004496820979", function(apiResponse){
-      if (apiResponse.data && apiResponse.data.length > 0)
+      if (apiResponse.data && apiResponse.data.length > 0){
         // User likes the page. Enabled them to proceed
         $('.fb_like_mask').hide();
         $('.fb-like').hide();
-
-      else
-        // User does not like the page. Require they click Like.
+      }   
     }
   }
   // Load the SDK asynchronously
