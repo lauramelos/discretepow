@@ -492,4 +492,18 @@ outline:1px solid red;
 .error-msg{
 display: none
 }
-
+.termsconditions h1,
+.termsconditions h2,
+.termsconditions h3,
+.termsconditions h4,
+.termsconditions p
+{
+font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
+font-size: 15px;
+color: black;
+text-align:center;
+}
+.termsconditions p
+{
+text-align: left;
+}
