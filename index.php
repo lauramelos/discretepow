@@ -14,6 +14,7 @@ $isFan = $request['page']['liked'];
 
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="inc/jquery-1.10.2.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="https://fast.fonts.net/jsapi/c71e20be-219a-4a86-8783-74514d0a6982.js">
