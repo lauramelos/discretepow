@@ -122,6 +122,7 @@ div.top_logo {
 }
 
 div.title_under_logo {
+  display: none;
   width: 308px;
   text-align: center;
   margin-left: 43px;
@@ -159,22 +160,23 @@ div.subscribe_mask{
 }
 
 div.bottom_text {
-  width: 690px;
+  width: 710px;
   height: 190px;
-  margin: 380px auto 0px;
+  margin: 380px 0 0 45px;
 }
 
 div.bottom_text p {
   color: white;
-  margin: 5px 0px;
+  margin: 19px 0 0px;
+  font-size:15px;
 }
 div.bottom_text p strong{
 font-style:oblique;
 font-weight: 400;
-font-size:14px;
 }
 div.bottom_text h2 {
   color: #8bc83f;
+  font-size:37px;
 }
 
 div.win {

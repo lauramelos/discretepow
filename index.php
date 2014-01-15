@@ -160,7 +160,7 @@ FB.Canvas.setAutoGrow(1000);
     </div>
     <div class="bottom_text">
       <h2>WE LOVE WINTER. LET'S TAKE A STAND TO PROTECT IT</h2>
-<p>Winters are getting dryer and shorter every year. Politics aside, that’s not good for anyone, especially skiers and snowboarders. Winter is our season but winter is in trouble. So let’s do something about it! <strong>Protect Our Winters</strong> is uniting the global winter sports community to fight climate change’s effects on our sport. Take the POW Seven Pledge and start making an impact on the future of Winter! </p>
+<p>Winters are getting dryer and shorter every year. Politics aside, that's not good for anyone, especially skiers and snowboarders. Winter is our season but winter is in trouble. So let's do something about it! <strong>Protect Our Winters</strong> is uniting the global winter sports community to fight climate change's effects on our sport. Take the POW Seven Pledge and start making an impact on the future of Winter! </p>
   
 <p><strong>As a thank you for supporting POW, the sponsoring brands have put together some amazing prize packages.</strong> </p?
 
