@@ -129,8 +129,8 @@ $isFan = $request['page']['liked'];
     FB.api("/me/likes/"+"399004496820979", function(apiResponse){
       if (apiResponse.data && apiResponse.data.length > 0){
         // User likes the page. Enabled them to proceed
-       // $('.fb_like_mask').hide();
-      //  $('.fb-like').hide();
+        $('.fb_like_mask').hide();
+        $('.fb-like').hide();
       }   
     }
   }
@@ -147,10 +147,6 @@ $isFan = $request['page']['liked'];
   <?php if (!$isFan): ?>
     <div class="fb_like_mask">
     </div>
-
-    <script>
-    </script>
-
     <div class="fb-like"
       data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979"
       data-width="600"
@@ -161,11 +157,7 @@ $isFan = $request['page']['liked'];
       data-colorscheme="dark">
     </div>
   <?php endif ?>
-  <div class="subscribe_mask">
-
-  </div>
- 
-
+  <div class="subscribe_mask"></div>
   <div class="top_image">
     <div class="top_logo"></div>
     <div class="title_under_logo">
@@ -174,9 +166,9 @@ $isFan = $request['page']['liked'];
     </div>
     <div class="bottom_text">
       <h2>WE LOVE WINTER. LET'S TAKE A STAND TO PROTECT IT</h2>
-<p>Winters are getting dryer and shorter every year. Politics aside, that's not good for anyone, especially skiers and snowboarders. Winter is our season but winter is in trouble. So let's do something about it! <strong>Protect Our Winters</strong> is uniting the global winter sports community to fight climate change's effects on our sport. Take the POW Seven Pledge and start making an impact on the future of Winter! </p>
-  
-<p><strong>As a thank you for supporting POW, the sponsoring brands have put together some amazing prize packages.</strong> </p?
+      <p>Winters are getting dryer and shorter every year. Politics aside, that's not good for anyone, especially skiers and snowboarders. Winter is our season but winter is in trouble. So let's do something about it! <strong>Protect Our Winters</strong> is uniting the global winter sports community to fight climate change's effects on our sport. Take the POW Seven Pledge and start making an impact on the future of Winter! </p>
+        
+      <p><strong>As a thank you for supporting POW, the sponsoring brands have put together some amazing prize packages.</strong> </p>
 
     </div>
   </div>
