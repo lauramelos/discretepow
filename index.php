@@ -183,9 +183,9 @@ FB.Canvas.setAutoGrow(1000);
     <div class="grand_prize">
       <div class="desc_text">
         <p class="prize">GRAND PRIZE</p>
-        <h2>ROCK THE BIRD LIKE A PRO WITH THE PROS</h2>
+        <h2>ROCK BRIGHTON LIKE A PRO WITH THE PROS</h2>
         <p>Win a trip for two, including airfare, to ski with GoPro athletes at the
-            world-renowned Snowbird Mountain Resort in Utah's Wasatch Mountains.
+            world-renowned Brighton Mountain Resort in Utah's Wasatch Mountains.
             We'll also hook you up with complete ski kit including:</p>
         <ul>
           <li>+ GoPro Hero 3 Black Edition</li>
