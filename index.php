@@ -332,7 +332,7 @@ less carbon intensive options.</p>
         </label>
         <label for="option3">
           <input class="choose" name="option[]" id="option3" type="checkbox" value="true" />
-          &nbsp;I AGREE TO THE TERMS AND CONDITIONS
+          &nbsp;I AGREE TO THE <a href="term.html">TERMS AND CONDITIONS</a>
         </label> 
         <div id="mce-responses" class="clear">
           <div class="response" id="mce-error-response" style="display:none"></div>
