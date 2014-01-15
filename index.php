@@ -113,7 +113,8 @@ $isFan = $request['page']['liked'];
 FB.Canvas.setAutoGrow(1000);
 
     FB.Event.subscribe('edge.create', function(href, widget) {
-      top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
+      //top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
+      window.location.reload();
     });
 
   };
@@ -136,11 +137,11 @@ FB.Canvas.setAutoGrow(1000);
     </script>
 
     <div class="fb-like"
-      data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&amp;sk=app_191151347752624"
+      data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979"
       data-width="600"
-      data-layout="standard"
+      data-layout="button_count"
       data-action="like"
-      data-show-faces="true"
+      data-show-faces="false"
       data-share="false"
       data-colorscheme="dark">
     </div>
