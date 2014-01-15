@@ -498,12 +498,14 @@ display: none
 .termsconditions h4,
 .termsconditions p
 {
-font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
+font-family:'Trade Gothic W01'; font-weight:bold; font-style:normal;
 font-size: 15px;
 color: black;
 text-align:center;
 }
 .termsconditions p
 {
+
+font-family:'Trade Gothic W01'; font-weight:400; font-style:normal;
 text-align: left;
 }
