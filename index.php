@@ -111,15 +111,31 @@ $isFan = $request['page']['liked'];
       oauth  : true // enable OAuth 2.0
 
     });
-FB.Canvas.setAutoGrow(1000);
+    
+    FB.Canvas.setAutoGrow(1000);
 
-    FB.Event.subscribe('edge.create', function(href, widget) {
-      top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
-      //top.window.location.reload();
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
+      FB.Event.subscribe("edge.create", verifyUserLikesPage);
+
+ 
+    } else {
+      FB.Event.subscribe('edge.create', function(href, widget) {
+        top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
+        //top.window.location.reload();
     });
-
+    }
   };
+  function verifyUserLikesPage() {
+    FB.api("/me/likes/"+"399004496820979", function(apiResponse){
+      if (apiResponse.data && apiResponse.data.length > 0)
+        // User likes the page. Enabled them to proceed
+        $('.fb_like_mask').hide();
+        $('.fb-like').hide();
 
+      else
+        // User does not like the page. Require they click Like.
+    }
+  }
   // Load the SDK asynchronously
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
