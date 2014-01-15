@@ -160,13 +160,10 @@ FB.Canvas.setAutoGrow(1000);
     </div>
     <div class="bottom_text">
       <h2>WE LOVE WINTER. LET'S TAKE A STAND TO PROTECT IT</h2>
-      <p>The last decade has been the hottest on record, Politics aside, that's not
-          good for anyone, especially skiers and showboarders. Winter is our season
-          but winter is in trouble. So let's do something about it!
-          <br /><strong>Protect Our Winters</strong> is the POW Seven Pledge ans start making 
-          an impact on the future of Winter!</p>
-      <p><strong>Our partners have put together some amazing prize packages as a thank
-              you for supporting POW</strong>
+<p>Winters are getting dryer and shorter every year. Politics aside, that’s not good for anyone, especially skiers and snowboarders. Winter is our season but winter is in trouble. So let’s do something about it! <strong>Protect Our Winters</strong> is uniting the global winter sports community to fight climate change’s effects on our sport. Take the POW Seven Pledge and start making an impact on the future of Winter! </p>
+  
+<p><strong>As a thank you for supporting POW, the sponsoring brands have put together some amazing prize packages.</strong> </p?
+
     </div>
   </div>
   <div class="win">
@@ -193,6 +190,7 @@ FB.Canvas.setAutoGrow(1000);
           <li>+ Custom Boots from Daleboot</li>
           <li>+ Complete Spyder Outerwear and Baselayer Package</li>
           <li>+ Apres Apparel by Discrete</li>
+          <li>+ $5,000 Total Value</li>
         </ul>
       </div>
       <img src="imgs/win_grand_prize.jpg" />
