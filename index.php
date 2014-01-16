@@ -115,7 +115,7 @@ FB.Canvas.setAutoGrow(1000);
     FB.Event.subscribe('edge.create', function(href, widget) {
       alert('You liked the URL: ' + href);
       console.log('it works here!');
-      location.reload(true);
+      top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
     });
 
   };
