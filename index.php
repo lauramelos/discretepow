@@ -129,7 +129,7 @@ FB.Canvas.setAutoGrow(1000);
     <div class="fb_like_mask">
     </div>
     <div class="fb-like"
-      data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&amp;sk=app_191151347752624"
+      data-href="https://www.facebook.com/pages/Yakima-test/399004496820979
       data-width="600"
       data-layout="standard"
       data-action="like"
