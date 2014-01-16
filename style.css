@@ -45,7 +45,7 @@ table {
 }
 
 // css reset ends here
-
+body, html{height: 100% }
 body {
   width: 810px;
   margin: 0px;
@@ -155,6 +155,7 @@ div.fb_like_mask {
   top: 0px;
   left: 0px;
   background: rgba(0,0,0,0.85) url('imgs/fb_like_mask2.png') no-repeat top;
+  background-size: 100%;
   z-index: 1000;
 }
 div.subscribe_mask{
