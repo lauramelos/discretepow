@@ -126,6 +126,7 @@ $isFan = $request['page']['liked'];
     }
   };
   function verifyUserLikesPage() {
+    alert('click');
     FB.api("/me/likes/"+"399004496820979", function(apiResponse){
       if (apiResponse.data && apiResponse.data.length > 0){
         // User likes the page. Enabled them to proceed
