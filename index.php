@@ -109,16 +109,20 @@ $isFan = $request['page']['liked'];
       FB.Event.subscribe('auth.authResponseChange', function(response) {
         if (response.status === 'connected') {
           testAPI();
-        } else if (response.status === 'not_authorized') {
 
+          FB.Event.subscribe("edge.create",  function(href, widget ) {
+            alert('like');
+          });
+        } else if (response.status === 'not_authorized') {
+          $('.fb-like').hide();
           $('.fb-login-button').show();
           FB.login();
-
         } else {
-
+          $('.fb-like').hide();
           $('.fb-login-button').show();
           FB.login();
         }
+
       });
     } else {
       FB.Event.subscribe("edge.create",  function(href, widget ) {
@@ -136,15 +140,17 @@ $isFan = $request['page']['liked'];
   }(document));
 
   function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
-      console.log('Good to see you, ' + response.name + '.');
       FB.api("/me/likes/"+"399004496820979", function(apiResponse){ 
         if (apiResponse.data && apiResponse.data.length > 0){
           console.log('page liked');
           $('.fb_like_mask').hide();
           $('.fb-like').hide();
           $('.fb-login-button').hide();
+        }
+        else{
+          $('.fb-login-button').hide();
+          $('.fb-like').show();
         }
       });
     });

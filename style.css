@@ -137,8 +137,7 @@ div.title_under_logo {
 }
 
 .fb-login-button.fb_iframe_widget{
-display: none;
-left:305px
+  display: none;
 }
 div.title_under_logo p {
   color: white;
