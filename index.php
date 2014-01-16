@@ -192,7 +192,7 @@ $isFan = $request['page']['liked'];
       console.log('Good to see you, ' + response.name + '.');
       FB.api("/me/likes/"+"399004496820979", function(apiResponse){
         console.log(apiResponse);
-      }
+      });
     });
   }
 </script>
