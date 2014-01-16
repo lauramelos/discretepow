@@ -113,10 +113,17 @@ $isFan = $request['page']['liked'];
     });
     
     FB.Canvas.setAutoGrow(1000);
-    alert('antes');
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
-      alert('mobile');
-      FB.Event.subscribe("edge.create", verifyUserLikesPage);
+      FB.Event.subscribe("edge.create",  function(href, widget ) {
+    alert('click');
+    FB.api("/me/likes/"+"399004496820979", function(apiResponse){
+      if (apiResponse.data && apiResponse.data.length > 0){
+        // User likes the page. Enabled them to proceed
+        $('.fb_like_mask').hide();
+        $('.fb-like').hide();
+      }   
+    });>
+  });
 
  
     } else {
@@ -126,16 +133,6 @@ $isFan = $request['page']['liked'];
     });
     }
   };
-  function verifyUserLikesPage() {
-    alert('click');
-    FB.api("/me/likes/"+"399004496820979", function(apiResponse){
-      if (apiResponse.data && apiResponse.data.length > 0){
-        // User likes the page. Enabled them to proceed
-        $('.fb_like_mask').hide();
-        $('.fb-like').hide();
-      }   
-    });
-  }
   // Load the SDK asynchronously
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
