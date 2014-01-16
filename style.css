@@ -208,7 +208,6 @@ div.bottom_text h2 {
 }
 
 div.win {
-  height: 639px;
   background-image: url('imgs/win_bg.jpg');
   width: 100%;
   padding-top: 1px;
