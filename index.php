@@ -102,9 +102,13 @@ $isFan = $request['page']['liked'];
   window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
-      appId      : '191151347752624',                        // App ID from the app dashboard
-      status     : true,                                 // Check Facebook Login status
-      xfbml      : true                                  // Look for social plugins on the page
+      appId   : '191151347752624',                        // App ID from the app dashboard
+      status  : true,                                 // Check Facebook Login status
+      xfbml   : true,                                 // Look for social plugins on the page
+      cookie  : true,
+      channelUrl : 'http://discretepow.herokuapp.com/channel.html', //
+      oauth  : true // enable OAuth 2.0
+
     });
 FB.Canvas.setAutoGrow(1000);
   };
