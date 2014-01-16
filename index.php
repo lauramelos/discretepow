@@ -95,12 +95,6 @@ $isFan = $request['page']['liked'];
 })(jQuery);
 </script>
 
-<script>
-  FB.Event.subscribe('edge.create', function(href, widget) {
-    alert('You liked the URL: ' + href);
-  });
-</script>
-
 </head>
 <body>
 <div id="fb-root"></div>
@@ -128,6 +122,13 @@ FB.Canvas.setAutoGrow(1000);
   <?php if (!$isFan): ?>
     <div class="fb_like_mask">
     </div>
+
+    <script>
+      FB.Event.subscribe('edge.create', function(href, widget) {
+        alert('You liked the URL: ' + href);
+      });
+    </script>
+
     <div class="fb-like"
       data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&amp;sk=app_191151347752624"
       data-width="600"
