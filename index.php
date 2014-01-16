@@ -113,8 +113,9 @@ $isFan = $request['page']['liked'];
     });
     
     FB.Canvas.setAutoGrow(1000);
-
+    alert('antes');
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
+      alert('mobile');
       FB.Event.subscribe("edge.create", verifyUserLikesPage);
 
  
