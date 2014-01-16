@@ -95,6 +95,12 @@ $isFan = $request['page']['liked'];
 })(jQuery);
 </script>
 
+<script>
+  FB.Event.subscribe('edge.create', function(href, widget) {
+    alert('You just liked the page!');
+  });
+</script>
+
 </head>
 <body>
 <div id="fb-root"></div>
