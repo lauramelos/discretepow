@@ -118,9 +118,10 @@ div.top_image {
 }
 @media (max-width: 320px) {
   div.top_image {
-background-position: 0 150px;
-background-repeat: no-repeat;
-background-color: #000;
+    background-position: 0 150px;
+    background-repeat: no-repeat;
+    background-color: #000;
+    height: 700px;
   }
 }
 div.top_logo {
@@ -212,7 +213,12 @@ div.win {
   width: 100%;
   padding-top: 1px;
 }
-
+div.win:after {
+  clear: both;
+  width: 100%;
+  display: block;
+  content: '';
+}
 div.win img {
   float: right;
   display: block;
