@@ -47,7 +47,8 @@ table {
 // css reset ends here
 body, html{height: 100% }
 body {
-  width: 810px;
+  width:100%;
+  max-width: 810px;
   margin: 0px;
   position: relative;
   font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
