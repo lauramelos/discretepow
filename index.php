@@ -90,14 +90,6 @@ $isFan = $request['page']['liked'];
       } 
       else $(".error-msg").show(); 
     })
-
-      //trying fb like callback
-
-      FB.Event.subscribe('edge.create', function(href, widget) {
-        alert('You liked the URL: ' + href);
-        console.log('it works here!');
-      });
-
   });
 
 })(jQuery);
@@ -136,6 +128,12 @@ FB.Canvas.setAutoGrow(1000);
     </div>
 
     <script>
+       window.fbAsyncInit = function() {
+        FB.Event.subscribe('edge.create', function(href, widget) {
+          alert('You liked the URL: ' + href);
+          console.log('it works here!');
+        });
+       }
     </script>
 
     <div class="fb-like"
