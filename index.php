@@ -80,7 +80,6 @@ $isFan = $request['page']['liked'];
         });
         $('.subscribe_mask').show();
         FB.Canvas.scrollTo(0,0);
-       );
       } 
       else $(".error-msg").show(); 
     })
