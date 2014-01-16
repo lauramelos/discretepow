@@ -116,7 +116,7 @@ $isFan = $request['page']['liked'];
         }
       });
     };
-  }
+  };
   // Load the SDK asynchronously
   (function(d){
    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
