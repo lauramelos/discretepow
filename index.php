@@ -115,6 +115,8 @@ $isFan = $request['page']['liked'];
           FB.login();
         }
       });
+    } else {
+
     };
   };
   // Load the SDK asynchronously
