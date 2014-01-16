@@ -130,6 +130,7 @@ FB.Canvas.setAutoGrow(1000);
     <script>
       FB.Event.subscribe('edge.create', function(href, widget) {
         alert('You liked the URL: ' + href);
+        console.log('it works here!');
       });
     </script>
 
