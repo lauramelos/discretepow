@@ -136,7 +136,7 @@ div.title_under_logo {
   width: 600px;
 }
 
-.fb-login-button{
+.fb-login-button.fb_iframe_widget{
 display: none;
 left:305px
 }
@@ -158,7 +158,7 @@ div.fb_like_mask {
   background: rgba(0,0,0,0.85) url('imgs/fb_like_mask2.png') no-repeat top;
   z-index: 1000;
 }
-div.subscribe_mask.fb_iframe_widget{
+div.subscribe_mask{
   display: none;
   background: rgba(0,0,0,0.85) url('imgs/suscribe_mask.png') no-repeat top;
 }
