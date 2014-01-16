@@ -115,6 +115,7 @@ FB.Canvas.setAutoGrow(1000);
     FB.Event.subscribe('edge.create', function(href, widget) {
       alert('You liked the URL: ' + href);
       console.log('it works here!');
+      location.reload(true);
     });
 
   };
