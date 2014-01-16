@@ -110,8 +110,13 @@ $isFan = $request['page']['liked'];
         if (response.status === 'connected') {
           testAPI();
         } else if (response.status === 'not_authorized') {
+
+          $('.fb-login-button').show();
           FB.login();
+
         } else {
+
+          $('.fb-login-button').show();
           FB.login();
         }
       });
@@ -139,6 +144,7 @@ $isFan = $request['page']['liked'];
           console.log('page liked');
           $('.fb_like_mask').hide();
           $('.fb-like').hide();
+          $('.fb-login-button').hide();
         }
       });
     });

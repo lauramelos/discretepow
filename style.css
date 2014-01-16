@@ -137,6 +137,7 @@ div.title_under_logo {
 }
 
 .fb-login-button{
+display: none;
 left:305px
 }
 div.title_under_logo p {
