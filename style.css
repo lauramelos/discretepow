@@ -283,12 +283,30 @@ div.want_in {
   background-image: url('imgs/wantin_bg.jpg');
   width: 100%;
   padding-top: 1px;
+  padding-bottom: 20px;
 }
 div.want_in:after {
   clear: both;
   width: 100%;
   display: block;
   content: '';
+}
+.want_in .ready {
+  width: 130px;
+  height: 100px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 44px;
+}
+
+.want_in .ready h2 {
+  font-size: 40px;
+}
+
+.want_in .ready p {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 
@@ -360,9 +378,10 @@ div.want_in {
   background-image: url('imgs/wantin_bg2.jpg');
 }
 .want_in .ready {
+
+width: 90%;
   height: auto;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 20px auto 20px;
 }
 div.want_in .step.two,
 div.want_in .step {
@@ -537,23 +556,6 @@ div.signup .bottom p {
   font-weight: 400;
 }
 
-.want_in .ready {
-  width: 130px;
-  height: 100px;
-  float: left;
-  margin-left: 50px;
-  margin-top: 44px;
-}
-
-.want_in .ready h2 {
-  font-size: 40px;
-}
-
-.want_in .ready p {
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 22px;
-}
 
 div.footer_img {
   background-image: url('imgs/footer_bg.jpg');
