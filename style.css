@@ -127,7 +127,7 @@ div.title_under_logo {
   text-align: center;
   margin-left: 43px;
 }
-
+.fb-login-button,
 .fb-like {
   z-index: 1010;
   position: absolute !important;
@@ -136,6 +136,9 @@ div.title_under_logo {
   width: 600px;
 }
 
+.fb-login-button{
+left:305px
+}
 div.title_under_logo p {
   color: white;
   background-color: #34582c;
