@@ -114,9 +114,10 @@ $isFan = $request['page']['liked'];
     
     FB.Canvas.setAutoGrow(1000);
     FB.Event.subscribe("edge.create",  function(href, widget ) {
+      
+        alert('click');
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
 
-        alert('click');
         FB.api("/me/likes/"+"399004496820979", function(apiResponse){
           if (apiResponse.data && apiResponse.data.length > 0){
             // User likes the page. Enabled them to proceed
