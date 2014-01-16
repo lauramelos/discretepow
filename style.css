@@ -280,11 +280,17 @@ div.desc_text {
 }
 }
 div.want_in {
-  height: 700px;
   background-image: url('imgs/wantin_bg.jpg');
   width: 100%;
   padding-top: 1px;
 }
+div.want_in:after {
+  clear: both;
+  width: 100%;
+  display: block;
+  content: '';
+}
+
 
 div.want_in .step {
   width: 470px;
@@ -349,6 +355,31 @@ strong.wantin {
   color: white;
 }
 
+@media (max-width: 320px) {
+div.want_in {
+  background-image: url('imgs/wantin_bg2.jpg');
+}
+.want_in .ready {
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+div.want_in .step.two,
+div.want_in .step {
+width: 100%;
+margin: 10px 0px 0px 0px;
+}
+div.want_in .step .title {
+height: auto;
+width: 100%;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+div.want_in .step img {
+width: 100%;
+height: auto;
+}
+}
 div.pledge {
   background-image: url('imgs/pledge_bg.jpg');
   height: 708px;
