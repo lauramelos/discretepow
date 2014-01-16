@@ -381,6 +381,7 @@ strong.wantin {
     width: 90%;
     height: auto;
     margin: 20px auto 20px;
+    float: none;
   }
   div.want_in .step.two,
   div.want_in .step {
@@ -482,6 +483,32 @@ div.pledge:after {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 320px) {
+  div.pledge{
+    background-image: url('imgs/pledge_bg2.jpg');
+  }
+
+  .top_pledge img{
+    float: none;
+  }
+  .top_pledge .pledge_text {
+    float: none;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .pledges_container{
+    margin: 0;
+  }
+.pledge_child {
+  width: 149px;
+  height: 190px;
+  float: left;
+  margin: 5px;
+  background-color: #e0e0e0;
+  color: #34582c;
+  padding: 5px;
+}
+}
 div.signup {
   background-image: url('imgs/mailform_bg.jpg');
   height: 364px;
