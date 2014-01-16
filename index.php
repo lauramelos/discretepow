@@ -132,7 +132,7 @@ $isFan = $request['page']['liked'];
         $('.fb_like_mask').hide();
         $('.fb-like').hide();
       }   
-    }
+    });
   }
   // Load the SDK asynchronously
   (function(d, s, id){
@@ -145,8 +145,7 @@ $isFan = $request['page']['liked'];
 </script>
 
   <?php if (!$isFan): ?>
-    <div class="fb_like_mask">
-    </div>
+    <div class="fb_like_mask"></div>
     <div class="fb-like"
       data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979"
       data-width="600"
@@ -352,15 +351,11 @@ less carbon intensive options.</p>
 
     <div class="bottom">
       <img src="imgs/discrete_logo.png" />
-      <p><span><strong>BONUS!</strong> </span>25% OFF DISCRETE JUST FOR SIGNING THE POW SEVEN PLEDGE!</p>
+      <p><span><strong>BONUS!</strong></span>25% OFF DISCRETE JUST FOR SIGNING THE POW SEVEN PLEDGE!</p>
     </div>
-
   </div>
-
-  <div class="footer_img">
-  </div>
-  <div class="sponsors_footer">
-  </div>
+  <div class="footer_img"></div>
+  <div class="sponsors_footer"></div>
 
 </body>
 </html>
