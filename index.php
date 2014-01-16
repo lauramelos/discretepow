@@ -302,7 +302,7 @@ Visit: <a href="http://climate.nasa.gov/" target="_blank">climate.nasa.gov</a>
 family, friends and co-workers. Have a POW party.</p>
       </div>
 
-      <div class="pledge_child ">
+      <div class="pledge_child jump">
         <p>05</p>
         <h2>TALK TO<br />BUSINESSES</h2>
         <p>Support businesses taht embrace sustainability. Talk to others about
@@ -316,9 +316,7 @@ In fact it'll save you money. Look around you and see where you can find
 less carbon intensive options.</p>
       </div>
 
-      <div class="pledge_child powseven">
-      </div>
-
+     
       <div class="pledge_child join ">
         <p>07</p>
         <h2>JOIN<br />POW</h2>
@@ -326,7 +324,9 @@ less carbon intensive options.</p>
 keep our winters white.</p>
       </div>
 
-      
+       <div class="pledge_child powseven">
+      </div>
+
          </div>
   </div>
 

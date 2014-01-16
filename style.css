@@ -403,6 +403,7 @@ strong.wantin {
 div.pledge {
   background-image: url('imgs/pledge_bg.jpg');
   padding-top: 1px;
+  position: relative;
 }
 div.pledge:after {
   clear: both;
@@ -450,6 +451,9 @@ div.pledge:after {
   padding: 12px;
 }
 
+.pledge_child.jump {
+  margin-left:265px;
+}
 .pledge_child h2 {
   font-size: 20px;
   color: #34582a;
@@ -464,6 +468,7 @@ div.pledge:after {
 .pledge_child.join {
   background-color: #34582c;
   color: white;
+  margin-right: 0;
 }
 
 .pledge_child.join h2 {
@@ -476,6 +481,8 @@ div.pledge:after {
 }
 
 .pledge_child.powseven {
+  position: absolute;
+  bottom: 10px;
   width: 228px;
   background-position: center top;
   background-color: transparent;
