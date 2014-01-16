@@ -118,7 +118,7 @@ $isFan = $request['page']['liked'];
     } else {
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
-      }
+      });
     };
   };
   // Load the SDK asynchronously
