@@ -113,26 +113,22 @@ $isFan = $request['page']['liked'];
     });
     
     FB.Canvas.setAutoGrow(1000);
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
-      FB.Event.subscribe("edge.create",  function(href, widget ) {
-    alert('click');
-    FB.api("/me/likes/"+"399004496820979", function(apiResponse){
-      if (apiResponse.data && apiResponse.data.length > 0){
-        // User likes the page. Enabled them to proceed
-        $('.fb_like_mask').hide();
-        $('.fb-like').hide();
-      }   
-    });>
-  });
-
- 
-    } else {
-      FB.Event.subscribe('edge.create', function(href, widget) {
+    FB.Event.subscribe("edge.create",  function(href, widget ) {
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
+        FB.api("/me/likes/"+"399004496820979", function(apiResponse){
+          alert('click');
+          if (apiResponse.data && apiResponse.data.length > 0){
+            // User likes the page. Enabled them to proceed
+            $('.fb_like_mask').hide();
+            $('.fb-like').hide();
+          }   
+        })
+      } else {
         top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
-        //top.window.location.reload();
-    });
-    }
-  };
+          //top.window.location.reload();
+        }
+      });
+     };
   // Load the SDK asynchronously
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
