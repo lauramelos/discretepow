@@ -158,7 +158,7 @@ div.fb_like_mask {
   background: rgba(0,0,0,0.85) url('imgs/fb_like_mask2.png') no-repeat top;
   z-index: 1000;
 }
-div.subscribe_mask{
+div.subscribe_mask.fb_iframe_widget{
   display: none;
   background: rgba(0,0,0,0.85) url('imgs/suscribe_mask.png') no-repeat top;
 }
