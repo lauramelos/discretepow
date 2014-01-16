@@ -374,35 +374,40 @@ strong.wantin {
 }
 
 @media (max-width: 320px) {
-div.want_in {
-  background-image: url('imgs/wantin_bg2.jpg');
+  div.want_in {
+    background-image: url('imgs/wantin_bg2.jpg');
+  }
+  .want_in .ready {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 20px;
+  }
+  div.want_in .step.two,
+  div.want_in .step {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+  div.want_in .step .title {
+    height: auto;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  div.want_in .step img {
+    width: 100%;
+    height: auto;
+  }
 }
-.want_in .ready {
 
-width: 90%;
-  height: auto;
-  margin: 20px auto 20px;
-}
-div.want_in .step.two,
-div.want_in .step {
-width: 100%;
-margin: 10px 0px 0px 0px;
-}
-div.want_in .step .title {
-height: auto;
-width: 100%;
-padding-top: 15px;
-padding-bottom: 15px;
-}
-div.want_in .step img {
-width: 100%;
-height: auto;
-}
-}
 div.pledge {
   background-image: url('imgs/pledge_bg.jpg');
-  height: 708px;
   padding-top: 1px;
+}
+div.pledge:after {
+  clear: both;
+  width: 100%;
+  display: block;
+  content: '';
 }
 
 .top_pledge {
