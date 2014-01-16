@@ -109,10 +109,6 @@ $isFan = $request['page']['liked'];
       FB.Event.subscribe('auth.authResponseChange', function(response) {
         if (response.status === 'connected') {
           testAPI();
-
-          FB.Event.subscribe("edge.create",  function(href, widget ) {
-            alert('like');
-          });
         } else if (response.status === 'not_authorized') {
           $('.fb-like').hide();
           $('.fb-login-button').show();
@@ -122,8 +118,14 @@ $isFan = $request['page']['liked'];
           $('.fb-login-button').show();
           FB.login();
         }
-
       });
+      FB.Event.subscribe('auth.login', function(){
+        window.location.reload();
+      });
+      FB.Event.subscribe('auth.logout', function(){
+        window.location.reload();
+      });
+
     } else {
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
@@ -153,6 +155,10 @@ $isFan = $request['page']['liked'];
           $('.fb-like').show();
         }
       });
+      
+    });
+    FB.Event.subscribe("edge.create",  function(href, widget ) {
+      window.location.reload();
     });
   }
 </script>
