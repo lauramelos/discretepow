@@ -111,6 +111,12 @@ $isFan = $request['page']['liked'];
 
     });
 FB.Canvas.setAutoGrow(1000);
+
+    FB.Event.subscribe('edge.create', function(href, widget) {
+      alert('You liked the URL: ' + href);
+      console.log('it works here!');
+    });
+
   };
 
   // Load the SDK asynchronously
@@ -128,10 +134,6 @@ FB.Canvas.setAutoGrow(1000);
     </div>
 
     <script>
-        FB.Event.subscribe('edge.create', function(href, widget) {
-          alert('You liked the URL: ' + href);
-          console.log('it works here!');
-        });
     </script>
 
     <div class="fb-like"
