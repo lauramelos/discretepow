@@ -302,13 +302,13 @@ Visit: <a href="http://climate.nasa.gov/" target="_blank">climate.nasa.gov</a>
 family, friends and co-workers. Have a POW party.</p>
       </div>
 
-      <div class="pledge_child right">
+      <div class="pledge_child ">
         <p>05</p>
         <h2>TALK TO<br />BUSINESSES</h2>
         <p>Support businesses taht embrace sustainability. Talk to others about
             what they could be doing.</p>
       </div>
-      <div class="pledge_child right">
+      <div class="pledge_child ">
         <p>06</p>
         <h2>CHANGE YOUR LIFE AND SAVE MONEY</h2>
         <p>Saving the planet isn't hard.
@@ -319,7 +319,7 @@ less carbon intensive options.</p>
       <div class="pledge_child powseven">
       </div>
 
-      <div class="pledge_child join right">
+      <div class="pledge_child join ">
         <p>07</p>
         <h2>JOIN<br />POW</h2>
         <p>Help us create a movement against climate change, and
