@@ -59,6 +59,8 @@
         echo '<img src="'.$image_link.'" />';
     }
 
+    echo $results[pagination][next_url];
+
     echo '<pre>';
     print_r($results);
     echo '</pre>';
