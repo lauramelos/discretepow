@@ -23,24 +23,24 @@
     return $result;
     }
 
-    $tag = 'bjj';
-    $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
-    $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id";
+  $tag = 'bjj';
+  $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
+  $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id&max_tag_id=$nextpics";
 
-    $inst_stream = callInstagram($url);
-    $results = json_decode($inst_stream, true);
+  $inst_stream = callInstagram($url);
+  $results = json_decode($inst_stream, true);
 
-    //Now parse through the $results array to display your results... 
-    foreach($results['data'] as $item){
-        $image_link = $item['images']['low_resolution']['url'];
-        echo '<img src="'.$image_link.'" />';
-    }
+  //Now parse through the $results array to display your results... 
+  foreach($results['data'] as $item){
+      $image_link = $item['images']['low_resolution']['url'];
+      echo '<img src="'.$image_link.'" />';
+  }
 
-    echo $results[pagination][next_url];
-    $next_pics = $results[pagination][next_max_tag_id];
-    $prev_pics = $results[pagination][min_tag_id];
-    echo "Next from: $next_pics";
-    echo "Previous from: $prev_pics";
+  echo $results[pagination][next_url];
+  $next_pics = $results[pagination][next_max_tag_id];
+  $prev_pics = $results[pagination][min_tag_id];
+  echo "Next from: $next_pics";
+  echo "Previous from: $prev_pics";
 ?>
 
 <?php
