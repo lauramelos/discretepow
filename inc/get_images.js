@@ -6,13 +6,6 @@
     var count = 12;
     var filterby;
 
-    // Add pretty photos in the hard-refresh
-    addPrettyPhoto();
-
-    function addPrettyPhoto() {
-      $("a[rel^='prettyPhoto']").prettyPhoto({ social_tools: '' });
-    }
-
     /**
      * Load pictures
      */
@@ -41,7 +34,7 @@
     * Bind 'click' event in show-more button
     */
 
-    var button = $('#container .show-more a');
+    var button = $('div#morepics');
     button.on('click', function(ev){
       ev.preventDefault();
       start = $('#container .rectangle').length;
