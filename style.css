@@ -190,6 +190,15 @@ div.bottom_text h2 {
   color: #8bc83f;
   font-size:37px;
 }
+@media (max-width: 767px) {
+  div.top_image {
+  height: 745px;
+  }
+  div.bottom_text {
+  margin: 419px 0 0 45px;
+  }
+}
+
 @media (max-width: 620px) {
   div.top_image {
     background-image: url('imgs/mobile_top_image.jpg');
@@ -198,6 +207,7 @@ div.bottom_text h2 {
     background-color: #000;
     height: 742px;
   }
+
   @media (max-width: 320px) {
     div.top_image {
       background-image: url('imgs/mobile_top_image.jpg');
@@ -208,9 +218,10 @@ div.bottom_text h2 {
     }
   }
   div.bottom_text {
+    background-color: #000;
     width: 90%;
     height: 178px;
-    margin: 245px auto 0;
+    margin: 0 auto;
   }
   div.bottom_text h2 {
     font-size: 28px;
@@ -218,17 +229,23 @@ div.bottom_text h2 {
   div.bottom_text p {
     font-size: 12px;
   }
-
+  
+  div.title_under_logo {
+    display:block;
+    width: 90%;
+    text-align: center;
+    margin: 241px auto 10px;
+  }
+  div.title_under_logo p {
+    color: white;
+    background-color: #34582c;
+    line-height: 27px;
+    margin: 7px 0px;
+    font-size: 25px;
+    font-weight: 400;
+  }
 }
 
-@media (max-width: 767px) {
-div.top_image {
-height: 745px;
-}
-div.bottom_text {
-margin: 419px 0 0 45px;
-}
-}
 
 div.win {
   background-image: url('imgs/win_bg.jpg');
