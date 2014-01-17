@@ -50,7 +50,8 @@ body {
   width:100%;
   max-width: 810px;
   margin: 0px auto;
-  background: #000
+  background: #000;
+  overflow-y:hidden;
   position: relative;
   font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
   font-family:'Trade Gothic W01'; font-weight:400; font-style:normal;
