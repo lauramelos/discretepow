@@ -10,7 +10,6 @@
      * Load pictures
      */
 
-    console.log(morepics);
     function load(){
       var data = {
         next_pics: morepics
@@ -32,6 +31,7 @@
     */
 
     var button = $('div#morepics');
+    console.log(morepics);
     button.on('click', function(ev){
       ev.preventDefault();
       start = $('#container .rectangle').length;
