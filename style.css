@@ -190,7 +190,7 @@ div.bottom_text h2 {
   color: #8bc83f;
   font-size:37px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   div.top_image {
   height: 745px;
   }
