@@ -12,13 +12,12 @@
 
     function load(){
       var data = {
-        start: start,
-        count: count,
+        next_pics: "<?php print($next_pics); ?>"
       };
 
       $.ajax({
         type: 'GET',
-        url: "get_images.php?next_pics=<?php echo $next_pics; ?>",
+        url: "get_images.php',
         data: data
       }).done(renderResponse);
     }
