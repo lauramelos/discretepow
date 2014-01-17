@@ -6,7 +6,7 @@
 
     // Initialize class with client_id
     // Register at http://instagram.com/developer/ and replace client_id with your own
-    $instagram = new Instagram('  11115ed2e74d47bbbebb4c69dbacfae2');
+    $instagram = new Instagram('11115ed2e74d47bbbebb4c69dbacfae2');
 
     // Set keyword for #hashtag
     $tag = 'bjj';
