@@ -2,12 +2,10 @@
 
   if ($_GET['next_pics']):
   $nextpics = $_GET['next_pics'];
-  echo "Next from: $nextpics";
   endif;
 
   if ($_GET['prev_pics']):
   $prevpics = $_GET['prev_pics'];
-  echo "Previous from: $prevpics";
   endif;
 
   function callInstagram($url)
@@ -27,7 +25,7 @@
 
     $tag = 'bjj';
     $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
-    $url = 'https://api.instagram.com/v1/tags/'.$tag.'/media/recent?client_id='.$client_id;
+    $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id";
 
     $inst_stream = callInstagram($url);
     $results = json_decode($inst_stream, true);
