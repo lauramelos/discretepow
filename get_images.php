@@ -27,9 +27,6 @@
   $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
   $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id$extra_query";
 
-  echo $url. "<br />";
-  echo "SERVER_NAME : " . $_SERVER['SERVER_NAME'] . "<br />"; 
-  $host = $_SERVER['SERVER_NAME'];
 
   $inst_stream = callInstagram($url);
   $results = json_decode($inst_stream, true);
@@ -39,4 +36,10 @@
       $image_link = $item['images']['low_resolution']['url'];
       echo '<img src="'.$image_link.'" />';
   }
+  $next_pics = $results[pagination][next_max_tag_id];
+  $prev_pics = $results[pagination][min_tag_id];
 ?>
+  <script>
+    var morepics = <?php echo $next_pics; ?>;
+  </script>
+

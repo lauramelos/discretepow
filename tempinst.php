@@ -8,17 +8,8 @@
 <?php       
   include_once('get_images.php');
 
-  echo $results[pagination][next_url];
-  $next_pics = $results[pagination][next_max_tag_id];
-  $prev_pics = $results[pagination][min_tag_id];
-  echo "Next from: $next_pics";
-  echo "Previous from: $prev_pics";
   $host = $_SERVER['SERVER_NAME'];
 ?>
-  <script>
-    var morepics = <?php echo $next_pics; ?>;
-  </script>
-
   <a class="loadmore" href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
   <div id="morepics">more</div>
 <?php
