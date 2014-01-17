@@ -104,7 +104,7 @@ $isFan = $request['page']['liked'];
     
     FB.Canvas.setAutoGrow(1000);
 
-    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
+    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || true) {     
       FB.Event.subscribe('auth.authResponseChange', function(response) {
         if (response.status === 'connected') {
           testAPI();
@@ -124,12 +124,12 @@ $isFan = $request['page']['liked'];
       FB.Event.subscribe('auth.logout', function(){
         window.location.reload();
       });
-
     } else {
+
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
       });
-    };
+    }
   };
   // Load the SDK asynchronously
   (function(d){
@@ -142,24 +142,23 @@ $isFan = $request['page']['liked'];
 
   function testAPI() {
     FB.api('/me', function(response) {
-      FB.api("/me/likes/"+"399004496820979", function(apiResponse){ 
+      FB.api("/me/likes/399004496820979", function(apiResponse){ 
+        console.log(apiResponse);
         if (apiResponse.data && apiResponse.data.length > 0){
-          console.log('page liked');
+          alert(true);
           $('.fb_like_mask').hide();
           $('.fb-like').hide();
           $('.fb-login-button').hide();
-        }
-        else{
+        } else {
           $('.fb-login-button').hide();
           $('.fb-like').show();
         }
       });
-      
     });
     FB.Event.subscribe("edge.create",  function(href, widget ) {
       window.location.reload();
     });
-  }
+  };
 </script>
 
   <?php if (!$isFan): ?>
