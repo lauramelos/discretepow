@@ -116,8 +116,9 @@ div.top_image {
   padding-top: 1px;
 
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   div.top_image {
+    background-image: url('imgs/mobile_top_image.jpg');
     background-position: 0 150px;
     background-repeat: no-repeat;
     background-color: #000;
@@ -193,7 +194,7 @@ div.bottom_text h2 {
   color: #8bc83f;
   font-size:37px;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   div.bottom_text {
     width: 90%;
     height: 178px;
@@ -262,7 +263,7 @@ div.weekly_prize {
   height: 319px;
 }
 
-@media (max-width: 320px) {
+@media (max-width:767px) {
 div.win img {
 width: 100%;
 height: auo;
@@ -373,7 +374,7 @@ strong.wantin {
   color: white;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   div.want_in {
     background-image: url('imgs/wantin_bg2.jpg');
   }
@@ -490,7 +491,7 @@ div.pledge:after {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   div.pledge{
     background-image: url('imgs/pledge_bg2.jpg');
   }
@@ -639,7 +640,7 @@ outline:1px solid red;
 display: none
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
 div.signup .title { 
 width: 90%;
 margin: 20px auto;
