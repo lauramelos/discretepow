@@ -49,7 +49,7 @@
   <a href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
 <?php
     echo '<pre>';
-    print_r($results);
+    //print_r($results);
     echo '</pre>';
 
 ?>
