@@ -535,6 +535,7 @@ position:static;
 div.signup {
   background-image: url('imgs/mailform_bg.jpg');
   padding-top: 1px;
+  border-bottom: 16px solid #35562d;
 }
 div.signup:after {
   clear: both;
@@ -596,7 +597,7 @@ div.signup fieldset input[type="checkbox"] {
 }
 
 div.signup .bottom {
-  height: 18px;
+  height: 68px;
   clear: both;
   margin: 0px auto;
   width: 700px;
