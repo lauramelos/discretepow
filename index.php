@@ -111,11 +111,11 @@ $isFan = $request['page']['liked'];
         } else if (response.status === 'not_authorized') {
           $('.fb-like').hide();
           $('.fb-login-button').show();
-          FB.login( {scope: 'email,user_likes'} );
+          FB.login(function() {}, {scope: 'email,user_likes'} );
         } else {
           $('.fb-like').hide();
           $('.fb-login-button').show();
-          FB.login( {scope: 'email,user_likes'} );
+          FB.login(function() {}, {scope: 'email,user_likes'} );
         }
       });
       FB.Event.subscribe('auth.login', function(){
