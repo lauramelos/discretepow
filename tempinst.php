@@ -28,6 +28,7 @@
         echo '<img style="float: left; display: block;" src="'.$data->images->thumbnail->url.'" height="'.$size.'" width="'.$size.'" alt="SOME TEXT HERE" />';
     }
 
+    echo '<br />;
 
  function callInstagram($url)
     {
