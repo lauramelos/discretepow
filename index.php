@@ -104,7 +104,7 @@ $isFan = $request['page']['liked'];
     
     FB.Canvas.setAutoGrow(1000);
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
+    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {     
       FB.Event.subscribe('auth.authResponseChange', function(response) {
         if (response.status === 'connected') {
           testAPI();
