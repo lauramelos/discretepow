@@ -12,7 +12,7 @@
 
     function load(){
       var data = {
-        next_pics: "<?php print($next_pics); ?>"
+        next_pics: "<?php echo $next_pics; ?>"
       };
 
       $.ajax({
