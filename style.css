@@ -308,7 +308,15 @@ div.grand_prize,
 div.weekly_prize {
   height: 319px;
 }
+@media (max-width:768px) {
+div.win img {
+width: 400px;
+}
 
+div.win .grand_prize img {
+margin-right: 10px;
+}
+}
 @media (max-width:620px) {
 div.win img {
 width: 100%;
