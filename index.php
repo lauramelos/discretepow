@@ -380,7 +380,7 @@ keep our winters white.</p>
   </div>
   <div class="sponsors_footer">
     
-      <img src="imgs/sponsors_footer_bg.jpg'" />
+      <img src="imgs/sponsors_footer_bg.jpg" />
   </div>
 
 </body>
