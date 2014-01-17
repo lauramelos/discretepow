@@ -6,13 +6,6 @@
     var count = 12;
     var filterby;
 
-    // Add pretty photos in the hard-refresh
-    addPrettyPhoto();
-
-    function addPrettyPhoto() {
-      $("a[rel^='prettyPhoto']").prettyPhoto({ social_tools: '' });
-    }
-
     /**
      * Load pictures
      */
