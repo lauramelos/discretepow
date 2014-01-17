@@ -33,8 +33,6 @@
     echo $next_pics;
 ?>
 
-<div id="myDiv" onClick="callInstagram($next_pics)">next</div>
-
 <?php
     echo '<pre>';
     print_r($results);
