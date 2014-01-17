@@ -17,7 +17,7 @@
 
       $.ajax({
         type: 'GET',
-        url: "get_images.php',
+        url: 'get_images.php',
         data: data
       }).done(renderResponse);
     }
