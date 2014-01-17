@@ -1,3 +1,9 @@
+<head>
+
+  <script src="inc/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+</head>
+
 <?php       
 
   if ($_GET['next_pics']):
@@ -48,9 +54,12 @@
 ?>
   <a href="http://<?php echo $host; ?>/tempinst.php?prev_pics=<?php echo $prev_pics; ?>">prev 20</a>
   <a href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
+  <script>
+    $('#myLink').click(function(){ MyFunction(); return false; });
+  </script>
 <?php
     echo '<pre>';
-    print_r($results);
+    //print_r($results);
     echo '</pre>';
 
 ?>
