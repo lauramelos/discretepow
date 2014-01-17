@@ -5,7 +5,7 @@
   endif;
 
   if ($_GET['prev_pics']):
-  $prevpics = $_GET['prev_pics'];
+  $extra_query = '&min_tag_id='.$_GET['prev_pics'];
   endif;
 
   function callInstagram($url)
