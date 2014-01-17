@@ -141,6 +141,10 @@ $isFan = $request['page']['liked'];
   }(document));
 
   function testAPI() {
+
+    FB.api('/me/permissions', function(response) {
+      console.log(response);
+    });
     FB.api('/me', function(response) {
       console.log(response.id);
       FB.api("/"+response.id+"/likes/399004496820979", function(apiResponse){ 
