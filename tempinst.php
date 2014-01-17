@@ -15,7 +15,7 @@
     $media = $instagram->getTagMedia($tag);
 
     // Set number of photos to show
-    $limit = 5;
+    $limit = 500;
 
     // Set height and width for photos
     $size = '100';
