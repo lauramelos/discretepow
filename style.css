@@ -559,8 +559,7 @@ div.signup .title h2 {
 div.signup span {
   color: #8bc83f;
 }
-
-div.signup fieldset {
+#formular{
   width: 375px;
   height: 270px;
   float: right;
@@ -568,6 +567,13 @@ div.signup fieldset {
   margin-top: 25px;
   border: 0px;
   background: url('imgs/corner.png') no-repeat 0 0;
+
+}
+div.signup fieldset {
+  width: 375px;
+  height: 270px;
+  border: 0px;
+  background: url('imgs/cornertr.png') no-repeat 0 0;
 }
 
 div.signup fieldset input {
@@ -619,14 +625,10 @@ div.signup .bottom p {
 }
 
 
+div.sponsors_footer img,
 div.footer_img img{
 width:100%;
 height:auto;
-}
-
-div.sponsors_footer {
-width:100%;
-height: auto;
 }
 .error{
 outline:1px solid red;
