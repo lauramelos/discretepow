@@ -15,6 +15,10 @@
   echo "Previous from: $prev_pics";
   $host = $_SERVER['SERVER_NAME'];
 ?>
+  <script>
+    var morepics = <?php echo $next_pics; ?>;
+  </script>
+
   <a class="loadmore" href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
   <div id="morepics">more</div>
 <?php

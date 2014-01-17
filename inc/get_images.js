@@ -10,9 +10,10 @@
      * Load pictures
      */
 
+    console.log(morepics);
     function load(){
       var data = {
-        next_pics: "<?php echo $next_pics; ?>"
+        next_pics: morepics
       };
 
       $.ajax({
