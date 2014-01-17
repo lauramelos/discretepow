@@ -53,9 +53,11 @@
   echo "Previous from: $prev_pics";
 ?>
   <a href="http://<?php echo $host; ?>/tempinst.php?prev_pics=<?php echo $prev_pics; ?>">prev 20</a>
-  <a href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
+  <a class="next20" href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
   <script>
-    $('#myLink').click(function(){ MyFunction(); return false; });
+  $('.next20').click(function(){ MyFunction(
+    top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
+  ); return false; });
   </script>
 <?php
     echo '<pre>';
