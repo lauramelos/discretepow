@@ -1,37 +1,20 @@
+<head>
+
+  <script src="inc/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+</head>
+
 <?php       
-    // Get class for Instagram
-    // More examples here: https://github.com/cosenary/Instagram-PHP-API
-    error_reporting(E_ERROR | E_WARNING | E_PARSE);
-    require_once 'inc/instagram.class.php';
 
-    // Initialize class with client_id
-    // Register at http://instagram.com/developer/ and replace client_id with your own
-    $instagram = new Instagram('11115ed2e74d47bbbebb4c69dbacfae2');
+  if ($_GET['next_pics']):
+  $extra_query = '&max_tag_id='.$_GET['next_pics'];
+  endif;
 
-    // Set keyword for #hashtag
-    $tag = 'bjj';
+  if ($_GET['prev_pics']):
+  $extra_query = '&min_tag_id='.$_GET['prev_pics'];
+  endif;
 
-    // Get latest photos according to #hashtag keyword
-    $media = $instagram->getTagMedia($tag);
-
-    // Set number of photos to show
-    $limit = 200;
-
-    // Set height and width for photos
-    $size = '300';
-
-    // Show results
-    // Using for loop will cause error if there are less photos than the limit
-    foreach(array_slice($media->data, 0, $limit) as $data)
-    {
-        // Show photo
-        echo '<img style="float: left; display: block;" src="'.$data->images->thumbnail->url.'" height="'.$size.'" width="'.$size.'" alt="SOME TEXT HERE" />';
-    }
-
-    echo '<p style="display: block; clear: both;">end class testing</p>';
-    echo '<p style="display: block; clear: both;">start direct testing</p>';
-
- function callInstagram($url)
+  function callInstagram($url)
     {
     $ch = curl_init();
     curl_setopt_array($ch, array(
@@ -46,21 +29,39 @@
     return $result;
     }
 
-    $tag = 'bjj';
-    $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
-    $url = 'https://api.instagram.com/v1/tags/'.$tag.'/media/recent?client_id='.$client_id;
+  $tag = 'bjj';
+  $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
+  $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id$extra_query";
 
-    $inst_stream = callInstagram($url);
-    $results = json_decode($inst_stream, true);
+  echo $url. "<br />";
+  echo "SERVER_NAME : " . $_SERVER['SERVER_NAME'] . "<br />"; 
+  $host = $_SERVER['SERVER_NAME'];
 
-    //Now parse through the $results array to display your results... 
-    foreach($results['data'] as $item){
-        $image_link = $item['images']['low_resolution']['url'];
-        echo '<img src="'.$image_link.'" />';
-    }
+  $inst_stream = callInstagram($url);
+  $results = json_decode($inst_stream, true);
 
+  //Now parse through the $results array to display your results... 
+  foreach($results['data'] as $item){
+      $image_link = $item['images']['low_resolution']['url'];
+      echo '<img src="'.$image_link.'" />';
+  }
+
+  echo $results[pagination][next_url];
+  $next_pics = $results[pagination][next_max_tag_id];
+  $prev_pics = $results[pagination][min_tag_id];
+  echo "Next from: $next_pics";
+  echo "Previous from: $prev_pics";
+?>
+  <a href="http://<?php echo $host; ?>/tempinst.php?prev_pics=<?php echo $prev_pics; ?>">prev 20</a>
+  <a class="next20" href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
+  <script>
+  $('.next20').click(function(){ MyFunction(
+    top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
+  ); return false; });
+  </script>
+<?php
     echo '<pre>';
-    print_r($results);
+    //print_r($results);
     echo '</pre>';
 
 ?>
