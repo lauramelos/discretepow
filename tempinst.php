@@ -5,6 +5,11 @@
   echo $nextpics;
   endif;
 
+  if ($_GET['prev_pics']):
+  $prevpics = $_GET['prev_pics'];
+  echo $prevpics;
+  endif;
+
   function callInstagram($url)
     {
     $ch = curl_init();
@@ -34,8 +39,10 @@
     }
 
     echo $results[pagination][next_url];
-    $next_pics = $results[pagination][max_tag_id];
+    $next_pics = $results[pagination][next_max_id];
+    $prev_pics = $results[pagination][next_min_id];
     echo $next_pics;
+    echo $prev_pics;
 ?>
 
 <?php
