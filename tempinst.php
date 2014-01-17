@@ -1,6 +1,7 @@
 <?php       
     // Get class for Instagram
     // More examples here: https://github.com/cosenary/Instagram-PHP-API
+    error_reporting(E_ERROR | E_WARNING | E_PARSE);
     require_once 'inc/instagram.class.php';
 
     // Initialize class with client_id
