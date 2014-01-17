@@ -653,12 +653,14 @@ margin: 20px auto;
 padding: 0;
 }
 div.signup .bottom{
-width: 90px;
+width: 90%;
 height: auto;
 text-align: center;
 }
 div.signup .bottom img, div.signup .bottom p {
 float: none;
+margin: 10px;
+
 }
 }
 .termsconditions h1,
