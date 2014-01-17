@@ -1,7 +1,7 @@
 <?php       
 
   if ($_GET['next_pics']):
-  $nextpics = $_GET['next_pics'];
+  $extra_query = '&max_tag_id='.$_GET['next_pics'];
   endif;
 
   if ($_GET['prev_pics']):
@@ -25,7 +25,7 @@
 
   $tag = 'bjj';
   $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
-  $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id&max_tag_id=$nextpics";
+  $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id$extra_query";
 
   echo $url. "<br />";
   echo "SERVER_NAME : " . $_SERVER['SERVER_NAME'] . "<br />"; 
