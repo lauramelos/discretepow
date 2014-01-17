@@ -33,6 +33,7 @@
     }
 
     function renderResponse(html){
+      event.preventDefault();
       $('a.loadmore').before(html);
       addPrettyPhoto();
     }
