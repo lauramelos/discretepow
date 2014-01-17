@@ -13,7 +13,6 @@
   echo "Next from: $next_pics";
   echo "Previous from: $prev_pics";
 ?>
-  <a href="http://<?php echo $host; ?>/tempinst.php?prev_pics=<?php echo $prev_pics; ?>">prev 20</a>
   <a href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
 <?php
     echo '<pre>';
