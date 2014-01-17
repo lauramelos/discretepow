@@ -567,7 +567,7 @@ div.signup span {
   margin-top: 25px;
   border: 0px;
   background: url('imgs/corner.png') no-repeat left top, url('imgs/cornerbl.png') no-repeat left bottom;
-
+padding-left: 20px;
 }
 div.signup fieldset {
   width: 100%;
