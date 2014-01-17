@@ -41,8 +41,8 @@
     echo $results[pagination][next_url];
     $next_pics = $results[pagination][next_max_id];
     $prev_pics = $results[pagination][next_min_id];
-    echo $next_pics;
-    echo $prev_pics;
+    echo "Next from: $next_pics";
+    echo "Previous from: $prev_pics";
 ?>
 
 <?php
