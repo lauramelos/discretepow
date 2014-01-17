@@ -28,8 +28,10 @@
         echo '<img src="'.$image_link.'" />';
     }
 
-    echo $results[pagination][next_url];
+?>
+  <a href='<?php echo $results[pagination][next_url]?>;'>next</a>
 
+<?php
     echo '<pre>';
     print_r($results);
     echo '</pre>';
