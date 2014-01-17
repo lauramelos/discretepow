@@ -28,7 +28,8 @@
         echo '<img style="float: left; display: block;" src="'.$data->images->thumbnail->url.'" height="'.$size.'" width="'.$size.'" alt="SOME TEXT HERE" />';
     }
 
-    echo 'end class testing<br />....';
+    echo '<p>end class testing</p>';
+    echo '<p>start direct testing</p>';
 
  function callInstagram($url)
     {
