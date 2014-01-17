@@ -190,7 +190,7 @@ div.bottom_text h2 {
   color: #8bc83f;
   font-size:37px;
 }
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   div.top_image {
     background-image: url('imgs/mobile_top_image.jpg');
     background-position: 0 150px;
