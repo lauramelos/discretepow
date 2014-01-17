@@ -619,16 +619,14 @@ div.signup .bottom p {
 }
 
 
-div.footer_img {
-  background-image: url('imgs/footer_bg.jpg');
-  height: 249px;
-  background-size: 100%;
+div.footer_img img{
+width:100%;
+height:auto;
 }
 
 div.sponsors_footer {
-  background-image: url('imgs/sponsors_footer_bg.jpg');
-  height: 102px;
-  background-size: 100%;
+width:100%;
+height: auto;
 }
 .error{
 outline:1px solid red;
@@ -642,6 +640,7 @@ div.signup .title {
 width: 90%;
 margin: 20px auto;
 float: none;
+height: auto;
 }
 div.signup .title h2 {
 font-size: 30px;
@@ -652,6 +651,14 @@ height: auto;
 float:none;
 margin: 20px auto;
 padding: 0;
+}
+div.signup .bottom{
+width: 90px;
+height: auto;
+text-align: center;
+}
+div.signup .bottom img, div.signup .bottom p {
+float: none;
 }
 }
 .termsconditions h1,

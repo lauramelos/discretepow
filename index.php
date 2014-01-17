@@ -374,8 +374,14 @@ keep our winters white.</p>
       <p><span><strong>BONUS!</strong></span> 25% OFF DISCRETE JUST FOR SIGNING THE POW SEVEN PLEDGE!</p>
     </div>
   </div>
-  <div class="footer_img"></div>
-  <div class="sponsors_footer"></div>
+  <div class="footer_img">
+
+      <img src="imgs/footer_bg.jpg" />
+  </div>
+  <div class="sponsors_footer">
+    
+      <img src="imgs/sponsors_footer_bg.jpg'" />
+  </div>
 
 </body>
 </html>
