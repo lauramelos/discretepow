@@ -28,6 +28,7 @@
   $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id&max_tag_id=$nextpics";
 
   echo $url;
+  echo "SERVER_NAME : " . $_SERVER['SERVER_NAME'] . "<br />"; 
 
   $inst_stream = callInstagram($url);
   $results = json_decode($inst_stream, true);
