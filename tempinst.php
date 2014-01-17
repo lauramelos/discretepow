@@ -28,8 +28,12 @@
         echo '<img src="'.$image_link.'" />';
     }
 
+    echo $results[pagination][next_url];
+    $next_pics = $results[pagination][max_tag_id];
+    echo $next_pics;
 ?>
-  <a href='<?php echo $results[pagination][next_url]?>;'>next</a>
+
+<div id="myDiv" onClick="callInstagram($next_pics)">next</div>
 
 <?php
     echo '<pre>';
