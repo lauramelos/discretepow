@@ -142,6 +142,7 @@ $isFan = $request['page']['liked'];
 
   function testAPI() {
     FB.api('/me', function(response) {
+      console.log(response);
       FB.api("/me/likes/399004496820979", function(apiResponse){ 
         console.log(apiResponse);
         if (apiResponse.data && apiResponse.data.length > 0){
