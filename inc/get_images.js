@@ -27,13 +27,13 @@
 
       $.ajax({
         type: 'GET',
-        url: 'pictures.php',
+        url: 'get_images.php',
         data: data
       }).done(renderResponse);
     }
 
     function renderResponse(html){
-      $('#container .show-more').before(html);
+      $('a.loadmore').before(html);
       addPrettyPhoto();
     }
 
