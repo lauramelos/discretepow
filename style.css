@@ -100,6 +100,11 @@ label {
   display: block;
   height: 27px;
 }
+@media (max-width: 767px) {
+  label{
+    font-size:12px;
+  }
+}
 
 label span {
 color:#8ec549;
@@ -116,10 +121,8 @@ div.top_image {
   padding-top: 1px;
 
 }
-@media (max-width: 767px) {
-  label{
-    font-size:12px;
-  }
+
+@media (max-width: 480px) {
   div.top_image {
     background-image: url('imgs/mobile_top_image.jpg');
     background-position: 0 150px;
@@ -127,6 +130,16 @@ div.top_image {
     background-color: #000;
     height: 700px;
   }
+  @media (max-width: 480px) {
+    div.top_image {
+      background-image: url('imgs/mobile_top_image.jpg');
+      background-position: 0 150px;
+      background-repeat: no-repeat;
+      background-color: #000;
+      height: 700px;
+    }
+  }
+
 }
 div.top_logo {
   width: 237px;
