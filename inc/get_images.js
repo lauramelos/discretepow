@@ -5,9 +5,7 @@
     var start = 0;
     var count = 12;
     var filterby;
-    var pics = '<?php print($next_pics); ?>';
 
-    console.log(pics);
     /**
      * Load pictures
      */
@@ -16,12 +14,11 @@
       var data = {
         start: start,
         count: count,
-        next_pics: pics
       };
 
       $.ajax({
         type: 'GET',
-        url: 'get_images.php',
+        url: "get_images.php?next_pics=<?php echo $next_pics; ?>",
         data: data
       }).done(renderResponse);
     }
