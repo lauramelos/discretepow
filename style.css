@@ -49,8 +49,8 @@ body, html{height: 100% }
 body {
   width:100%;
   max-width: 810px;
-  overflow-y: hidden;
-  margin: 0px;
+  margin: 0px auto;
+  background: #000
   position: relative;
   font-family:'Trade Gothic W01'; font-weight:200; font-style:normal;
   font-family:'Trade Gothic W01'; font-weight:400; font-style:normal;
@@ -698,7 +698,11 @@ outline:1px solid red;
 .error-msg{
 display: none
 }
-
+@media (max-width: 768px) {
+#formular {
+  margin-right: 50px;
+}
+}
 @media (max-width: 620px) {
 div.signup .title { 
 width: 90%;
