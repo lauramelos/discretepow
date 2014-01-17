@@ -104,18 +104,18 @@ $isFan = $request['page']['liked'];
     
     FB.Canvas.setAutoGrow(1000);
 
-    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || true) {     
+    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {     
       FB.Event.subscribe('auth.authResponseChange', function(response) {
         if (response.status === 'connected') {
           testAPI();
         } else if (response.status === 'not_authorized') {
           $('.fb-like').hide();
           $('.fb-login-button').show();
-          FB.login(function() {}, {scope: 'email,user_likes'} );
+          FB.login(function() {}, {scope: 'user_likes'} );
         } else {
           $('.fb-like').hide();
           $('.fb-login-button').show();
-          FB.login(function() {}, {scope: 'email,user_likes'} );
+          FB.login(function() {}, {scope: 'user_likes'} );
         }
       });
       FB.Event.subscribe('auth.login', function(){
@@ -141,16 +141,9 @@ $isFan = $request['page']['liked'];
   }(document));
 
   function testAPI() {
-
-    FB.api('/me/permissions', function(response) {
-      console.log(response);
-    });
     FB.api('/me', function(response) {
-      console.log(response.id);
       FB.api("/"+response.id+"/likes/399004496820979", function(apiResponse){ 
-        console.log(apiResponse);
         if (apiResponse.data && apiResponse.data.length > 0){
-          alert(true);
           $('.fb_like_mask').hide();
           $('.fb-like').hide();
           $('.fb-login-button').hide();
@@ -178,7 +171,7 @@ $isFan = $request['page']['liked'];
       data-colorscheme="dark">
     </div>
   <?php endif ?>
-  <div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="email, user_likes" ></div>
+  <div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" ></div>
   <div class="subscribe_mask"></div>
   <div class="top_image">
     <div class="top_logo"></div>
