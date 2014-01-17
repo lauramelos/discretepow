@@ -53,9 +53,9 @@ function getInstagrams ($ids, $params) {
  $params['retrieve'] = true;
  $params['number'] = 1254;
  $params['count'] = 20;
- $params['client_id'] = 'ed5f894b2f4e4069a4e9943d98bcd2da';
+ $params['client_id'] = '11115ed2e74d47bbbebb4c69dbacfae2';
 
- $identifiers ='@yakimaracks,#takemorefriends';
+ $identifiers ='#bjj';
  
  $data['instams'] = getInstagrams($identifiers, $params);
 ?> 
