@@ -20,14 +20,13 @@
 
       $.ajax({
         type: 'GET',
-        url: 'get_images.php',
+        url: 'get_images.php?next_pics=<?php echo $next_pics; ?>',
         data: data
       }).done(renderResponse);
     }
 
     function renderResponse(html){
       $('a.loadmore').before(html);
-      addPrettyPhoto();
     }
 
     /**
