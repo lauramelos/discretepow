@@ -222,6 +222,9 @@ div.bottom_text h2 {
 }
 
 @media (max-width: 767px) {
+div.top_image {
+height: 745px;
+}
 div.bottom_text {
 margin: 419px 0 0 45px;
 }
