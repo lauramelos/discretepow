@@ -1,6 +1,9 @@
 <?php       
 
- function callInstagram($url)
+  $nextpics = $_GET['next_pics'];
+  echo $nextpics;
+
+  function callInstagram($url)
     {
     $ch = curl_init();
     curl_setopt_array($ch, array(
