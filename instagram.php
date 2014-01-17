@@ -58,6 +58,11 @@ function getInstagrams ($ids, $params) {
  $identifiers ='#bjj';
  
  $data['instams'] = getInstagrams($identifiers, $params);
+
+ echo '<pre>';
+ print_r($data);
+ echo '</pre>';
+
 ?> 
 <!doctype html>
 <html>
