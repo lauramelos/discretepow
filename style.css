@@ -202,12 +202,18 @@ div.bottom_text h2 {
 @media (max-width: 620px) {
   div.top_image {
     background-image: url('imgs/mobile_top_image.jpg');
-    background-position: 0 150px;
+    background-position: 0 0px;
     background-repeat: no-repeat;
     background-color: #000;
     height: 742px;
   }
-
+div.top_logo {
+width: 237px;
+height: 128px;
+background-image: url('imgs/top_logo.png');
+margin-top: 0;
+margin-left: 0;
+}
   @media (max-width: 320px) {
     div.top_image {
       background-image: url('imgs/mobile_top_image.jpg');
