@@ -214,14 +214,15 @@ div.bottom_text h2 {
       background-position: 0 150px;
       background-repeat: no-repeat;
       background-color: #000;
-      height: 700px;
+      height: auto;
     }
   }
   div.bottom_text {
     background-color: #000;
     width: 90%;
-    height: 178px;
-    margin: 0 auto;
+height: auto;
+margin: 0 auto;
+padding: 10px 0 20px 0;
   }
   div.bottom_text h2 {
     font-size: 28px;
@@ -234,7 +235,7 @@ div.bottom_text h2 {
     display:block;
     width: 90%;
     text-align: center;
-    margin: 241px auto 10px;
+    margin: 240px auto 10px;
   }
   div.title_under_logo p {
     color: white;
