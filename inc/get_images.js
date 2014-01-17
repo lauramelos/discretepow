@@ -5,7 +5,9 @@
     var start = 0;
     var count = 12;
     var filterby;
+    var pics = '<?php print($next_pics); ?>';
 
+    console.log(pics);
     /**
      * Load pictures
      */
@@ -13,10 +15,9 @@
     function load(){
       var data = {
         start: start,
-        count: count
+        count: count,
+        next_pics: pics
       };
-
-      if (filterby) data.filter = filterby;
 
       $.ajax({
         type: 'GET',
@@ -27,7 +28,6 @@
 
     function renderResponse(html){
       $('a.loadmore').before(html);
-      addPrettyPhoto();
     }
 
     /**
