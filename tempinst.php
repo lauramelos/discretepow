@@ -27,8 +27,9 @@
   $client_id = "11115ed2e74d47bbbebb4c69dbacfae2";
   $url = "https://api.instagram.com/v1/tags/$tag/media/recent?client_id=$client_id&max_tag_id=$nextpics";
 
-  echo $url;
+  echo $url. "<br />";
   echo "SERVER_NAME : " . $_SERVER['SERVER_NAME'] . "<br />"; 
+  $host = $_SERVER['SERVER_NAME'];
 
   $inst_stream = callInstagram($url);
   $results = json_decode($inst_stream, true);
@@ -45,7 +46,7 @@
   echo "Next from: $next_pics";
   echo "Previous from: $prev_pics";
 ?>
-
+  <a href="http://<?php echo $host: ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
 <?php
     echo '<pre>';
     print_r($results);
