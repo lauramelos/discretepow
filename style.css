@@ -122,25 +122,6 @@ div.top_image {
 
 }
 
-@media (max-width: 480px) {
-  div.top_image {
-    background-image: url('imgs/mobile_top_image.jpg');
-    background-position: 0 150px;
-    background-repeat: no-repeat;
-    background-color: #000;
-    height: 700px;
-  }
-  @media (max-width: 480px) {
-    div.top_image {
-      background-image: url('imgs/mobile_top_image.jpg');
-      background-position: 0 150px;
-      background-repeat: no-repeat;
-      background-color: #000;
-      height: 700px;
-    }
-  }
-
-}
 div.top_logo {
   width: 237px;
   height: 128px;
@@ -209,7 +190,23 @@ div.bottom_text h2 {
   color: #8bc83f;
   font-size:37px;
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
+  div.top_image {
+    background-image: url('imgs/mobile_top_image.jpg');
+    background-position: 0 150px;
+    background-repeat: no-repeat;
+    background-color: #000;
+    height: 742px;
+  }
+  @media (max-width: 320px) {
+    div.top_image {
+      background-image: url('imgs/mobile_top_image.jpg');
+      background-position: 0 150px;
+      background-repeat: no-repeat;
+      background-color: #000;
+      height: 700px;
+    }
+  }
   div.bottom_text {
     width: 90%;
     height: 178px;
@@ -221,6 +218,13 @@ div.bottom_text h2 {
   div.bottom_text p {
     font-size: 12px;
   }
+
+}
+
+@media (max-width: 767px) {
+div.bottom_text {
+margin: 419px 0 0 45px;
+}
 }
 
 div.win {
