@@ -18,7 +18,7 @@
     $limit = 500;
 
     // Set height and width for photos
-    $size = '100';
+    $size = '300';
 
     // Show results
     // Using for loop will cause error if there are less photos than the limit
@@ -27,5 +27,9 @@
         // Show photo
         echo '<p><img src="'.$data->images->thumbnail->url.'" height="'.$size.'" width="'.$size.'" alt="SOME TEXT HERE"></p>';
     }
+
+    echo '<pre>';
+    print_r($media);
+    echo '</pre>';
 ?>
 
