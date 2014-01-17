@@ -143,7 +143,8 @@ $isFan = $request['page']['liked'];
     FB.api('/me', function(response) {
       alert('response');
       FB.api("/me/likes/399004496820979", function(apiResponse){ 
-        alert(apiResponse);
+        alert(apiResponse.data);
+        alert(apiResponse.data.lenght);
         if (apiResponse.data && apiResponse.data.length > 0){
           alert(true);
           $('.fb_like_mask').hide();
