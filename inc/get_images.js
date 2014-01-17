@@ -42,7 +42,7 @@
     * Bind 'click' event in show-more button
     */
 
-    var button = $('a.loadmore');
+    var button = $('div#morepics');
     button.on('click', function(ev){
       ev.preventDefault();
       start = $('#container .rectangle').length;
