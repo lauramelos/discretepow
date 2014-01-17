@@ -515,11 +515,32 @@ div.pledge:after {
   color: #34582c;
   padding: 5px;
 }
+
+.pledge_child.jump {
+  margin: 5px
+}
+
+.pledge_child.powseven {
+position:static;
+  width: 149px;
+  height: 190px;
+  float: left;
+  margin: 5px;
+  background-color: #e0e0e0;
+  color: #34582c;
+  padding: 5px;
+  background-size: 100%;
+}
 }
 div.signup {
   background-image: url('imgs/mailform_bg.jpg');
-  height: 364px;
   padding-top: 1px;
+}
+div.signup:after {
+  clear: both;
+  width: 100%;
+  display: block;
+  content: '';
 }
 
 div.signup .title {
@@ -612,6 +633,24 @@ outline:1px solid red;
 }
 .error-msg{
 display: none
+}
+
+@media (max-width: 320px) {
+div.signup .title { 
+width: 90%;
+margin: 20px auto;
+float: none;
+}
+div.signup .title h2 {
+font-size: 30px;
+}
+div.signup fieldset {
+width: 90%;
+height: auto;
+float:none;
+margin: 20px auto;
+padding: 0;
+}
 }
 .termsconditions h1,
 .termsconditions h2,
