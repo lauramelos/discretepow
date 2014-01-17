@@ -2,12 +2,12 @@
 
   if ($_GET['next_pics']):
   $nextpics = $_GET['next_pics'];
-  echo $nextpics;
+  echo "Next from: $nextpics";
   endif;
 
   if ($_GET['prev_pics']):
   $prevpics = $_GET['prev_pics'];
-  echo $prevpics;
+  echo "Previous from: $prevpics";
   endif;
 
   function callInstagram($url)
