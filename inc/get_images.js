@@ -6,7 +6,6 @@
     var count = 12;
     var filterby;
 
-    console.log(pics);
     /**
      * Load pictures
      */
