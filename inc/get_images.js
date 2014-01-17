@@ -5,8 +5,9 @@
     var start = 0;
     var count = 12;
     var filterby;
-    var pics = '<?php echo $next_pics; ?>';
+    var pics = '<?php print($next_pics); ?>';
 
+    console.log(pics);
     /**
      * Load pictures
      */
