@@ -117,6 +117,9 @@ div.top_image {
 
 }
 @media (max-width: 767px) {
+  label{
+    font-size:12px;
+  }
   div.top_image {
     background-image: url('imgs/mobile_top_image.jpg');
     background-position: 0 150px;
@@ -145,7 +148,6 @@ div.title_under_logo {
   position: absolute !important;
   top: 300px;
   left: 105px;
-  width: 600px;
 }
 
 .fb-login-button.fb_iframe_widget{
