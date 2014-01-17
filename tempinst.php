@@ -1,9 +1,9 @@
 <?php       
 
-  if ($_GET['next_pics'];) :
+  if ($_GET['next_pics'];) {
   $nextpics = $_GET['next_pics'];
   echo $nextpics;
-  endif;
+  }
 
   function callInstagram($url)
     {
