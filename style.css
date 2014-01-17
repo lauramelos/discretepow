@@ -207,13 +207,13 @@ div.bottom_text h2 {
     background-color: #000;
     height: 742px;
   }
-div.top_logo {
-width: 237px;
-height: 128px;
-background-image: url('imgs/top_logo.png');
-margin-top: 0;
-margin-left: 0;
-}
+  div.top_logo {
+    width: 237px;
+    height: 128px;
+    background-image: url('imgs/top_logo.png');
+    margin-top: 0;
+    margin-left: 0;
+  }
   @media (max-width: 320px) {
     div.top_image {
       background-image: url('imgs/mobile_top_image.jpg');
@@ -312,13 +312,14 @@ div.weekly_prize {
 @media (max-width:620px) {
 div.win img {
 width: 100%;
-height: auo;
+max-width:436px
+height: auto;
 }
 
 div.win .grand_prize img {
 margin: 0;
 width: 100%;
-height: auo;
+height: auto;
 }
 div.desc_text {
  width:90%;
