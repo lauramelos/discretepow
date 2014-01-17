@@ -515,7 +515,7 @@ div.pledge:after {
   color: #34582c;
   padding: 5px;
 }
-
+.pledge_child.join,
 .pledge_child.jump {
   margin: 5px
 }
