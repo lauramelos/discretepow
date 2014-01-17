@@ -25,7 +25,7 @@
     foreach(array_slice($media->data, 0, $limit) as $data)
     {
         // Show photo
-        echo '<p><img src="'.$data->images->thumbnail->url.'" height="'.$size.'" width="'.$size.'" alt="SOME TEXT HERE"></p>';
+        echo '<img style="float: left; display: block;" src="'.$data->images->thumbnail->url.'" height="'.$size.'" width="'.$size.'" alt="SOME TEXT HERE" />';
     }
 
     echo '<pre>';
