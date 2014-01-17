@@ -545,7 +545,11 @@ div.pledge:after {
   background-image: url('imgs/powseven.png');
   background-repeat: no-repeat;
 }
-
+@media (max-width: 768px) {
+.pledge_child.jump {
+margin-left: 222px;
+}
+}
 @media (max-width: 620px) {
   div.pledge{
     background-image: url('imgs/pledge_bg2.jpg');
