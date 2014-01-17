@@ -59,7 +59,9 @@
         echo '<img src="'.$image_link.'" />';
     }
 
+    echo '<pre>';
     print_r($results);
+    echo '</pre>';
 
 ?>
 
