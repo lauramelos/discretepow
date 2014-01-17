@@ -14,14 +14,13 @@
     function load(){
       var data = {
         start: start,
-        count: count
+        count: count,
+        next_pics: pics
       };
-
-      if (filterby) data.filter = filterby;
 
       $.ajax({
         type: 'GET',
-        url: 'get_images.php?next_pics=$pics',
+        url: 'get_images.php',
         data: data
       }).done(renderResponse);
     }
