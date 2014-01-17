@@ -5,7 +5,6 @@
     var start = 0;
     var count = 12;
     var filterby;
-    var pics = '<?php print($next_pics); ?>';
 
     console.log(pics);
     /**
@@ -16,7 +15,6 @@
       var data = {
         start: start,
         count: count,
-        next_pics: pics
       };
 
       $.ajax({
