@@ -39,5 +39,4 @@
       $image_link = $item['images']['low_resolution']['url'];
       echo '<img src="'.$image_link.'" />';
   }
-
 ?>
