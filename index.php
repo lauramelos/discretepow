@@ -178,7 +178,7 @@ $isFan = $request['page']['liked'];
       data-colorscheme="dark">
     </div>
   <?php endif ?>
-  <div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" ></div>
+  <div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div>
   <div class="subscribe_mask"></div>
   <div class="top_image">
     <div class="top_logo"></div>
