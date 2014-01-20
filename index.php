@@ -127,7 +127,7 @@ $isFan = $request['page']['liked'];
     } else {
 
       FB.Event.subscribe("edge.create",  function(href, widget ) {
-        top.window.location = 'https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979&sk=app_191151347752624';
+        top.window.location = 'https://www.facebook.com/discreteheadwear/app_191151347752624'
       });
     }
   };
@@ -142,7 +142,7 @@ $isFan = $request['page']['liked'];
 
   function testAPI() {
     FB.api('/me', function(response) {
-      FB.api("/"+response.id+"/likes/399004496820979", function(apiResponse){ 
+      FB.api("/"+response.id+"/likes/191151347752624", function(apiResponse){ 
         if (apiResponse.data && apiResponse.data.length > 0){
           $('.fb_like_mask').hide();
           $('.fb-like').hide();
@@ -162,7 +162,7 @@ $isFan = $request['page']['liked'];
   <?php if (!$isFan): ?>
     <div class="fb_like_mask"></div>
     <div class="fb-like"
-      data-href="https://www.facebook.com/pages/Yakima-test/399004496820979?id=399004496820979"
+      data-href="https://www.facebook.com/discreteheadwear/app_191151347752624"
       data-width="600"
       data-layout="button_count"
       data-action="like"
