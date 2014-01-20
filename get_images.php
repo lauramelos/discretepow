@@ -35,10 +35,10 @@
   foreach($results['data'] as $item){
       $image_link = $item['images']['low_resolution']['url'];
       echo '<img src="'.$image_link.'" />';
-      echo "<p>$item[comments][count]</p>";
+      echo '<p>'.$item['comments']['count'].'</p>';
   }
-  $next_pics = $results[pagination][next_max_tag_id];
-  $prev_pics = $results[pagination][min_tag_id];
+  $next_pics = $results['pagination']['next_max_tag_id'];
+  $prev_pics = $results['pagination']['min_tag_id'];
 
   echo '<pre>';
   print_r($results);
