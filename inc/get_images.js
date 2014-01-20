@@ -19,7 +19,6 @@
         type: 'GET',
         url: 'get_images.php',
         data: data
-        console.log(morepics);
       }).done(renderResponse);
     }
 
