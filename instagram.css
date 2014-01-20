@@ -133,6 +133,10 @@ body .image_box {
   float: left;
   position: relative;
 }
+body .image_box img {
+  width: 100%;
+  height: auto;
+}
 body .image_box p {
   position: absolute;
   top: 0px;
