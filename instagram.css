@@ -137,8 +137,11 @@ body .image_box p {
   position: absolute;
   top: 0px;
   left: 0px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.3);
 }
 body .image_box p.likes {
-  left: none;
+  left: auto;
   right: 0px;
 }
