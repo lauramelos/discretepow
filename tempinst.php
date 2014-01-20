@@ -24,11 +24,11 @@ $isFan = $request['page']['liked'];
     // init the FB JS SDK
     FB.init({
       appId   : '230882110427062',
-      status  : true,
-      xfbml   : true,
-      cookie  : true,
-      channelUrl : 'http://discretepow.herokuapp.com/channel.html',
-      oauth  : true 
+      //status  : true,
+      //xfbml   : true,
+      //cookie  : true,
+      //channelUrl : 'http://discretepow.herokuapp.com/channel.html',
+      //oauth  : true 
     });
     
     FB.Canvas.setAutoGrow(1000);
