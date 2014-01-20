@@ -105,25 +105,32 @@ $isFan = $request['page']['liked'];
     FB.Canvas.setAutoGrow(1000);
 
     if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {     
-      FB.Event.subscribe('auth.authResponseChange', function(response) {
-        if (response.status === 'connected') {
-          testAPI();
-        } else if (response.status === 'not_authorized') {
+      if(navigator.userAgent.match('CriOS')){
+          $('.fb_like_mask').hide();
           $('.fb-like').hide();
-          $('.fb-login-button').show();
-          FB.login(function() {}, {scope: 'user_likes'} );
-        } else {
-          $('.fb-like').hide();
-          $('.fb-login-button').show();
-          FB.login(function() {}, {scope: 'user_likes'} );
-        }
-      });
-      FB.Event.subscribe('auth.login', function(){
-        window.location.reload();
-      });
-      FB.Event.subscribe('auth.logout', function(){
-        window.location.reload();
-      });
+          $('.fb-login-button').hide();
+      }
+      else{
+        FB.Event.subscribe('auth.authResponseChange', function(response) {
+          if (response.status === 'connected') {
+            testAPI();
+          } else if (response.status === 'not_authorized') {
+            $('.fb-like').hide();
+            $('.fb-login-button').show();
+            FB.login(function() {}, {scope: 'user_likes'} );
+          } else {
+            $('.fb-like').hide();
+            $('.fb-login-button').show();
+            FB.login(function() {}, {scope: 'user_likes'} );
+          }
+        });
+        FB.Event.subscribe('auth.login', function(){
+          window.location.reload();
+        });
+        FB.Event.subscribe('auth.logout', function(){
+          window.location.reload();
+        });
+      }
     } else {
 
       FB.Event.subscribe("edge.create",  function(href, widget ) {
