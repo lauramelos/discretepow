@@ -131,7 +131,12 @@ $isFan = $request['page']['liked'];
         top.window.location = 'https://www.facebook.com/discreteheadwear/app_476755032431099'
       });
     }
-      };
+    if(navigator.userAgent.match('CriOS')){
+      $('.fb_like_mask').hide();
+      $('.fb-like').hide();
+      $('.fb-login-button').hide();
+    }
+  };
   // Load the SDK asynchronously
   (function(d){
    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
@@ -139,12 +144,6 @@ $isFan = $request['page']['liked'];
    js = d.createElement('script'); js.id = id; js.async = true;
    js.src = "//connect.facebook.net/en_US/all.js";
    ref.parentNode.insertBefore(js, ref);
-   if(navigator.userAgent.match('CriOS')){
-          $('.fb_like_mask').hide();
-          $('.fb-like').hide();
-          $('.fb-login-button').hide();
-    }
-
   }(document));
 
   function testAPI() {
