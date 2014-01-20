@@ -3,8 +3,8 @@
 
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
-  'appId'  => '191151347752624',
-  'secret' => 'a4c1147272a2df8f706f5ac2a7956b5b',
+  'appId'  => '476755032431099',
+  'secret' => 'bf1e5ecbe60c748266205c70bddacf78',
 ));
 
 $request = $facebook->getSignedRequest();
@@ -94,11 +94,11 @@ $isFan = $request['page']['liked'];
   window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
-      appId   : '191151347752624',
+      appId   : '476755032431099',
       status  : true,
       xfbml   : true,
       cookie  : true,
-      channelUrl : 'http://discretepow.herokuapp.com/channel.html',
+      channelUrl : 'http://unitedwepow.herokuapp.com/channel.html',
       oauth  : true 
     });
     
@@ -127,7 +127,7 @@ $isFan = $request['page']['liked'];
     } else {
 
       FB.Event.subscribe("edge.create",  function(href, widget ) {
-        top.window.location = 'https://www.facebook.com/discreteheadwear/app_191151347752624'
+        top.window.location = 'https://www.facebook.com/discreteheadwear/app_476755032431099'
       });
     }
   };
@@ -162,7 +162,7 @@ $isFan = $request['page']['liked'];
   <?php if (!$isFan): ?>
     <div class="fb_like_mask"></div>
     <div class="fb-like"
-      data-href="https://www.facebook.com/discreteheadwear/app_191151347752624"
+      data-href="https://www.facebook.com/discreteheadwear"
       data-width="600"
       data-layout="button_count"
       data-action="like"
