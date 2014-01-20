@@ -105,12 +105,7 @@ $isFan = $request['page']['liked'];
     FB.Canvas.setAutoGrow(1000);
 
     if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {     
-      if(navigator.userAgent.match('CriOS')){
-          $('.fb_like_mask').hide();
-          $('.fb-like').hide();
-          $('.fb-login-button').hide();
-      }
-      else{
+     
         FB.Event.subscribe('auth.authResponseChange', function(response) {
           if (response.status === 'connected') {
             testAPI();
@@ -130,12 +125,16 @@ $isFan = $request['page']['liked'];
         FB.Event.subscribe('auth.logout', function(){
           window.location.reload();
         });
-      }
     } else {
 
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/discreteheadwear/app_476755032431099'
       });
+    }
+    if(navigator.userAgent.match('CriOS')){
+          $('.fb_like_mask').hide();
+          $('.fb-like').hide();
+          $('.fb-login-button').hide();
     }
   };
   // Load the SDK asynchronously
