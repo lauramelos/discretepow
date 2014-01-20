@@ -22,8 +22,12 @@
       }).done(renderResponse);
     }
 
+    /**
+     * Render the answer
+     */
+
     function renderResponse(html){
-      $('a.loadmore').before(html);
+      $('div#morepics').before(html);
     }
 
     /**
@@ -34,7 +38,7 @@
     console.log(morepics);
     button.on('click', function(ev){
       ev.preventDefault();
-      start = $('#container .rectangle').length;
+      //start = $('#container .rectangle').length;
       load();
     });
 
@@ -50,6 +54,12 @@
       filterby = category == 'all' ? null : category;
       start = 0;
       load();
+    });
+    
+    $(window).scroll(function() {
+      if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        alert("bottom!");
+      }
     });
 
   });
