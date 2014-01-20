@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
   require 'src/facebook.php';
 
@@ -19,6 +20,7 @@ if($isFan) {
 <head>
   <script src="inc/jquery-1.10.2.min.js" type="text/javascript"></script>
   <script src="inc/get_images.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="instagram.css">
 </head>
 <body>
 <div id="fb-root"></div>
@@ -43,7 +45,7 @@ if($isFan) {
 
   $host = $_SERVER['SERVER_NAME'];
 ?>
-  <div style="background-color: red;" id="morepics">more</div>
+  <div id="morepics">more</div>
 <?php
     echo '<pre>';
     //print_r($results);

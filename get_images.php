@@ -34,10 +34,19 @@
   //Now parse through the $results array to display your results... 
   foreach($results['data'] as $item){
       $image_link = $item['images']['low_resolution']['url'];
+      echo '<div class="image_box">';
       echo '<img src="'.$image_link.'" />';
+      echo '<p>Comments: '.$item['comments']['count'].'</p>';
+      echo '<p class="likes">Likes: '.$item['likes']['count'].'</p>';
+      echo '</div>';
   }
-  $next_pics = $results[pagination][next_max_tag_id];
-  $prev_pics = $results[pagination][min_tag_id];
+  $next_pics = $results['pagination']['next_max_tag_id'];
+  $prev_pics = $results['pagination']['min_tag_id'];
+
+  /*echo '<pre>';
+  print_r($results);
+  echo '</pre>';
+   */
 ?>
   <script>
     var morepics = <?php echo $next_pics; ?>;
