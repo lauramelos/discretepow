@@ -19,6 +19,7 @@ if($isFan) {
 <head>
   <script src="inc/jquery-1.10.2.min.js" type="text/javascript"></script>
   <script src="inc/get_images.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="instagram.css">
 </head>
 <body>
 <div id="fb-root"></div>
