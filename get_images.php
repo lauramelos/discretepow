@@ -37,7 +37,7 @@
       echo '<div class="image_box">';
       echo '<img src="'.$image_link.'" />';
       echo '<p>Comments: '.$item['comments']['count'].'</p>';
-      echo '<p>Likes: '.$item['likes']['count'].'</p>';
+      echo '<p class="likes">Likes: '.$item['likes']['count'].'</p>';
       echo '</div>';
   }
   $next_pics = $results['pagination']['next_max_tag_id'];

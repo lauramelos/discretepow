@@ -128,7 +128,17 @@ table {
 }
 body .image_box {
   width: 25%;
-  height: 300px;
   display: block;
   overflow: hidden;
+  float: left;
+  position: relative;
+}
+body .image_box p {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+body .image_box p.likes {
+  left: none;
+  right: 0px;
 }
