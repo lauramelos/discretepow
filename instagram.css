@@ -139,7 +139,10 @@ body .image_box p {
   left: 0px;
   padding: 5px;
   color: #fff;
-  background-color: rgba(0,0,0,0.3);
+  margin: 0px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
 }
 body .image_box p.likes {
   left: auto;
