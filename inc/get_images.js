@@ -19,6 +19,7 @@
         type: 'GET',
         url: 'get_images.php',
         data: data
+        console.log(morepics);
       }).done(renderResponse);
     }
 
@@ -35,7 +36,6 @@
     */
 
     var button = $('div#morepics');
-    console.log(morepics);
     button.on('click', function(ev){
       ev.preventDefault();
       //start = $('#container .rectangle').length;
@@ -58,7 +58,6 @@
     
     $(window).scroll(function() {
       if($(window).scrollTop() + $(window).height() == $(document).height()) {
-        console.log("bottom!");
         load();
       }
     });
