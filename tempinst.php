@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
   require 'src/facebook.php';
 
@@ -10,6 +9,10 @@ $facebook = new Facebook(array(
 
 $request = $facebook->getSignedRequest();
 $isFan = $request['page']['liked'];
+
+if($isFan) {
+  echo '<p>liked</p>';
+}
 
 ?>
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
