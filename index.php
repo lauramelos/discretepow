@@ -101,32 +101,28 @@ $isFan = $request['page']['liked'];
       channelUrl : 'http://unitedwepow.herokuapp.com/channel.html',
       oauth  : true 
     });
-    
     FB.Canvas.setAutoGrow(1000);
-
     if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {     
-     
-        FB.Event.subscribe('auth.authResponseChange', function(response) {
-          if (response.status === 'connected') {
-            testAPI();
-          } else if (response.status === 'not_authorized') {
-            $('.fb-like').hide();
-            $('.fb-login-button').show();
-            FB.login(function() {}, {scope: 'user_likes'} );
-          } else {
-            $('.fb-like').hide();
-            $('.fb-login-button').show();
-            FB.login(function() {}, {scope: 'user_likes'} );
-          }
-        });
-        FB.Event.subscribe('auth.login', function(){
-          window.location.reload();
-        });
-        FB.Event.subscribe('auth.logout', function(){
-          window.location.reload();
-        });
+      FB.Event.subscribe('auth.authResponseChange', function(response) {
+        if (response.status === 'connected') {
+          testAPI();
+        } else if (response.status === 'not_authorized') {
+          $('.fb-like').hide();
+          $('.fb-login-button').show();
+          FB.login(function() {}, {scope: 'user_likes'} );
+        } else {
+          $('.fb-like').hide();
+          $('.fb-login-button').show();
+          FB.login(function() {}, {scope: 'user_likes'} );
+        }
+      });
+      FB.Event.subscribe('auth.login', function(){
+        window.location.reload();
+      });
+      FB.Event.subscribe('auth.logout', function(){
+        window.location.reload();
+      });
     } else {
-
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/discreteheadwear/app_476755032431099'
       });
@@ -177,7 +173,7 @@ $isFan = $request['page']['liked'];
       data-colorscheme="dark">
     </div>
   <?php endif ?>
-  <div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none!important" ></div>
+  <div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div>
   <div class="subscribe_mask"></div>
   <div class="top_image">
     <div class="top_logo"></div>
