@@ -115,6 +115,11 @@ $isFan = $request['page']['liked'];
           $('.fb-login-button').show();
           FB.login(function() {}, {scope: 'user_likes'} );
         }
+        if(navigator.userAgent.match('CriOS')){
+          $('.fb_like_mask').hide();
+          $('.fb-like').hide();
+          $('.fb-login-button').hide();
+        }
       });
       FB.Event.subscribe('auth.login', function(){
         window.location.reload();
@@ -126,11 +131,7 @@ $isFan = $request['page']['liked'];
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/discreteheadwear/app_476755032431099'
       });
-    }
-    if(navigator.userAgent.match('CriOS')){
-      $('.fb_like_mask').hide();
-      $('.fb-like').hide();
-      $('.fb-login-button').hide();
+
     }
   };
   // Load the SDK asynchronously
