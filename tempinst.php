@@ -11,7 +11,6 @@
 
   $host = $_SERVER['SERVER_NAME'];
 ?>
-  <a class="loadmore" href="http://<?php echo $host; ?>/tempinst.php?next_pics=<?php echo $next_pics; ?>">next 20</a>
   <div style="background-color: red;" id="morepics">more</div>
 <?php
     echo '<pre>';
