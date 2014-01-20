@@ -23,7 +23,7 @@ $isFan = $request['page']['liked'];
   window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
-      appId   : '191151347752624',
+      appId   : '230882110427062',
       status  : true,
       xfbml   : true,
       cookie  : true,
