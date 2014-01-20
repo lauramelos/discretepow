@@ -38,6 +38,10 @@
   }
   $next_pics = $results[pagination][next_max_tag_id];
   $prev_pics = $results[pagination][min_tag_id];
+
+  echo '<pre>';
+  print_r($results);
+  echo '</pre>';
 ?>
   <script>
     var morepics = <?php echo $next_pics; ?>;
