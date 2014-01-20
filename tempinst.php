@@ -31,7 +31,7 @@ $isFan = $request['page']['liked'];
       //oauth  : true 
     });
     
-    FB.Canvas.setAutoGrow(1000);
+    //FB.Canvas.setAutoGrow(1000);
   }
 </script>
 
