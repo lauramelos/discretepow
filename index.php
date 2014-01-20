@@ -103,7 +103,10 @@ $isFan = $request['page']['liked'];
     });
     FB.Canvas.setAutoGrow(1000);
     if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {     
-      FB.Event.subscribe('auth.authResponseChange', function(response) {
+      $('.fb_like_mask').hide();
+      $('.fb-like').hide();
+
+      /*FB.Event.subscribe('auth.authResponseChange', function(response) {
         if (response.status === 'connected') {
           testAPI();
         } else if (response.status === 'not_authorized') {
@@ -115,23 +118,17 @@ $isFan = $request['page']['liked'];
           $('.fb-login-button').show();
           FB.login(function() {}, {scope: 'user_likes'} );
         }
-        if(navigator.userAgent.match('CriOS')){
-          $('.fb_like_mask').hide();
-          $('.fb-like').hide();
-          $('.fb-login-button').hide();
-        }
       });
       FB.Event.subscribe('auth.login', function(){
         window.location.reload();
       });
       FB.Event.subscribe('auth.logout', function(){
         window.location.reload();
-      });
+    });*/
     } else {
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/discreteheadwear/app_476755032431099'
       });
-
     }
   };
   // Load the SDK asynchronously
@@ -143,7 +140,7 @@ $isFan = $request['page']['liked'];
    ref.parentNode.insertBefore(js, ref);
   }(document));
 
-  function testAPI() {
+  /*function testAPI() {
     FB.api('/me', function(response) {
       FB.api("/"+response.id+"/likes/191151347752624", function(apiResponse){ 
         if (apiResponse.data && apiResponse.data.length > 0){
@@ -159,7 +156,7 @@ $isFan = $request['page']['liked'];
     FB.Event.subscribe("edge.create",  function(href, widget ) {
       window.location.reload();
     });
-  };
+  };*/
 </script>
 
   <?php if (!$isFan): ?>
@@ -174,7 +171,7 @@ $isFan = $request['page']['liked'];
       data-colorscheme="dark">
     </div>
   <?php endif ?>
-  <div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div>
+  <!--div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div-->
   <div class="subscribe_mask"></div>
   <div class="top_image">
     <div class="top_logo"></div>
