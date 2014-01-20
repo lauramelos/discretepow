@@ -152,3 +152,6 @@ body .image_box p.likes {
   left: auto;
   right: 0px;
 }
+body #morepics {
+  background-color: #f00;
+}

@@ -45,7 +45,7 @@ if($isFan) {
 
   $host = $_SERVER['SERVER_NAME'];
 ?>
-  <div style="background-color: red;" id="morepics">more</div>
+  <div id="morepics">more</div>
 <?php
     echo '<pre>';
     //print_r($results);
