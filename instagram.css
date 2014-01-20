@@ -126,7 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
+body .image_box {
   width: 25%;
   height: 300px;
   display: block;
