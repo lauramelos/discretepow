@@ -167,8 +167,8 @@ div.fb_like_mask {
 }
 div.subscribe_mask{
   display: none;
-  background: rgba(0,0,0,0.85) url('imgs/suscribe_mask.png') no-repeat top;
-  background-size: 100%;
+  background-image: none; /* rgba(0,0,0,0.85) url('imgs/suscribe_mask.png') no-repeat top;*?
+  background-size: 100%;*/
 }
 
 div.bottom_text {

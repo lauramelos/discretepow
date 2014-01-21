@@ -173,9 +173,10 @@ $isFan = $request['page']['liked'];
   <?php endif ?>
   <!--div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div-->
   <div class="subscribe_mask">
+<img src="https://unitedwepow.herokuapp.com/imgs/suscribe_mask.png" usemap="#planetmap"/>
 <map name="planetmap">
-  <area shape="rect" coords="0,0,82,126" alt="Share on Facebook" href="http://www.facebook.com/sharer.php?u=http://smarturl.it/UnitedWePOW">
-  <area shape="rect" coords="0,0,82,126" alt="Share on twitter" href="http://twitter.com/share?text=WE%20LOVE%20WINTER.%20LETS%20TAKE%20A%20STAND%20TO%20PROTECT%20IT&url=http://smarturl.it/UnitedWePOW">
+  <area shape="rect" coords="588,542,37,37" alt="Share on Facebook" href="http://www.facebook.com/sharer.php?u=http://smarturl.it/UnitedWePOW">
+  <area shape="rect" coords="636,542,37,37" alt="Share on twitter" href="http://twitter.com/share?text=WE%20LOVE%20WINTER.%20LETS%20TAKE%20A%20STAND%20TO%20PROTECT%20IT&url=http://smarturl.it/UnitedWePOW">
 </map>
   </div>
   <div class="top_image">
