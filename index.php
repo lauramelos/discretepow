@@ -172,7 +172,12 @@ $isFan = $request['page']['liked'];
     </div>
   <?php endif ?>
   <!--div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div-->
-  <div class="subscribe_mask"></div>
+  <div class="subscribe_mask">
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Share on Facebook" href="http://www.facebook.com/sharer.php?u=http://smarturl.it/UnitedWePOW">
+  <area shape="rect" coords="0,0,82,126" alt="Share on twitter" href="http://twitter.com/share?text=WE%20LOVE%20WINTER.%20LETS%20TAKE%20A%20STAND%20TO%20PROTECT%20IT&url=http://smarturl.it/UnitedWePOW">
+</map>
+  </div>
   <div class="top_image">
     <div class="top_logo"></div>
     <div class="title_under_logo">
@@ -345,12 +350,12 @@ keep our winters white.</p>
 
         <label for="option1">
           <input class="choose" name="option[]" id="option1" type="checkbox" value="true" />
-            &nbsp;I TOOK THE POW SEVEN PLEDGE
+            &nbsp;I commit to the POW SEVEN pledge
         </label>
         <label for="option2">
           <input class="choose" name="option[]" id="option2" type="checkbox" value="true" />
             &nbsp;SEND ME MORE INFORMATION FROM POW AND PARTNERS
-            <span>25% off Discrete Promo Code Comes in First POW EMAil</span>
+            <span>25% off Discrete Promo Code Comes in First POW Email</span>
         </label>
         <label for="option3">
           <input class="choose" name="option[]" id="option3" type="checkbox" value="true" />
