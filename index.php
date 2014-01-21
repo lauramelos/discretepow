@@ -1,92 +1,86 @@
 <?php
   require 'src/facebook.php';
-
-// Create our Application instance (replace this with your appId and secret).
-$facebook = new Facebook(array(
-  'appId'  => '476755032431099',
-  'secret' => 'bf1e5ecbe60c748266205c70bddacf78',
-));
-
-$request = $facebook->getSignedRequest();
-$isFan = $request['page']['liked'];
-
+  $facebook = new Facebook(array(
+    'appId'  => '476755032431099',
+    'secret' => 'bf1e5ecbe60c748266205c70bddacf78',
+  ));
+  $request = $facebook->getSignedRequest();
+  $isFan = $request['page']['liked'];
 ?>
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"/>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="inc/jquery-1.10.2.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://fast.fonts.net/jsapi/c71e20be-219a-4a86-8783-74514d0a6982.js">
-  </script>
-<script>
-;(function($){
-  $(document).ready(function() {
-    var form = $('#formular');
-    var inputs = $('input[type=text]');
-    inputs.on('focus', function(e){
-      $(this).removeClass('error');
+  <script type="text/javascript" src="https://fast.fonts.net/jsapi/c71e20be-219a-4a86-8783-74514d0a6982.js"></script>
+  <script>
+  ;(function($){
+    $(document).ready(function() {
+      var form = $('#formular');
+      var inputs = $('input[type=text]');
+      inputs.on('focus', function(e){
+        $(this).removeClass('error');
+      });
+      form.on('click', '#mc-embedded-subscribe', function(e){
+        e.preventDefault();
+        var send = true;
+        var email     = $("#two").val();
+        var fname     = $("#one").val();
+        var insta     = $("#three").val();
+        var sevenp    = $("#option1").is(':checked');
+        var subscribe = $("#option2").is(':checked');
+        var agree     = $("#option3").is(':checked');
+
+
+        if ( !(/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) {
+          var node = $("#two").parent();
+          node.addClass('error');
+          send = false;
+        }
+        if ( fname=="" || fname ==null) {
+          var node1 = $("#one");
+          node1.addClass('error');
+          send = false;
+        }
+        if ( insta=="" || insta==null) {
+          var node2 = $("#three");
+          node2.addClass('error');
+          send = false;
+        }
+        /* if ( !sevenp ) {
+          var node3 = $("#option1");
+          node3.addClass('error');
+          send = false;
+        }
+        if ( !subscribe ) {
+          var node4 = $("#option2");
+          node4.addClass('error');
+          send = false;
+        }*/
+        if ( !agree ) {
+          var node5 = $("#option3");
+          node5.addClass('error');
+          send = false;
+        }
+
+        if (send){
+          $(".error-msg").hide();
+          $.ajax({
+            url: form.attr('action'),
+            type: 'post',
+            data:  { 'FNAME' : fname , 'INSTA' : insta, 'EMAIL' : email, 
+            'SEVENP': sevenp, 'SUBSCRIBE': subscribe, 'AGREE': agree },
+            dataType: "text" 
+          });
+          $('.subscribe_mask').show();
+          FB.Canvas.scrollTo(0,0);
+        } 
+        else $(".error-msg").show(); 
+      })
     });
-    form.on('click', '#mc-embedded-subscribe', function(e){
-      e.preventDefault();
-      var send = true;
-      var email     = $("#two").val();
-      var fname     = $("#one").val();
-      var insta     = $("#three").val();
-      var sevenp    = $("#option1").is(':checked');
-      var subscribe = $("#option2").is(':checked');
-      var agree     = $("#option3").is(':checked');
 
-
-      if ( !(/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) {
-        var node = $("#two").parent();
-        node.addClass('error');
-        send = false;
-      }
-      if ( fname=="" || fname ==null) {
-        var node1 = $("#one");
-        node1.addClass('error');
-        send = false;
-      }
-      if ( insta=="" || insta==null) {
-        var node2 = $("#three");
-        node2.addClass('error');
-        send = false;
-      }
-      /* if ( !sevenp ) {
-        var node3 = $("#option1");
-        node3.addClass('error');
-        send = false;
-      }
-      if ( !subscribe ) {
-        var node4 = $("#option2");
-        node4.addClass('error');
-        send = false;
-      }*/
-      if ( !agree ) {
-        var node5 = $("#option3");
-        node5.addClass('error');
-        send = false;
-      }
-
-      if (send){
-        $(".error-msg").hide();
-        $.ajax({
-          url: form.attr('action'),
-          type: 'post',
-          data:  { 'FNAME' : fname , 'INSTA' : insta, 'EMAIL' : email, 
-          'SEVENP': sevenp, 'SUBSCRIBE': subscribe, 'AGREE': agree },
-          dataType: "text" 
-        });
-        $('.subscribe_mask').show();
-        FB.Canvas.scrollTo(0,0);
-      } 
-      else $(".error-msg").show(); 
-    })
-  });
-
-})(jQuery);
-</script>
-
+  })(jQuery);
+  </script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -105,33 +99,12 @@ $isFan = $request['page']['liked'];
     if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {     
       $('.fb_like_mask').hide();
       $('.fb-like').hide();
-
-      /*FB.Event.subscribe('auth.authResponseChange', function(response) {
-        if (response.status === 'connected') {
-          testAPI();
-        } else if (response.status === 'not_authorized') {
-          $('.fb-like').hide();
-          $('.fb-login-button').show();
-          FB.login(function() {}, {scope: 'user_likes'} );
-        } else {
-          $('.fb-like').hide();
-          $('.fb-login-button').show();
-          FB.login(function() {}, {scope: 'user_likes'} );
-        }
-      });
-      FB.Event.subscribe('auth.login', function(){
-        window.location.reload();
-      });
-      FB.Event.subscribe('auth.logout', function(){
-        window.location.reload();
-    });*/
     } else {
       FB.Event.subscribe("edge.create",  function(href, widget ) {
         top.window.location = 'https://www.facebook.com/discreteheadwear/app_476755032431099'
       });
     }
   };
-  // Load the SDK asynchronously
   (function(d){
    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
    if (d.getElementById(id)) {return;}
@@ -139,24 +112,6 @@ $isFan = $request['page']['liked'];
    js.src = "//connect.facebook.net/en_US/all.js";
    ref.parentNode.insertBefore(js, ref);
   }(document));
-
-  /*function testAPI() {
-    FB.api('/me', function(response) {
-      FB.api("/"+response.id+"/likes/191151347752624", function(apiResponse){ 
-        if (apiResponse.data && apiResponse.data.length > 0){
-          $('.fb_like_mask').hide();
-          $('.fb-like').hide();
-          $('.fb-login-button').hide();
-        } else {
-          $('.fb-login-button').hide();
-          $('.fb-like').show();
-        }
-      });
-    });
-    FB.Event.subscribe("edge.create",  function(href, widget ) {
-      window.location.reload();
-    });
-  };*/
 </script>
 
   <?php if (!$isFan): ?>
@@ -171,13 +126,12 @@ $isFan = $request['page']['liked'];
       data-colorscheme="dark">
     </div-->
   <?php endif ?>
-  <!--div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div-->
   <div class="subscribe_mask">
-<img src="https://unitedwepow.herokuapp.com/imgs/suscribe_mask.png" usemap="#planetmap"/>
-<map name="planetmap">
-  <area shape="rect" coords="588,542,625,578" alt="Share on Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/photo.php?fbid=10151900870447507&set=a.298031247506.147732.284825007506&type=1&stream_ref=10">
-  <area shape="rect" coords="636,542,673,578" alt="Share on twitter"  target="_blank" href="http://twitter.com/share?text=I%20Just%20Took%20A%20Stand%20For%20Winter!%20Join%20Me%20in%20The%20Fight%20to%20Protecti%20Our%20Winters%20%23UnitedWePOW&url=http://smarturl.it/UnitedWePOW">
-</map>
+    <img src="https://unitedwepow.herokuapp.com/imgs/suscribe_mask.png" usemap="#planetmap"/>
+    <map name="planetmap">
+      <area shape="rect" coords="588,542,625,578" alt="Share on Facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/photo.php?fbid=10151900870447507&set=a.298031247506.147732.284825007506&type=1&stream_ref=10">
+      <area shape="rect" coords="636,542,673,578" alt="Share on twitter"  target="_blank" href="http://twitter.com/share?text=I%20Just%20Took%20A%20Stand%20For%20Winter!%20Join%20Me%20in%20The%20Fight%20to%20Protecti%20Our%20Winters%20%23UnitedWePOW&url=http://smarturl.it/UnitedWePOW">
+    </map>
   </div>
   <div class="top_image">
     <div class="top_logo"></div>
