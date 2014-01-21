@@ -252,8 +252,8 @@ $isFan = $request['page']['liked'];
       <div class="caption">
         <h2>WIN THE ULTIMATE SKI WEEKEND IN UTAH</h2>
         <p>Tag your ski, snowboard and general winter-loving pics on
-          <strong> Instagram</strong> with <strong class="wantin">#UnitedWePOW</strong>
-           and <strong class="wantin">@ProtectOurWinters</strong>. Hit it hard all 
+          <strong> Instagram</strong> with <strong class="wantin">#UnitedWePOW</strong>.
+          Hit it hard all 
           season long. In March, we'll invete our favorite 
           <strong class="wantin">#UnitedWePow</strong> Instagrammer and a freind
           to join us in the Wasatch Mountains of Utah for an all-expense-paid
