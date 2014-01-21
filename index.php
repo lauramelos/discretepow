@@ -176,7 +176,7 @@ $isFan = $request['page']['liked'];
 <img src="https://unitedwepow.herokuapp.com/imgs/suscribe_mask.png" usemap="#planetmap"/>
 <map name="planetmap">
   <area shape="rect" coords="588,542,625,578" alt="Share on Facebook" href="http://www.facebook.com/sharer.php?u=http://smarturl.it/UnitedWePOW">
-  <area shape="rect" coords="636,542,673,578" alt="Share on twitter" href="http://twitter.com/share?text=WE%20LOVE%20WINTER.%20LETS%20TAKE%20A%20STAND%20TO%20PROTECT%20IT&url=http://smarturl.it/UnitedWePOW">
+  <area shape="rect" coords="636,542,673,578" alt="Share on twitter" href="http://twitter.com/share?text=I%20Just%20Took%20A%20Stand%20For%20Winter!%20Join%20Me%20in%20The%20Fight%20to%20Protecti%20Our%20Winters%20%23UnitedWePOW&url=http://smarturl.it/UnitedWePOW">
 </map>
   </div>
   <div class="top_image">
