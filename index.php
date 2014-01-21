@@ -161,7 +161,7 @@ $isFan = $request['page']['liked'];
 
   <?php if (!$isFan): ?>
     <div class="fb_like_mask"></div>
-    <div class="fb-like"
+    <!--div class="fb-like"
       data-href="https://www.facebook.com/discreteheadwear"
       data-width="600"
       data-layout="button_count"
@@ -169,7 +169,7 @@ $isFan = $request['page']['liked'];
       data-show-faces="false"
       data-share="false"
       data-colorscheme="dark">
-    </div>
+    </div-->
   <?php endif ?>
   <!--div class="fb-login-button" data-max-rows="1" data-show-faces="false" data-scope="user_likes" style="display:none" ></div-->
   <div class="subscribe_mask">
