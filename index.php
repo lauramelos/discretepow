@@ -258,7 +258,7 @@ $isFan = $request['page']['liked'];
           <strong class="wantin">#UnitedWePow</strong> Instagrammer and a freind
           to join us in the Wasatch Mountains of Utah for an all-expense-paid
           trip to ski with GoPro athlete Julian Carr and friends on the world-cass
-          terrain of Snowbird Mountain Resort.</p>
+          Brighton Mountain Resort.</p>
       </div>
     </div>
   </div>
