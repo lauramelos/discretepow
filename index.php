@@ -222,8 +222,8 @@
       <img src="imgs/pow_logo.png" class="powlogo" />
       <div class="pledge_text">
         <h2>OUR TIME IS NOW.</h2>
-        <p>There is no much information out there, it's tough to know that you're
-            actally making a difference. We'll make it super-ease for you. We'll
+        <p>There is so much information out there, it's tough to know that you're
+            actually making a difference. We'll make it super-easy for you. We've
             consolidated the best and most effective actions into one short list.
             The POW SEVEN is simple and effective.<br /><strong>Pledge to do POW
             SEVEN once a month and you'll make a difference</strong></p>
