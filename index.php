@@ -225,7 +225,7 @@
         <p>There is so much information out there, it's tough to know that you're
             actually making a difference. We'll make it super-easy for you. We've
             consolidated the best and most effective actions into one short list.
-            The POW SEVEN is simple and effective.<br /><strong>Pledge to do POW
+            The POW SEVEN is simple and effective.<br /><strong>Pledge to do the POW
             SEVEN once a month and you'll make a difference</strong></p>
       </div>
     </div>
